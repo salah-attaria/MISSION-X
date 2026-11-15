@@ -1,0 +1,1163 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: 'Inter', sans-serif;
+  color: #e8f1fa;
+  background: #080e18;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; background: #080e18; }
+button { font: inherit; cursor: pointer; }
+
+.app-shell { min-height: 100vh; display: flex; }
+.sidebar {
+  width: 245px; background: #0b1421; border-right: 1px solid #1c3044;
+  padding: 30px 18px; display: flex; flex-direction: column; flex-shrink: 0;
+}
+.brand { display: flex; align-items: center; gap: 12px; margin-bottom: 65px; }
+.brand-icon { color: #4bdcff; }
+.brand h2 { font: 800 21px Orbitron; margin: 0; letter-spacing: 2px; }
+.brand h2 span, .hero h1 span, .section-heading h2 span { color: #4bdcff; }
+.brand small { color: #71889e; font-size: 9px; letter-spacing: 2px; }
+.nav-label, .eyebrow { color: #4bdcff; font-size: 10px; letter-spacing: 2px; font-weight: 700; }
+.nav-label { margin: 0 0 15px 12px; }
+.nav-item {
+  display: flex; align-items: center; gap: 13px; width: 100%;
+  padding: 14px 12px; margin-bottom: 7px; color: #8295aa;
+  background: transparent; border: 1px solid transparent; border-radius: 7px;
+  text-align: left; font-size: 10px; letter-spacing: 1px;
+}
+.nav-item:hover, .nav-item.active { color: #4bdcff; background: #122538; border-color: #1b3c51; }
+.sidebar-bottom { margin-top: auto; color: #71889e; font-size: 10px; }
+.connection { color: #60dda8; margin-bottom: 12px; }
+.connection span, .eyebrow span, .live-dot {
+  display: inline-block; width: 7px; height: 7px; background: #60dda8;
+  border-radius: 50%; margin-right: 8px;
+}
+.main-content { flex: 1; min-width: 0; padding: 0 42px; }
+.topbar {
+  height: 75px; border-bottom: 1px solid #1b2b3b;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.breadcrumb { color: #71889e; font-size: 10px; letter-spacing: 1.5px; }
+.breadcrumb span { color: #dceaf5; }
+.top-status { color: #60dda8; font-size: 9px; letter-spacing: 1px; }
+.hero {
+  min-height: 370px; display: flex; align-items: center;
+  justify-content: space-between; border-bottom: 1px solid #1b2b3b;
+  overflow: hidden;
+}
+.hero-content { max-width: 520px; padding: 35px 0; z-index: 1; }
+.hero h1 { font: 800 clamp(34px, 5vw, 58px) Orbitron; line-height: 1.2; letter-spacing: 1px; margin: 20px 0; }
+.hero-content p { color: #91a5b8; line-height: 1.8; font-size: 13px; max-width: 400px; }
+.primary-button {
+  display: inline-flex; align-items: center; gap: 15px; margin-top: 18px;
+  padding: 14px 19px; background: #4bdcff; border: 0; color: #07121c;
+  font-size: 10px; font-weight: 800; letter-spacing: 1px; border-radius: 3px;
+}
+.primary-button:hover { background: #a2efff; }
+.hero-visual { width: 340px; height: 300px; position: relative; flex-shrink: 0; }
+.planet {
+  position: absolute; width: 150px; height: 150px; border-radius: 50%;
+  top: 55px; left: 90px; background: radial-gradient(circle at 35% 30%, #9bc9db, #245b80 45%, #101f39 78%);
+  box-shadow: 0 0 60px #23739b66;
+}
+.planet div { position: absolute; inset: 25px 0; border-top: 9px solid #a8d6df44; transform: rotate(-24deg); border-radius: 50%; }
+.orbit { position: absolute; border: 1px solid #4bdcff55; border-radius: 50%; }
+.orbit-one { width: 270px; height: 105px; top: 80px; left: 30px; transform: rotate(-25deg); }
+.orbit-two { width: 300px; height: 180px; top: 40px; left: 15px; transform: rotate(35deg); }
+.satellite-icon { position: absolute; top: 28px; right: 38px; color: #4bdcff; filter: drop-shadow(0 0 8px #4bdcff); }
+.visual-caption { position: absolute; bottom: 0; left: 45px; font: 10px Orbitron; letter-spacing: 1px; text-align: center; line-height: 2; }
+.visual-caption span { color: #71889e; font-size: 8px; }
+.status-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; padding: 22px 0; border-bottom: 1px solid #1b2b3b; }
+.status-card { display: flex; align-items: center; gap: 12px; padding: 13px; background: #0d1927; border: 1px solid #1b3042; border-radius: 5px; }
+.status-card svg { color: #4bdcff; width: 20px; }
+.status-card small, .status-card strong { display: block; font-size: 9px; letter-spacing: 1px; }
+.status-card small { color: #71889e; margin-bottom: 6px; }
+.status-card strong { color: #60dda8; }
+.missions-section { padding: 35px 0 50px; }
+.section-heading { display: flex; justify-content: space-between; align-items: end; margin-bottom: 23px; }
+.section-heading h2 { font: 700 24px Orbitron; margin: 10px 0 0; }
+.mission-count { color: #71889e; font-size: 9px; letter-spacing: 1px; }
+.mission-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+.mission-card { background: #0d1927; border: 1px solid #1b3042; padding: 19px; min-width: 0; transition: .2s; }
+.mission-card:hover { border-color: #4bdcff; transform: translateY(-3px); }
+.card-top { display: flex; justify-content: space-between; color: #71889e; font-size: 9px; letter-spacing: 1px; }
+.card-top svg { color: #4bdcff; }
+.destination { font: 700 25px Orbitron; color: #315b76; margin-top: 35px; }
+.mission-card h3 { font: 600 16px Orbitron; margin: 9px 0; }
+.mission-card p { color: #71889e; font-size: 9px; letter-spacing: 1px; }
+.card-footer { border-top: 1px solid #223648; margin-top: 25px; padding-top: 15px; display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.card-footer span { color: #f1c77a; font-size: 8px; }
+.card-footer button { background: transparent; color: #4bdcff; border: 0; font-size: 9px; display: flex; align-items: center; gap: 5px; white-space: nowrap; }
+footer { border-top: 1px solid #1b2b3b; padding: 20px 0; color: #71889e; font-size: 9px; display: flex; justify-content: space-between; gap: 10px; }
+footer span { letter-spacing: 1px; }
+.modal-backdrop { position: fixed; inset: 0; background: #02070ddc; display: grid; place-items: center; padding: 20px; z-index: 10; }
+.briefing-modal { width: min(520px, 100%); background: #0d1927; border: 1px solid #4bdcff77; padding: 32px; position: relative; box-shadow: 0 0 50px #0009; }
+.close-button { position: absolute; right: 17px; top: 17px; background: transparent; border: 0; color: #9aafc1; }
+.briefing-modal h2 { font: 700 27px Orbitron; margin: 20px 0; }
+.briefing-modal p { color: #9aafc1; line-height: 1.8; font-size: 13px; }
+.briefing-modal h3 { color: #4bdcff; font: 11px Orbitron; margin-top: 25px; }
+.objective { padding: 12px 0; border-bottom: 1px solid #203344; font-size: 12px; }
+.objective span { color: #4bdcff; margin-right: 15px; }
+.briefing-note { color: #f1c77a; font-size: 9px; display: flex; gap: 9px; align-items: center; margin-top: 20px; }
+.placeholder-page { min-height: 70vh; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
+.placeholder-page > svg { color: #4bdcff; margin-bottom: 25px; }
+.placeholder-page h1 { font: 700 35px Orbitron; }
+.placeholder-page p { color: #91a5b8; }
+
+@media (max-width: 950px) {
+  .sidebar { width: 190px; }
+  .main-content { padding: 0 22px; }
+  .status-grid { grid-template-columns: repeat(2, 1fr); }
+  .mission-grid { grid-template-columns: 1fr 1fr; }
+  .hero-visual { width: 260px; transform: scale(.85); }
+}
+@media (max-width: 650px) {
+  .sidebar { width: 65px; padding: 20px 8px; }
+  .brand { justify-content: center; }
+  .brand > div:last-child, .nav-label, .nav-item:not(.active), .nav-item { font-size: 0; }
+  .nav-item { justify-content: center; padding: 14px 0; }
+  .nav-item svg { width: 20px; height: 20px; }
+  .sidebar-bottom { display: none; }
+  .main-content { padding: 0 14px; }
+  .top-status { font-size: 7px; }
+  .hero { min-height: 330px; }
+  .hero-visual { display: none; }
+  .hero h1 { font-size: 34px; }
+  .status-grid, .mission-grid { grid-template-columns: 1fr; }
+  .section-heading { align-items: flex-start; flex-direction: column; gap: 10px; }
+  footer { flex-direction: column; }
+  .briefing-modal { padding: 24px; }
+}
+
+.engineering-lab {
+  padding: 40px 0;
+}
+.nasa-data-panel {
+  width: 100%;
+  margin-bottom: 22px;
+  padding: 20px 22px;
+  background: #0d1927;
+  border: 1px solid #234156;
+  border-left: 3px solid #4bdcff;
+  border-radius: 5px;
+}
+
+.nasa-data-panel h2 {
+  color: #4bdcff;
+  font: 700 15px Orbitron;
+  letter-spacing: 1px;
+  margin: 0 0 16px;
+}
+
+.nasa-data-panel p,
+.nasa-data-panel div {
+  color: #91a5b8;
+  font-size: 11px;
+  line-height: 1.8;
+  margin: 6px 0;
+}
+
+.nasa-data-panel strong {
+  color: #4bdcff;
+}
+
+.nasa-data-panel small {
+  display: block;
+  color: #71889e;
+  font-size: 9px;
+  margin-top: 12px;
+}
+.engineering-lab h1 {
+  font: 800 clamp(28px, 4vw, 42px) Orbitron;
+  margin: 18px 0;
+}
+
+.engineering-lab h1 span {
+  color: #4bdcff;
+}
+
+.lab-intro {
+  color: #91a5b8;
+  font-size: 13px;
+  line-height: 1.8;
+  max-width: 650px;
+  margin-bottom: 30px;
+}
+
+.lab-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 22px;
+  align-items: start;
+  min-width: 0;
+}
+.component-panel,
+.spacecraft-summary {
+  min-width: 0;
+  width: 100%;
+}
+.component-group {
+  background: #0d1927;
+  border: 1px solid #1b3042;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.component-group h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #4bdcff;
+  font: 12px Orbitron;
+  margin-bottom: 17px;
+}
+
+.component-options {
+  display: grid;
+  gap: 10px;
+}
+
+.component-option {
+  background: #101f30;
+  border: 1px solid #26394b;
+  padding: 14px;
+  color: #e8f1fa;
+  text-align: left;
+  border-radius: 4px;
+}
+
+.component-option:hover,
+.component-option.chosen {
+  border-color: #4bdcff;
+  background: #142c3e;
+}
+
+.option-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.option-heading span {
+  color: #4bdcff;
+  font-size: 9px;
+}
+
+.component-option p {
+  color: #91a5b8;
+  font-size: 11px;
+  margin: 10px 0;
+}
+
+.component-option small {
+  color: #f1c77a;
+  font-size: 9px;
+}
+
+.reset-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: transparent;
+  border: 1px solid #344b60;
+  color: #91a5b8;
+  font-size: 10px;
+}
+
+.spacecraft-summary {
+  background: #0d1927;
+  border: 1px solid #234156;
+  padding: 23px;
+  position: sticky;
+  top: 20px;
+}
+
+.dna-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #4bdcff;
+  font: 13px Orbitron;
+  margin-top: 28px;
+}
+
+.dna-code {
+  font: 800 42px Orbitron;
+  color: #4bdcff;
+  letter-spacing: 9px;
+  margin: 15px 0;
+}
+
+.dna-description {
+  color: #91a5b8;
+  font-size: 11px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.metric {
+  margin: 22px 0;
+}
+
+.metric > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+.metric span {
+  color: #91a5b8;
+}
+
+.metric strong {
+  color: #e8f1fa;
+}
+
+.metric-track {
+  height: 5px;
+  background: #203448;
+  margin-top: 10px;
+}
+
+.metric-track span {
+  display: block;
+  height: 100%;
+  background: #4bdcff;
+  transition: width .3s;
+}
+
+.engineering-warning {
+  display: flex;
+  gap: 12px;
+  padding: 15px;
+  background: #2b2619;
+  border: 1px solid #65532c;
+  margin-top: 25px;
+  color: #f1c77a;
+}
+
+.engineering-warning p {
+  color: #c5b58f;
+  font-size: 10px;
+  line-height: 1.7;
+  margin-top: 8px;
+}
+
+.engineering-warning strong {
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+.design-status {
+  margin-top: 20px;
+  color: #60dda8;
+  font-size: 9px;
+}
+
+.design-status span {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background: #60dda8;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+@media (max-width: 850px) {
+  .lab-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .spacecraft-summary {
+    position: static;
+  }
+}
+
+.crisis-section {
+  margin-top: 30px;
+  padding: 25px;
+  background: #111724;
+  border: 1px solid #75433d;
+}
+
+.crisis-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.crisis-heading h2 {
+  font: 700 22px Orbitron;
+}
+
+.crisis-heading h2 span {
+  color: #ff806b;
+}
+
+.crisis-heading p {
+  color: #91a5b8;
+  font-size: 11px;
+  line-height: 1.8;
+  margin-top: 12px;
+}
+
+.danger-indicator {
+  color: #ff806b;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.crisis-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 22px 0;
+}
+
+.crisis-stats > div {
+  background: #0b1421;
+  padding: 15px;
+  border: 1px solid #283b4c;
+}
+
+.crisis-stats small,
+.crisis-stats strong {
+  display: block;
+}
+
+.crisis-stats small {
+  color: #91a5b8;
+  font-size: 9px;
+  margin-bottom: 10px;
+}
+
+.crisis-stats strong {
+  color: #4bdcff;
+  font: 600 17px Orbitron;
+}
+
+.decision-title {
+  font: 11px Orbitron;
+  color: #e8f1fa;
+  margin: 25px 0 15px;
+}
+
+.decision-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.decision-card {
+  min-width: 0;
+  text-align: left;
+  padding: 17px;
+  background: #0b1421;
+  border: 1px solid #30475c;
+  color: #e8f1fa;
+}
+
+.decision-card:hover {
+  border-color: #4bdcff;
+  background: #142538;
+}
+.decision-card:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  border-color: #283b4c;
+}
+
+.decision-card:disabled:hover {
+  background: #0b1421;
+  border-color: #283b4c;
+}
+.decision-card svg {
+  color: #4bdcff;
+  margin-bottom: 15px;
+}
+
+.decision-card strong {
+  display: block;
+  font: 10px Orbitron;
+  line-height: 1.6;
+}
+
+.decision-card p {
+  color: #91a5b8;
+  font-size: 10px;
+  line-height: 1.7;
+  margin: 12px 0;
+}
+
+.decision-card span {
+  color: #f1c77a;
+  font-size: 9px;
+}
+
+.crisis-result {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #4bdcff;
+  background: #102435;
+}
+
+.crisis-result.success {
+  border-color: #60dda8;
+}
+
+.crisis-result.failure,
+.crisis-result.warning {
+  border-color: #ff806b;
+}
+
+.crisis-result h3 {
+  font: 15px Orbitron;
+  margin: 12px 0;
+}
+
+.crisis-result p {
+  color: #b5c5d4;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.crisis-result button {
+  margin-top: 15px;
+  background: transparent;
+  border: 1px solid #4bdcff;
+  padding: 10px 14px;
+  color: #4bdcff;
+  font-size: 9px;
+}
+
+.simulation-note {
+  color: #71889e;
+  font-size: 9px;
+  margin-top: 20px;
+  line-height: 1.7;
+}
+
+@media (max-width: 700px) {
+  .decision-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .crisis-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .crisis-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+.consequences-panel {
+  margin-top: 25px;
+  padding: 22px;
+  background: #0b1421;
+  border: 1px solid #35536a;
+}
+
+.consequences-panel h2 {
+  font: 700 17px Orbitron;
+  color: #4bdcff;
+  margin: 15px 0 20px;
+}
+
+.consequence-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.consequence-grid > div {
+  padding: 15px;
+  background: #111c2b;
+  border: 1px solid #283b4c;
+}
+
+.consequence-grid span,
+.consequence-grid strong {
+  display: block;
+}
+
+.consequence-grid span {
+  color: #91a5b8;
+  font-size: 9px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.consequence-grid strong {
+  color: #4bdcff;
+  font: 600 18px Orbitron;
+}
+
+@media (max-width: 700px) {
+  .consequence-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.mission-progress-panel {
+  margin: 25px 0;
+  padding: 22px;
+  background: #0b1421;
+  border: 1px solid #35536a;
+}
+
+.mission-progress-panel h3 {
+  color: #4bdcff;
+  font: 700 17px Orbitron;
+  margin: 15px 0 22px;
+}
+
+.stage-track {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.stage-item {
+  padding: 14px 8px;
+  text-align: center;
+  background: #111c2b;
+  border: 1px solid #283b4c;
+  opacity: 0.5;
+}
+
+.stage-item span {
+  display: block;
+  margin: 0 auto 10px;
+  width: 27px;
+  height: 27px;
+  line-height: 27px;
+  border-radius: 50%;
+  background: #26394b;
+  color: #fff;
+  font-size: 11px;
+}
+
+.stage-item small {
+  display: block;
+  color: #91a5b8;
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+.stage-item.active {
+  opacity: 1;
+  border-color: #4bdcff;
+}
+
+.stage-item.active span {
+  background: #4bdcff;
+  color: #08111d;
+}
+
+.stage-item.completed {
+  opacity: 1;
+  border-color: #60dda8;
+}
+
+.stage-item.completed span {
+  background: #60dda8;
+  color: #08111d;
+}
+
+.advance-button {
+  margin-top: 20px;
+  padding: 12px 18px;
+  background: #12364b;
+  border: 1px solid #4bdcff;
+  color: #4bdcff;
+  font: 11px Orbitron;
+  cursor: pointer;
+}
+
+.advance-button:hover:not(:disabled) {
+  background: #1b506a;
+}
+
+.advance-button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+@media (max-width: 700px) {
+  .stage-track {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.stage-objective {
+  margin: 25px 0;
+  padding: 28px;
+  background: linear-gradient(135deg, #101e30, #0b1421);
+  border: 1px solid #35536a;
+  position: relative;
+  overflow: hidden;
+}
+
+.stage-objective::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: #4bdcff;
+}
+
+.stage-objective h3 {
+  color: #4bdcff;
+  font: 700 17px Orbitron;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.stage-objective p {
+  color: #a5b8ca;
+  font-size: 12px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.stage-action-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 22px;
+  background: #10364a;
+  border: 1px solid #4bdcff;
+  color: #4bdcff;
+  font: 600 11px Orbitron;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.stage-action-button:hover {
+  background: #1b506a;
+  box-shadow: 0 0 18px #4bdcff35;
+  transform: translateY(-2px);
+}
+.stage-action-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+.archetype-card {
+  margin: 20px 0;
+  padding: 16px;
+  background: #102435;
+  border-left: 3px solid #4bdcff;
+}
+
+.archetype-card span {
+  display: block;
+  color: #91a5b8;
+  font-size: 9px;
+  margin-bottom: 10px;
+}
+
+.archetype-card strong {
+  display: block;
+  color: #4bdcff;
+  font: 600 14px Orbitron;
+  margin-bottom: 10px;
+}
+
+.archetype-card p {
+  color: #a5b8ca;
+  font-size: 11px;
+  line-height: 1.7;
+}
+.diagnosis-card {
+  margin-top: 22px;
+  padding: 22px;
+  background: #102435;
+  border: 1px solid #24516a;
+  border-left: 4px solid #4bdcff;
+  border-radius: 8px;
+}
+
+.diagnosis-card h2 {
+  color: #4bdcff;
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.diagnosis-card h3 {
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+.diagnosis-card p {
+  color: #a5b8ca;
+  font-size: 12px;
+  line-height: 1.8;
+  margin-top: 10px;
+}
+/* SPACECRAFT PERSONALITY */
+.personality-panel {
+  margin-top: 18px;
+  padding: 16px;
+  background: linear-gradient(135deg, #102d42, #142238);
+  border: 1px solid #28617b;
+  border-radius: 10px;
+}
+
+.personality-panel h3 {
+  color: #4bdcff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+.personality-panel p {
+  color: #a9bfd0;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* ACTIVE DNA EFFECTS */
+.dna-effects {
+  margin-top: 18px;
+  padding: 16px;
+  background: #0b1928;
+  border: 1px solid #23445c;
+  border-radius: 10px;
+}
+
+.dna-effects h3 {
+  color: #4bdcff;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  margin-bottom: 16px;
+}
+
+.dna-effects p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #20394d;
+}
+
+.dna-effects p:last-child {
+  border-bottom: none;
+}
+
+.dna-effects span {
+  color: #91a9bb;
+  font-size: 11px;
+  letter-spacing: 0.7px;
+}
+
+.dna-effects strong {
+  color: #4bdcff;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.emergency-repair {
+  margin-top: 18px;
+  padding: 18px;
+  border: 1px solid rgba(249, 115, 22, 0.55);
+  border-left: 5px solid #f97316;
+  border-radius: 10px;
+  background: rgba(249, 115, 22, 0.08);
+  color: inherit;
+}
+
+.emergency-repair h3 {
+  margin: 0 0 8px;
+  color: #fb923c;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.emergency-repair p {
+  margin: 0 0 14px;
+  opacity: 0.85;
+  font-size: 13px;
+}
+
+.emergency-repair button {
+  padding: 11px 16px;
+  border: 1px solid #f97316;
+  border-radius: 6px;
+  background: #c2410c;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.emergency-repair button:hover:not(:disabled) {
+  background: #ea580c;
+  transform: translateY(-2px);
+}
+
+.emergency-repair button:disabled {
+  background: #525252;
+  border-color: #737373;
+  color: #d4d4d4;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* NASA PLANETARY DATA PANEL */
+
+.planetary-data-panel {
+  position: relative;
+  overflow: hidden;
+  margin-top: 24px;
+  padding: 24px;
+  border: 1px solid rgba(0, 210, 255, 0.3);
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 90% 5%, rgba(0, 180, 255, 0.13), transparent 35%),
+    linear-gradient(145deg, #101d30, #080f1c);
+  box-shadow: 0 0 25px rgba(0, 170, 255, 0.08);
+  color: #e8f4ff;
+}
+
+.planetary-data-panel h2 {
+  color: #35d9ff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.planetary-data-panel h3 {
+  color: #8edfff;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin: 22px 0 12px;
+}
+
+.planetary-data-panel p {
+  color: #b9cce0;
+  font-size: 13px;
+  margin: 9px 0;
+  overflow-wrap: anywhere;
+}
+
+.planetary-data-panel p strong {
+  color: #ffffff;
+}
+
+.planetary-data-panel .planetary-value {
+  color: #39dcff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.planetary-data-panel .planetary-status {
+  display: inline-block;
+  padding: 7px 12px;
+  margin-top: 12px;
+  border: 1px solid rgba(0, 255, 180, 0.35);
+  border-radius: 20px;
+  background: rgba(0, 255, 180, 0.08);
+  color: #53ffc1;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.planetary-data-panel .planetary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.planetary-data-panel .planetary-card {
+  padding: 14px;
+  border: 1px solid rgba(80, 180, 255, 0.2);
+  border-radius: 10px;
+  background: rgba(15, 35, 57, 0.75);
+}
+
+@media (max-width: 600px) {
+  .planetary-data-panel {
+    padding: 16px;
+  }
+
+  .planetary-data-panel .planetary-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.pds-note {
+  margin-top: 18px;
+  padding: 14px;
+  border: 1px solid rgba(0, 210, 255, 0.25);
+  border-radius: 10px;
+  background: rgba(0, 150, 220, 0.07);
+}
+
+.pds-note strong {
+  color: #35d9ff;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+}
+
+.pds-note p {
+  color: #b9cce0;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.nasa-mission-intelligence {
+  margin-top: 18px;
+  padding: 16px;
+  border: 1px solid rgba(0, 210, 255, 0.3);
+  border-radius: 12px;
+  background: rgba(0, 150, 220, 0.08);
+}
+
+.nasa-mission-intelligence h3 {
+  color: #35d9ff;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+}
+
+.nasa-mission-intelligence p {
+  color: #b9cce0;
+  font-size: 13px;
+  margin: 10px 0;
+}
+
+.nasa-mission-intelligence strong {
+  color: #ffffff;
+}
+
+.nasa-mission-intelligence small {
+  display: block;
+  color: #8da8c0;
+  line-height: 1.5;
+  margin-top: 12px;
+}
+
+.mission-briefing-panel {
+  margin: 24px 0;
+  padding: 22px;
+  border: 1px solid rgba(53, 217, 255, 0.35);
+  border-radius: 14px;
+  background: rgba(0, 150, 220, 0.08);
+}
+
+.mission-briefing-panel h2 {
+  color: #35d9ff;
+  margin: 10px 0 18px;
+}
+
+.mission-briefing-details {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.mission-briefing-details div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.mission-briefing-details small {
+  color: #8da8c0;
+  font-size: 11px;
+}
+
+.mission-briefing-details strong {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.mission-briefing-panel > p {
+  color: #b9cce0;
+  margin-top: 18px;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .mission-briefing-details {
+    grid-template-columns: 1fr;
+  }
+}
+
+.crew-page,
+.archive-page {
+  padding-bottom: 40px;
+}
+
+.crew-page > p,
+.archive-page > p {
+  color: #b9cce0;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+.crew-page .mission-card,
+.archive-page .mission-card {
+  min-height: 300px;
+}
+
+.crew-page .briefing-note,
+.archive-page .briefing-note {
+  margin-top: 16px;
+  padding: 14px;
+  line-height: 1.7;
+}
+
+.crew-page .card-footer,
+.archive-page .card-footer {
+  margin-top: 20px;
+}
+
+/* MISSION X PROTOTYPE PAGE FIX */
+
+.crew-page,
+.archive-page {
+  display: block !important;
+  width: 100%;
+  min-height: auto;
+  padding: 30px 0;
+}
+
+.crew-page .mission-grid,
+.archive-page .mission-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 100%;
+  gap: 18px;
+}
+
+.crew-page .mission-card,
+.archive-page .mission-card {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  min-height: 250px;
+}
+
+@media (max-width: 650px) {
+  .crew-page .mission-grid,
+  .archive-page .mission-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,5012 @@
+{
+  "source": "NASA Planetary Data System",
+  "target": "Mars",
+  "fetchedAt": "2026-11-15T13:00:23.082Z",
+  "products": {
+    "summary": {
+      "hits": 44450887,
+      "properties": [
+        "_package_id",
+        "alternate_ids",
+        "description",
+        "disp:Display_Direction.disp:horizontal_display_axis",
+        "disp:Display_Direction.disp:horizontal_display_direction",
+        "disp:Display_Direction.disp:vertical_display_axis",
+        "disp:Display_Direction.disp:vertical_display_direction",
+        "geom:Display_Direction.geom:horizontal_display_axis",
+        "geom:Display_Direction.geom:horizontal_display_direction",
+        "geom:Display_Direction.geom:vertical_display_axis",
+        "geom:Display_Direction.geom:vertical_display_direction",
+        "geom:Object_Orientation_RA_Dec.geom:celestial_north_clock_angle",
+        "geom:Object_Orientation_RA_Dec.geom:declination_angle",
+        "geom:Object_Orientation_RA_Dec.geom:reference_pixel_location",
+        "geom:Object_Orientation_RA_Dec.geom:right_ascension_angle",
+        "geom:Reference_Frame_Identification.geom:frame_spice_name",
+        "geom:SPICE_Kernel_Identification.geom:kernel_provenance",
+        "geom:SPICE_Kernel_Identification.geom:kernel_type",
+        "geom:SPICE_Kernel_Identification.geom:spice_kernel_file_name",
+        "hyb2:Image_Observation_Information.hyb2:actual_bitdepth",
+        "hyb2:Image_Observation_Information.hyb2:band_center",
+        "hyb2:Image_Observation_Information.hyb2:bandwidth",
+        "hyb2:Image_Observation_Information.hyb2:exposure_duration",
+        "hyb2:Image_Observation_Information.hyb2:filter_name",
+        "hyb2:Image_Observation_Information.hyb2:image_processing_return_status",
+        "hyb2:Image_Observation_Information.hyb2:number_of_binning",
+        "hyb2:Image_Observation_Information.hyb2:unit_count_value",
+        "hyb2:Mission_Information.hyb2:mission_phase_name",
+        "hyb2:ONC_Image_Information.hyb2:dynamic_range",
+        "hyb2:ONC_Image_Information.hyb2:first_rotation_angle_for_stray_light",
+        "hyb2:ONC_Image_Information.hyb2:linearity_guaranteed_range",
+        "hyb2:ONC_Image_Information.hyb2:number_of_subimage",
+        "hyb2:ONC_Image_Information.hyb2:observation_mode",
+        "hyb2:ONC_Image_Information.hyb2:second_rotation_angle_for_stray_light",
+        "hyb2:ONC_Image_Information.hyb2:stray_light_status",
+        "hyb2:ONC_Image_Processing_Parameters.hyb2:alignment_offset_correction_status",
+        "hyb2:ONC_Image_Processing_Parameters.hyb2:bias_correction_status",
+        "hyb2:ONC_Image_Processing_Parameters.hyb2:ccd_sensitivity",
+        "hyb2:ONC_Image_Processing_Parameters.hyb2:ccd_sensitivity_calibration_file_name",
+        "hyb2:ONC_Image_Processing_Parameters.hyb2:ccd_sensitivity_calibration_status",
+        "hyb2:ONC_Image_Processing_Parameters.hyb2:dark_correction_status",
+        "hyb2:ONC_Image_Processing_Parameters.hyb2:distortion_correction_file_name",
+        "hyb2:ONC_Image_Processing_Parameters.hyb2:distortion_correction_status",
+        "hyb2:ONC_Image_Processing_Parameters.hyb2:effective_solar_irradiance",
+        "hyb2:ONC_Image_Processing_Parameters.hyb2:elapsed_time_for_sensitivity_calibration",
+        "hyb2:ONC_Image_Processing_Parameters.hyb2:flat_field_correction_file_name",
+        "hyb2:ONC_Image_Processing_Parameters.hyb2:flat_field_correction_parameter_file_name",
+        "hyb2:ONC_Image_Processing_Parameters.hyb2:flat_field_correction_status",
+        "hyb2:ONC_Image_Processing_Parameters.hyb2:hardware_correction_file_name",
+        "hyb2:ONC_Image_Processing_Parameters.hyb2:hardware_correction_status",
+        "hyb2:ONC_Image_Processing_Parameters.hyb2:nonlinearity_correction_status",
+        "hyb2:ONC_Image_Processing_Parameters.hyb2:photometric_correction_status",
+        "hyb2:ONC_Image_Processing_Parameters.hyb2:radiance_conversion_status",
+        "hyb2:ONC_Image_Processing_Parameters.hyb2:radiometric_calibration_file_name",
+        "hyb2:ONC_Image_Processing_Parameters.hyb2:radiometric_calibration_status",
+        "hyb2:ONC_Image_Processing_Parameters.hyb2:sensitivity_calibration_period",
+        "hyb2:ONC_Image_Processing_Parameters.hyb2:smear_correction_status",
+        "hyb2:ONC_Image_Processing_Parameters.hyb2:solar_distance_correction_status",
+        "hyb2:ONC_Image_Processing_Parameters.hyb2:solar_distance_for_calibration",
+        "hyb2:ONC_Image_Processing_Parameters.hyb2:stray_light_correction_status",
+        "hyb2:ONC_Image_Processing_Parameters.hyb2:temperature_dependent_flat_field_correction_file_name",
+        "hyb2:ONC_Image_Processing_Parameters.hyb2:temperature_dependent_flat_field_correction_status",
+        "hyb2:ONC_Instrument_Attributes.hyb2:bus_line_voltage",
+        "hyb2:ONC_Instrument_Attributes.hyb2:fla_c_electric_current",
+        "hyb2:ONC_Instrument_Attributes.hyb2:fla_c_temperature",
+        "hyb2:ONC_Instrument_Attributes.hyb2:onc_analog_electronics_temperature",
+        "hyb2:ONC_Instrument_Attributes.hyb2:onc_electric_current",
+        "hyb2:ONC_Instrument_Attributes.hyb2:t_ccd_temperature",
+        "hyb2:ONC_Instrument_Attributes.hyb2:t_electric_circuit_temperature",
+        "hyb2:ONC_Instrument_Attributes.hyb2:t_optics_temperature",
+        "hyb2:ONC_Instrument_Attributes.hyb2:w1_ccd_temperature",
+        "hyb2:ONC_Instrument_Attributes.hyb2:w1_electric_circuit_temperature",
+        "hyb2:ONC_Instrument_Attributes.hyb2:w1_optics_temperature",
+        "hyb2:ONC_Instrument_Attributes.hyb2:w2_ccd_temperature",
+        "hyb2:ONC_Instrument_Attributes.hyb2:w2_electric_circuit_temperature",
+        "hyb2:ONC_Instrument_Attributes.hyb2:w2_optics_temperature",
+        "hyb2:Observation_Geometry.hyb2:backplane_data_version",
+        "hyb2:Observation_Geometry.hyb2:earth_distance_from_spacecraft",
+        "hyb2:Observation_Geometry.hyb2:ryugu_distance_from_spacecraft",
+        "hyb2:Observation_Geometry.hyb2:spacecraft_x_position",
+        "hyb2:Observation_Geometry.hyb2:spacecraft_y_position",
+        "hyb2:Observation_Geometry.hyb2:spacecraft_z_position",
+        "hyb2:Observation_Geometry.hyb2:sun_direction_spacecraft_x_axis_angle",
+        "hyb2:Observation_Geometry.hyb2:sun_direction_spacecraft_y_axis_angle",
+        "hyb2:Observation_Geometry.hyb2:sun_direction_spacecraft_z_axis_angle",
+        "hyb2:Observation_Geometry.hyb2:sun_distance_from_ryugu",
+        "hyb2:Observation_Geometry.hyb2:sun_distance_from_spacecraft",
+        "hyb2:Observation_Information.hyb2:naif_instrument_name",
+        "hyb2:Observation_Information.hyb2:observation_date_time",
+        "hyb2:Observation_Information.hyb2:raw_file_name",
+        "hyb2:Observation_Information.hyb2:spacecraft_clock_start_count",
+        "hyb2:Observation_Information.hyb2:spacecraft_clock_stop_count",
+        "hyb2:Sub_Image_Information.hyb2:analog_electronics_mode",
+        "hyb2:Sub_Image_Information.hyb2:digital_electronics_selection",
+        "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_driving_status",
+        "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_null_position_flag",
+        "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_position_sensor_status",
+        "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_reset_status",
+        "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_step_count",
+        "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_step_counter_error_count",
+        "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_timeout_error_count",
+        "hyb2:Sub_Image_Information.hyb2:flash_lamp_status",
+        "hyb2:Sub_Image_Information.hyb2:flat_field_lamp_a_status",
+        "hyb2:Sub_Image_Information.hyb2:flat_field_lamp_b_status",
+        "hyb2:Sub_Image_Information.hyb2:sequence_number",
+        "hyb2:Sub_Image_Information.hyb2:spacecraft_clock_count",
+        "hyb2:Sub_Image_Information.hyb2:t_camera_selection_status",
+        "hyb2:Sub_Image_Information.hyb2:t_driving_status",
+        "hyb2:Sub_Image_Information.hyb2:t_exposure_duration",
+        "hyb2:Sub_Image_Information.hyb2:t_filter_name",
+        "hyb2:Sub_Image_Information.hyb2:w1_camera_selection_status",
+        "hyb2:Sub_Image_Information.hyb2:w1_driving_status",
+        "hyb2:Sub_Image_Information.hyb2:w1_exposure_duration",
+        "hyb2:Sub_Image_Information.hyb2:w2_camera_selection_status",
+        "hyb2:Sub_Image_Information.hyb2:w2_driving_status",
+        "hyb2:Sub_Image_Information.hyb2:w2_exposure_duration",
+        "img:Dark_Current_Correction.img:active_flag",
+        "img:Dark_Current_Correction.img:processing_venue",
+        "img:Detector.img:detector_to_image_flip",
+        "img:Detector.img:detector_to_image_rotation",
+        "img:Detector.img:first_line",
+        "img:Detector.img:first_sample",
+        "img:Detector.img:lines",
+        "img:Detector.img:samples",
+        "img:Device_Current.img:current_value",
+        "img:Device_Current.img:device_name",
+        "img:Device_Temperature.img:device_name",
+        "img:Device_Temperature.img:temperature_value",
+        "img:Device_Voltage.img:device_name",
+        "img:Device_Voltage.img:voltage_value",
+        "img:Exposure.img:exposure_count",
+        "img:Exposure.img:exposure_duration",
+        "img:Exposure.img:exposure_type",
+        "img:Flat_Field_Correction.img:active_flag",
+        "img:Flat_Field_Correction.img:processing_venue",
+        "img:Flat_Field_Correction.img:sequence_number",
+        "img:Flat_Field_File.img:description",
+        "img:Flat_Field_File.img:name",
+        "img:Onboard_Compression.img:deferred_flag",
+        "img:Onboard_Compression.img:onboard_compression_class",
+        "img:Onboard_Compression.img:onboard_compression_type",
+        "img:Optical_Filter.img:bandwidth",
+        "img:Optical_Filter.img:center_filter_wavelength",
+        "img:Optical_Filter.img:filter_id",
+        "img:Optical_Filter.img:filter_name",
+        "img:Optical_Filter.img:filter_number",
+        "img:Radiometric_Correction.img:active_flag",
+        "img:Radiometric_Correction.img:processing_venue",
+        "img:Radiometric_Correction.img:radiometric_type",
+        "img:Sampling.img:crosstrack_summing",
+        "img:Sampling.img:downtrack_summing",
+        "img:Sampling.img:sample_bits",
+        "img:StarPixel_Lossless_Parameters.img:starpixel_initial_subsampling_interval",
+        "img:Subframe.img:first_line",
+        "img:Subframe.img:first_sample",
+        "img:Subframe.img:line_fov",
+        "img:Subframe.img:lines",
+        "img:Subframe.img:sample_fov",
+        "img:Subframe.img:samples",
+        "lid",
+        "lidvid",
+        "ops:Data_File_Info.ops:creation_date_time",
+        "ops:Data_File_Info.ops:file_name",
+        "ops:Data_File_Info.ops:file_ref",
+        "ops:Data_File_Info.ops:file_size",
+        "ops:Data_File_Info.ops:md5_checksum",
+        "ops:Data_File_Info.ops:mime_type",
+        "ops:Harvest_Info.ops:harvest_date_time",
+        "ops:Harvest_Info.ops:harvest_version",
+        "ops:Harvest_Info.ops:node_name",
+        "ops:Label_File_Info.ops:creation_date_time",
+        "ops:Label_File_Info.ops:file_name",
+        "ops:Label_File_Info.ops:file_ref",
+        "ops:Label_File_Info.ops:file_size",
+        "ops:Label_File_Info.ops:md5_checksum",
+        "ops:Provenance.ops:ancestor_refs",
+        "ops:Provenance.ops:parent_bundle_identifier",
+        "ops:Provenance.ops:parent_collection_identifier",
+        "ops:Provenance.ops:registry_sweepers_ancestry_version",
+        "ops:Provenance.ops:registry_sweepers_provenance_hotfixed_version",
+        "ops:Provenance.ops:registry_sweepers_provenance_version",
+        "ops:Provenance.ops:registry_sweepers_repairkit_version",
+        "ops:Provenance.ops:reindexed_at",
+        "ops:Provenance.ops:superseded_by",
+        "ops:Tracking_Meta.ops:archive_status",
+        "pds:Array_2D_Image.pds:axes",
+        "pds:Array_2D_Image.pds:axis_index_order",
+        "pds:Array_2D_Image.pds:description",
+        "pds:Array_2D_Image.pds:local_identifier",
+        "pds:Array_2D_Image.pds:name",
+        "pds:Array_2D_Image.pds:offset",
+        "pds:Axis_Array.pds:axis_name",
+        "pds:Axis_Array.pds:elements",
+        "pds:Axis_Array.pds:sequence_number",
+        "pds:Element_Array.pds:data_type",
+        "pds:Element_Array.pds:unit",
+        "pds:File.pds:comment",
+        "pds:File.pds:creation_date_time",
+        "pds:File.pds:file_name",
+        "pds:File.pds:file_size",
+        "pds:Header.pds:name",
+        "pds:Header.pds:object_length",
+        "pds:Header.pds:offset",
+        "pds:Header.pds:parsing_standard_id",
+        "pds:Identification_Area.pds:information_model_version",
+        "pds:Identification_Area.pds:logical_identifier",
+        "pds:Identification_Area.pds:product_class",
+        "pds:Identification_Area.pds:title",
+        "pds:Identification_Area.pds:version_id",
+        "pds:Internal_Reference.pds:lid_reference",
+        "pds:Internal_Reference.pds:lidvid_reference",
+        "pds:Internal_Reference.pds:reference_type",
+        "pds:Investigation_Area.pds:name",
+        "pds:Investigation_Area.pds:type",
+        "pds:Local_Internal_Reference.pds:local_identifier_reference",
+        "pds:Local_Internal_Reference.pds:local_reference_type",
+        "pds:Modification_Detail.pds:description",
+        "pds:Modification_Detail.pds:modification_date",
+        "pds:Modification_Detail.pds:version_id",
+        "pds:Observing_System_Component.pds:name",
+        "pds:Observing_System_Component.pds:type",
+        "pds:Primary_Result_Summary.pds:description",
+        "pds:Primary_Result_Summary.pds:processing_level",
+        "pds:Primary_Result_Summary.pds:purpose",
+        "pds:Science_Facets.pds:discipline_name",
+        "pds:Science_Facets.pds:wavelength_range",
+        "pds:Source_Product_Internal.pds:lidvid_reference",
+        "pds:Source_Product_Internal.pds:reference_type",
+        "pds:Target_Identification.pds:name",
+        "pds:Target_Identification.pds:type",
+        "pds:Time_Coordinates.pds:start_date_time",
+        "pds:Time_Coordinates.pds:stop_date_time",
+        "product_class",
+        "ref_lid_instrument",
+        "ref_lid_instrument_host",
+        "ref_lid_investigation",
+        "ref_lid_kernel",
+        "ref_lid_product",
+        "ref_lid_target",
+        "ref_lidvid_kernel",
+        "ref_lidvid_product",
+        "title",
+        "vid"
+      ],
+      "facets": []
+    },
+    "data": [
+      {
+        "id": "urn:jaxa:darts:hyb2_onc:data_calibrated:hyb2_onc_20160524_124631_tbf_l2c::1.0",
+        "type": "Product_Observational",
+        "title": "Hayabusa2 ONC distortion-corrected and physically converted calibrated image data product hyb2_onc_20160524_124631_tbf_l2c",
+        "start_date_time": "2016-05-24T12:46:31.769Z",
+        "stop_date_time": "2016-05-24T12:46:31.786Z",
+        "investigations": [
+          {
+            "id": "urn:jaxa:darts:context:investigation:mission.hyb2",
+            "href": "https://pds.mcp.nasa.gov/api/search/1/products/urn:jaxa:darts:context:investigation:mission.hyb2"
+          }
+        ],
+        "observing_system_components": [
+          {
+            "id": "urn:jaxa:darts:context:instrument_host:spacecraft.hyb2",
+            "href": "https://pds.mcp.nasa.gov/api/search/1/products/urn:jaxa:darts:context:instrument_host:spacecraft.hyb2"
+          },
+          {
+            "id": "urn:jaxa:darts:context:instrument:hyb2.onc",
+            "href": "https://pds.mcp.nasa.gov/api/search/1/products/urn:jaxa:darts:context:instrument:hyb2.onc"
+          }
+        ],
+        "targets": [
+          {
+            "id": "urn:nasa:pds:context:target:planet.mars",
+            "href": "https://pds.mcp.nasa.gov/api/search/1/products/urn:nasa:pds:context:target:planet.mars"
+          }
+        ],
+        "metadata": {
+          "creation_date_time": "2021-09-21T03:14:56Z",
+          "label_url": "https://sbnarchive.psi.edu/pds4/hayabusa2/hyb2_onc/data_calibrated/transfer/20160524/hyb2_onc_20160524_124631_tbf_l2c.xml",
+          "update_date_time": "2023-07-10T00:00:00Z",
+          "version": "1.0"
+        },
+        "properties": {
+          "pds:Local_Internal_Reference.pds:local_reference_type": [
+            "display_settings_to_array",
+            "display_to_data_object",
+            "imaging_parameters_to_image_object"
+          ],
+          "pds:Modification_Detail.pds:modification_date": [
+            "2023-07-10T00:00:00Z"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:sensitivity_calibration_period": [
+            "Before Touch Down 1"
+          ],
+          "vid": [
+            "1.0"
+          ],
+          "img:Dark_Current_Correction.img:active_flag": [
+            "true"
+          ],
+          "ops:Provenance.ops:registry_sweepers_provenance_hotfixed_version": [
+            "2"
+          ],
+          "alternate_ids": [
+            "urn:jaxa:darts:hyb2_onc:data_calibrated:hyb2_onc_20160524_124631_tbf_l2c::1.0",
+            "urn:jaxa:darts:hyb2_onc:data_calibrated:hyb2_onc_20160524_124631_tbf_l2c"
+          ],
+          "hyb2:Observation_Information.hyb2:raw_file_name": [
+            "01965_20160524125030_000058C470A7.img"
+          ],
+          "hyb2:Observation_Geometry.hyb2:sun_direction_spacecraft_x_axis_angle": [
+            "85.62"
+          ],
+          "img:Detector.img:detector_to_image_rotation": [
+            "0.0"
+          ],
+          "pds:Axis_Array.pds:sequence_number": [
+            "1",
+            "2"
+          ],
+          "ops:Data_File_Info.ops:md5_checksum": [
+            "4be3bce6f861e130656a7a8e7fead59b"
+          ],
+          "pds:Identification_Area.pds:title": [
+            "Hayabusa2 ONC distortion-corrected and physically converted calibrated image data product hyb2_onc_20160524_124631_tbf_l2c"
+          ],
+          "pds:Array_2D_Image.pds:offset": [
+            "23040"
+          ],
+          "hyb2:Observation_Geometry.hyb2:sun_direction_spacecraft_y_axis_angle": [
+            "88.17"
+          ],
+          "pds:Investigation_Area.pds:name": [
+            "Hayabusa2"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_null_position_flag": [
+            "Detected"
+          ],
+          "img:Subframe.img:lines": [
+            "1024"
+          ],
+          "ops:Label_File_Info.ops:creation_date_time": [
+            "2023-07-10T08:34:27Z"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:w2_camera_selection_status": [
+            "Off"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:flat_field_lamp_a_status": [
+            "Off"
+          ],
+          "pds:File.pds:comment": [
+            "Hayabusa2 ONC image in the FITS standard format."
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:stray_light_correction_status": [
+            "Not Applied"
+          ],
+          "img:Sampling.img:crosstrack_summing": [
+            "1"
+          ],
+          "geom:Object_Orientation_RA_Dec.geom:declination_angle": [
+            "-20.1216",
+            "-15.6687",
+            "-19.7029",
+            "-20.4135",
+            "-24.5736"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_reset_status": [
+            "Not In Reset Sequence"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:radiometric_calibration_status": [
+            "Applied"
+          ],
+          "img:Subframe.img:line_fov": [
+            "0.1099776"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:spacecraft_clock_count": [
+            "1/1489261250"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:photometric_correction_status": [
+            "Not Applied"
+          ],
+          "pds:File.pds:creation_date_time": [
+            "2021-09-21T03:14:56Z"
+          ],
+          "geom:Object_Orientation_RA_Dec.geom:reference_pixel_location": [
+            "Center",
+            "Lower Left Corner",
+            "Lower Right Corner",
+            "Upper Left Corner",
+            "Upper Right Corner"
+          ],
+          "img:Radiometric_Correction.img:active_flag": [
+            "true"
+          ],
+          "pds:Internal_Reference.pds:reference_type": [
+            "data_to_investigation",
+            "is_instrument_host",
+            "is_instrument",
+            "data_to_target",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "data_to_calibration_product"
+          ],
+          "ref_lidvid_kernel": [
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ck_hyb2_aocsc_2016_v02.bc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ck_hyb2_hkattrpt_2016_v02.bc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_hp_v01.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_ryugu_v01.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_shape_v01.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_v15.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_lidar_v02.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_nirs3_v03.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_onc_v05.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_tir_v04.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:lsk_naif0012.tls::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:pck_pck00010.tpc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:pck_ryugu_v10.tpc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:sclk_hyb2_20210915_v01.tsc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_2162173_ryugu_v01.bsp::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_hyb2_20141203-20180628_0001h_final_ver1.bsp::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_hyb2_de430.bsp::1.0"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:w2_exposure_duration": [
+            "0.0"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:alignment_offset_correction_status": [
+            "Not Conducted"
+          ],
+          "img:Exposure.img:exposure_type": [
+            "Manual"
+          ],
+          "img:Dark_Current_Correction.img:processing_venue": [
+            "Ground"
+          ],
+          "pds:Time_Coordinates.pds:start_date_time": [
+            "2016-05-24T12:46:31.769Z"
+          ],
+          "pds:Header.pds:object_length": [
+            "2880",
+            "20160"
+          ],
+          "lidvid": [
+            "urn:jaxa:darts:hyb2_onc:data_calibrated:hyb2_onc_20160524_124631_tbf_l2c::1.0"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:t_optics_temperature": [
+            "-17.44"
+          ],
+          "ops:Label_File_Info.ops:file_size": [
+            "42981"
+          ],
+          "pds:Science_Facets.pds:wavelength_range": [
+            "Visible"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:elapsed_time_for_sensitivity_calibration": [
+            "538.35"
+          ],
+          "ops:Provenance.ops:parent_bundle_identifier": [
+            "urn:jaxa:darts:hyb2_onc::1.0"
+          ],
+          "geom:Object_Orientation_RA_Dec.geom:right_ascension_angle": [
+            "244.467",
+            "244.836",
+            "239.737",
+            "249.218",
+            "244.076"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_position_sensor_status": [
+            "Off"
+          ],
+          "ops:Data_File_Info.ops:file_name": [
+            "hyb2_onc_20160524_124631_tbf_l2c.fit"
+          ],
+          "pds:Element_Array.pds:data_type": [
+            "IEEE754MSBSingle"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:solar_distance_for_calibration": [
+            "0.0"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:w2_electric_circuit_temperature": [
+            "-7.76"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:w1_electric_circuit_temperature": [
+            "-13.51"
+          ],
+          "lid": [
+            "urn:jaxa:darts:hyb2_onc:data_calibrated:hyb2_onc_20160524_124631_tbf_l2c"
+          ],
+          "img:Subframe.img:samples": [
+            "1024"
+          ],
+          "hyb2:Observation_Information.hyb2:spacecraft_clock_start_count": [
+            "1/1489261249"
+          ],
+          "ref_lid_instrument": [
+            "urn:jaxa:darts:context:instrument:hyb2.onc"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:flat_field_correction_file_name": [
+            "hyb2_onc_c_flat_bse_tbf_t_v03_20190131.fit"
+          ],
+          "pds:File.pds:file_name": [
+            "hyb2_onc_20160524_124631_tbf_l2c.fit"
+          ],
+          "hyb2:Observation_Geometry.hyb2:backplane_data_version": [
+            "N/A"
+          ],
+          "pds:Time_Coordinates.pds:stop_date_time": [
+            "2016-05-24T12:46:31.786Z"
+          ],
+          "ref_lidvid_product": [
+            "urn:jaxa:darts:hyb2_onc:calibration:hyb2_onc_c_flat_bse_tbf_t::1.0"
+          ],
+          "ops:Label_File_Info.ops:file_ref": [
+            "https://sbnarchive.psi.edu/pds4/hayabusa2/hyb2_onc/data_calibrated/transfer/20160524/hyb2_onc_20160524_124631_tbf_l2c.xml"
+          ],
+          "img:Flat_Field_Correction.img:active_flag": [
+            "true"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:hardware_correction_status": [
+            "Applied"
+          ],
+          "img:Device_Voltage.img:device_name": [
+            "Bus Line"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:flat_field_correction_status": [
+            "Applied"
+          ],
+          "img:Device_Current.img:device_name": [
+            "ONC",
+            "FLA-C"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:bandwidth": [
+            "26.7"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:bus_line_voltage": [
+            "49.28"
+          ],
+          "img:Optical_Filter.img:bandwidth": [
+            "26.7"
+          ],
+          "ops:Provenance.ops:registry_sweepers_repairkit_version": [
+            "4"
+          ],
+          "img:Device_Temperature.img:temperature_value": [
+            "-4.21",
+            "-17.44",
+            "-33.67",
+            "-14.06",
+            "-20.89",
+            "-32.97",
+            "-13.51",
+            "-15.37",
+            "-33.96",
+            "-7.76",
+            "-17.88"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:digital_electronics_selection": [
+            "DE"
+          ],
+          "pds:Header.pds:name": [
+            "Hayabusa2 ONC FITS header of primary HDU",
+            "Hayabusa2 ONC FITS header of secondary HDU"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:image_processing_return_status": [
+            "Normal End"
+          ],
+          "ops:Provenance.ops:parent_collection_identifier": [
+            "urn:jaxa:darts:hyb2_onc:data_calibrated::1.0"
+          ],
+          "ref_lid_kernel": [
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ck_hyb2_aocsc_2016_v02.bc",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ck_hyb2_hkattrpt_2016_v02.bc",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_hp_v01.tf",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_ryugu_v01.tf",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_shape_v01.tf",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_v15.tf",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_lidar_v02.ti",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_nirs3_v03.ti",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_onc_v05.ti",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_tir_v04.ti",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:lsk_naif0012.tls",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:pck_pck00010.tpc",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:pck_ryugu_v10.tpc",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:sclk_hyb2_20210915_v01.tsc",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_2162173_ryugu_v01.bsp",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_hyb2_20141203-20180628_0001h_final_ver1.bsp",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_hyb2_de430.bsp"
+          ],
+          "description": [
+            "Initial version.",
+            "This file contains a calibrated image data (l2c) from the ONC instrument.",
+            "Hayabusa2 ONC-T distortion-corrected and physically-converted calibrated image with b-band filter of 480-nm center wavelength"
+          ],
+          "hyb2:Observation_Geometry.hyb2:spacecraft_y_position": [
+            "-195126000.0"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_step_count": [
+            "7800"
+          ],
+          "title": [
+            "Hayabusa2 ONC distortion-corrected and physically converted calibrated image data product hyb2_onc_20160524_124631_tbf_l2c"
+          ],
+          "geom:Display_Direction.geom:horizontal_display_axis": [
+            "Sample"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:ccd_sensitivity_calibration_file_name": [
+            "hyb2_onc_c_ccdt_20190131.db"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_timeout_error_count": [
+            "0"
+          ],
+          "disp:Display_Direction.disp:vertical_display_direction": [
+            "Top to Bottom"
+          ],
+          "ops:Harvest_Info.ops:harvest_version": [
+            "4.0.5"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_driving_status": [
+            "Stop"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:nonlinearity_correction_status": [
+            "Not Applied"
+          ],
+          "pds:Primary_Result_Summary.pds:description": [
+            "This file contains a calibrated image data (l2c) from the ONC instrument."
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:fla_c_electric_current": [
+            "0.0"
+          ],
+          "hyb2:Observation_Geometry.hyb2:sun_distance_from_spacecraft": [
+            "180299000.0"
+          ],
+          "hyb2:Observation_Geometry.hyb2:sun_distance_from_ryugu": [
+            "210175000.0"
+          ],
+          "pds:Identification_Area.pds:logical_identifier": [
+            "urn:jaxa:darts:hyb2_onc:data_calibrated:hyb2_onc_20160524_124631_tbf_l2c"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:hardware_correction_file_name": [
+            "hyb2_onc_c_elec_20190131.db"
+          ],
+          "pds:Axis_Array.pds:elements": [
+            "1024",
+            "1024"
+          ],
+          "img:Radiometric_Correction.img:processing_venue": [
+            "Ground"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:actual_bitdepth": [
+            "12"
+          ],
+          "ops:Label_File_Info.ops:file_name": [
+            "hyb2_onc_20160524_124631_tbf_l2c.xml"
+          ],
+          "pds:Target_Identification.pds:type": [
+            "Planet"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:solar_distance_correction_status": [
+            "Not Applied"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:sequence_number": [
+            "1"
+          ],
+          "disp:Display_Direction.disp:horizontal_display_direction": [
+            "Left to Right"
+          ],
+          "hyb2:Observation_Information.hyb2:spacecraft_clock_stop_count": [
+            "1/1489261250"
+          ],
+          "img:Onboard_Compression.img:deferred_flag": [
+            "false"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:w2_driving_status": [
+            "Off"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:observation_mode": [
+            "Science"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:t_ccd_temperature": [
+            "-33.67"
+          ],
+          "img:Subframe.img:sample_fov": [
+            "0.1099776"
+          ],
+          "pds:Modification_Detail.pds:description": [
+            "Initial version."
+          ],
+          "pds:Axis_Array.pds:axis_name": [
+            "Line",
+            "Sample"
+          ],
+          "pds:File.pds:file_size": [
+            "4219200"
+          ],
+          "pds:Internal_Reference.pds:lidvid_reference": [
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:lsk_naif0012.tls::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:pck_pck00010.tpc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:pck_ryugu_v10.tpc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:sclk_hyb2_20210915_v01.tsc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_lidar_v02.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_nirs3_v03.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_onc_v05.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_tir_v04.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_hp_v01.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_v15.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_ryugu_v01.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_shape_v01.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_hyb2_de430.bsp::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_hyb2_20141203-20180628_0001h_final_ver1.bsp::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_2162173_ryugu_v01.bsp::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ck_hyb2_hkattrpt_2016_v02.bc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ck_hyb2_aocsc_2016_v02.bc::1.0",
+            "urn:jaxa:darts:hyb2_onc:calibration:hyb2_onc_c_flat_bse_tbf_t::1.0"
+          ],
+          "ops:Label_File_Info.ops:md5_checksum": [
+            "e77d92c10e41ab70c24301c48c9c7b3c"
+          ],
+          "ops:Tracking_Meta.ops:archive_status": [
+            "archived"
+          ],
+          "pds:Array_2D_Image.pds:local_identifier": [
+            "ImageData"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:t_exposure_duration": [
+            "0.0164"
+          ],
+          "ops:Provenance.ops:superseded_by": [
+            "null"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:analog_electronics_mode": [
+            "Standby"
+          ],
+          "img:Flat_Field_Correction.img:processing_venue": [
+            "Ground"
+          ],
+          "img:Exposure.img:exposure_duration": [
+            "0.0164"
+          ],
+          "img:Detector.img:first_sample": [
+            "1"
+          ],
+          "img:Optical_Filter.img:center_filter_wavelength": [
+            "479.8"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:unit_count_value": [
+            "0.06268416"
+          ],
+          "ops:Provenance.ops:registry_sweepers_ancestry_version": [
+            "7"
+          ],
+          "pds:Observing_System_Component.pds:type": [
+            "Host",
+            "Instrument"
+          ],
+          "hyb2:Observation_Geometry.hyb2:spacecraft_x_position": [
+            "-6408710.0"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:band_center": [
+            "479.8"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:dynamic_range": [
+            "237.2377"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:flash_lamp_status": [
+            "Disable"
+          ],
+          "img:Onboard_Compression.img:onboard_compression_type": [
+            "StarPixel Lossless"
+          ],
+          "pds:Array_2D_Image.pds:axes": [
+            "2"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:smear_correction_status": [
+            "Not Applied"
+          ],
+          "geom:Reference_Frame_Identification.geom:frame_spice_name": [
+            "J2000",
+            "J2000",
+            "J2000",
+            "J2000",
+            "J2000"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:temperature_dependent_flat_field_correction_status": [
+            "Not Applied"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:radiance_conversion_status": [
+            "Applied"
+          ],
+          "img:Detector.img:samples": [
+            "1056"
+          ],
+          "img:Subframe.img:first_sample": [
+            "17"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:onc_electric_current": [
+            "0.52"
+          ],
+          "geom:SPICE_Kernel_Identification.geom:kernel_type": [
+            "LSK",
+            "PCK",
+            "PCK",
+            "SCLK",
+            "IK",
+            "IK",
+            "IK",
+            "IK",
+            "FK",
+            "FK",
+            "FK",
+            "FK",
+            "SPK",
+            "SPK",
+            "SPK",
+            "CK",
+            "CK"
+          ],
+          "img:Optical_Filter.img:filter_id": [
+            "b"
+          ],
+          "ref_lid_product": [
+            "urn:jaxa:darts:hyb2_onc:calibration:hyb2_onc_c_flat_bse_tbf_t"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:w2_ccd_temperature": [
+            "-33.96"
+          ],
+          "hyb2:Observation_Geometry.hyb2:earth_distance_from_spacecraft": [
+            "29364800.0"
+          ],
+          "ops:Harvest_Info.ops:node_name": [
+            "PDS_SBN"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:t_electric_circuit_temperature": [
+            "-14.06"
+          ],
+          "ops:Provenance.ops:ancestor_refs": [
+            "urn:jaxa:darts:hyb2_onc:data_calibrated::1.0",
+            "urn:jaxa:darts:hyb2_onc:data_calibrated"
+          ],
+          "ops:Data_File_Info.ops:creation_date_time": [
+            "2023-06-05T04:43:57Z"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:radiometric_calibration_file_name": [
+            "hyb2_onc_c_radc_20190131.db"
+          ],
+          "pds:Primary_Result_Summary.pds:purpose": [
+            "Science"
+          ],
+          "pds:Identification_Area.pds:information_model_version": [
+            "1.14.0.0"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:effective_solar_irradiance": [
+            "0.0"
+          ],
+          "disp:Display_Direction.disp:horizontal_display_axis": [
+            "Sample"
+          ],
+          "pds:Local_Internal_Reference.pds:local_identifier_reference": [
+            "ImageData",
+            "ImageData",
+            "ImageData"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:exposure_duration": [
+            "0.0164"
+          ],
+          "hyb2:Observation_Geometry.hyb2:spacecraft_z_position": [
+            "-77836300.0"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:flat_field_correction_parameter_file_name": [
+            "hyb2_onc_c_flat_20200814.db"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:w1_camera_selection_status": [
+            "Off"
+          ],
+          "img:Flat_Field_File.img:description": [
+            "Flat field correction that does not depend on CCD temperature."
+          ],
+          "pds:Array_2D_Image.pds:axis_index_order": [
+            "Last Index Fastest"
+          ],
+          "img:Optical_Filter.img:filter_number": [
+            "8"
+          ],
+          "pds:Modification_Detail.pds:version_id": [
+            "1.0"
+          ],
+          "img:Optical_Filter.img:filter_name": [
+            "b-band"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:w1_driving_status": [
+            "Off"
+          ],
+          "geom:Display_Direction.geom:horizontal_display_direction": [
+            "Left to Right"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:ccd_sensitivity": [
+            "972.7435"
+          ],
+          "ops:Provenance.ops:reindexed_at": [
+            "2025-03-06T20:42:36.178504"
+          ],
+          "ref_lid_target": [
+            "urn:nasa:pds:context:target:planet.mars"
+          ],
+          "img:Flat_Field_File.img:name": [
+            "hyb2_onc_c_flat_bse_tbf_t_v03_20190131.fit"
+          ],
+          "hyb2:Observation_Geometry.hyb2:sun_direction_spacecraft_z_axis_angle": [
+            "4.75"
+          ],
+          "pds:Header.pds:parsing_standard_id": [
+            "FITS 3.0",
+            "FITS 3.0"
+          ],
+          "hyb2:Observation_Information.hyb2:observation_date_time": [
+            "2016-05-24T12:46:31.778Z"
+          ],
+          "pds:Header.pds:offset": [
+            "0",
+            "2880"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:ccd_sensitivity_calibration_status": [
+            "Applied"
+          ],
+          "product_class": [
+            "Product_Observational"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:t_filter_name": [
+            "No. 8: 480 nm"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:w1_optics_temperature": [
+            "-20.89"
+          ],
+          "img:Detector.img:lines": [
+            "1024"
+          ],
+          "img:StarPixel_Lossless_Parameters.img:starpixel_initial_subsampling_interval": [
+            "3"
+          ],
+          "img:Radiometric_Correction.img:radiometric_type": [
+            "Spectral Radiance"
+          ],
+          "img:Device_Current.img:current_value": [
+            "0.52",
+            "0.0"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:t_driving_status": [
+            "On"
+          ],
+          "pds:Primary_Result_Summary.pds:processing_level": [
+            "Calibrated"
+          ],
+          "img:Sampling.img:sample_bits": [
+            "16"
+          ],
+          "ops:Harvest_Info.ops:harvest_date_time": [
+            "2025-02-28T17:49:31.007109Z"
+          ],
+          "img:Device_Voltage.img:voltage_value": [
+            "49.28"
+          ],
+          "pds:Source_Product_Internal.pds:lidvid_reference": [
+            "urn:jaxa:darts:hyb2_onc:data_partially_processed:hyb2_onc_20160524_124631_tbf_l2b::1.0"
+          ],
+          "pds:Element_Array.pds:unit": [
+            "W/(m**2*um*sr)"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:second_rotation_angle_for_stray_light": [
+            "-22.69"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:filter_name": [
+            "No. 8: 480 nm"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:onc_analog_electronics_temperature": [
+            "-4.21"
+          ],
+          "ops:Data_File_Info.ops:mime_type": [
+            "application/fits"
+          ],
+          "pds:Target_Identification.pds:name": [
+            "Mars"
+          ],
+          "img:Flat_Field_Correction.img:sequence_number": [
+            "1"
+          ],
+          "img:Detector.img:first_line": [
+            "1"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:number_of_binning": [
+            "1"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:bias_correction_status": [
+            "Not Applied"
+          ],
+          "pds:Observing_System_Component.pds:name": [
+            "Hayabusa2",
+            "Optical Navigation Camera (ONC)"
+          ],
+          "img:Device_Temperature.img:device_name": [
+            "ONC Analog Electronics",
+            "ONC-T Optics",
+            "ONC-T CCD",
+            "ONC-T Electric Circuit",
+            "ONC-W1 Optics",
+            "ONC-W1 CCD",
+            "ONC-W1 Electric Circuit",
+            "ONC-W2 Optics",
+            "ONC-W2 CCD",
+            "ONC-W2 Electric Circuit",
+            "FLA-C"
+          ],
+          "pds:Array_2D_Image.pds:name": [
+            "Hayabusa2 ONC FITS data of secondary HDU"
+          ],
+          "img:Detector.img:detector_to_image_flip": [
+            "None"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:distortion_correction_file_name": [
+            "hyb2_onc_c_dist_20190131.db"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:distortion_correction_status": [
+            "Applied"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:fla_c_temperature": [
+            "-17.88"
+          ],
+          "geom:SPICE_Kernel_Identification.geom:spice_kernel_file_name": [
+            "naif0012.tls",
+            "pck00010.tpc",
+            "ryugu_v10.tpc",
+            "hyb2_20210915_v01.tsc",
+            "hyb2_lidar_v02.ti",
+            "hyb2_nirs3_v03.ti",
+            "hyb2_onc_v05.ti",
+            "hyb2_tir_v04.ti",
+            "hyb2_hp_v01.tf",
+            "hyb2_v15.tf",
+            "hyb2_ryugu_v01.tf",
+            "hyb2_shape_v01.tf",
+            "hyb2_de430.bsp",
+            "hyb2_20141203-20180628_0001h_final_ver1.bsp",
+            "2162173_ryugu_v01.bsp",
+            "hyb2_hkattrpt_2016_v02.bc",
+            "hyb2_aocsc_2016_v02.bc"
+          ],
+          "pds:Identification_Area.pds:product_class": [
+            "Product_Observational"
+          ],
+          "pds:Source_Product_Internal.pds:reference_type": [
+            "data_to_partially_processed_source_product"
+          ],
+          "pds:Array_2D_Image.pds:description": [
+            "Hayabusa2 ONC-T distortion-corrected and physically-converted calibrated image with b-band filter of 480-nm center wavelength"
+          ],
+          "ref_lid_instrument_host": [
+            "urn:jaxa:darts:context:instrument_host:spacecraft.hyb2"
+          ],
+          "img:Sampling.img:downtrack_summing": [
+            "1"
+          ],
+          "img:Onboard_Compression.img:onboard_compression_class": [
+            "Lossless"
+          ],
+          "geom:Display_Direction.geom:vertical_display_axis": [
+            "Line"
+          ],
+          "ops:Data_File_Info.ops:file_ref": [
+            "https://sbnarchive.psi.edu/pds4/hayabusa2/hyb2_onc/data_calibrated/transfer/20160524/hyb2_onc_20160524_124631_tbf_l2c.fit"
+          ],
+          "_package_id": [
+            "580f49dd-0c33-4383-b26f-8ac971f82f35"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:w2_optics_temperature": [
+            "-15.37"
+          ],
+          "pds:Identification_Area.pds:version_id": [
+            "1.0"
+          ],
+          "hyb2:Mission_Information.hyb2:mission_phase_name": [
+            "Transfer Phase"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:linearity_guaranteed_range": [
+            "194.3209"
+          ],
+          "hyb2:Observation_Information.hyb2:naif_instrument_name": [
+            "HAYABUSA2_ONC-T"
+          ],
+          "disp:Display_Direction.disp:vertical_display_axis": [
+            "Line"
+          ],
+          "geom:Display_Direction.geom:vertical_display_direction": [
+            "Top to Bottom"
+          ],
+          "pds:Internal_Reference.pds:lid_reference": [
+            "urn:jaxa:darts:context:investigation:mission.hyb2",
+            "urn:jaxa:darts:context:instrument_host:spacecraft.hyb2",
+            "urn:jaxa:darts:context:instrument:hyb2.onc",
+            "urn:nasa:pds:context:target:planet.mars"
+          ],
+          "geom:Object_Orientation_RA_Dec.geom:celestial_north_clock_angle": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "img:Exposure.img:exposure_count": [
+            "1"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:stray_light_status": [
+            "Not Affected"
+          ],
+          "ops:Data_File_Info.ops:file_size": [
+            "4219200"
+          ],
+          "ops:Provenance.ops:registry_sweepers_provenance_version": [
+            "null"
+          ],
+          "geom:SPICE_Kernel_Identification.geom:kernel_provenance": [
+            "Provenance Not Applicable",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed"
+          ],
+          "ref_lid_investigation": [
+            "urn:jaxa:darts:context:investigation:mission.hyb2"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:w1_ccd_temperature": [
+            "-32.97"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:w1_exposure_duration": [
+            "0.0"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_step_counter_error_count": [
+            "0"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:t_camera_selection_status": [
+            "On"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:number_of_subimage": [
+            "1"
+          ],
+          "img:Subframe.img:first_line": [
+            "1"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:flat_field_lamp_b_status": [
+            "Off"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:dark_correction_status": [
+            "Applied"
+          ],
+          "pds:Science_Facets.pds:discipline_name": [
+            "Small Bodies"
+          ],
+          "hyb2:Observation_Geometry.hyb2:ryugu_distance_from_spacecraft": [
+            "94440600.0"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:first_rotation_angle_for_stray_light": [
+            "-4.75"
+          ],
+          "pds:Investigation_Area.pds:type": [
+            "Mission"
+          ]
+        }
+      },
+      {
+        "id": "urn:jaxa:darts:hyb2_onc:data_calibrated:hyb2_onc_20160531_124615_tpf_l2c::1.0",
+        "type": "Product_Observational",
+        "title": "Hayabusa2 ONC distortion-corrected and physically converted calibrated image data product hyb2_onc_20160531_124615_tpf_l2c",
+        "start_date_time": "2016-05-31T12:46:15.558Z",
+        "stop_date_time": "2016-05-31T12:46:15.689Z",
+        "investigations": [
+          {
+            "id": "urn:jaxa:darts:context:investigation:mission.hyb2",
+            "href": "https://pds.mcp.nasa.gov/api/search/1/products/urn:jaxa:darts:context:investigation:mission.hyb2"
+          }
+        ],
+        "observing_system_components": [
+          {
+            "id": "urn:jaxa:darts:context:instrument_host:spacecraft.hyb2",
+            "href": "https://pds.mcp.nasa.gov/api/search/1/products/urn:jaxa:darts:context:instrument_host:spacecraft.hyb2"
+          },
+          {
+            "id": "urn:jaxa:darts:context:instrument:hyb2.onc",
+            "href": "https://pds.mcp.nasa.gov/api/search/1/products/urn:jaxa:darts:context:instrument:hyb2.onc"
+          }
+        ],
+        "targets": [
+          {
+            "id": "urn:nasa:pds:context:target:planet.mars",
+            "href": "https://pds.mcp.nasa.gov/api/search/1/products/urn:nasa:pds:context:target:planet.mars"
+          }
+        ],
+        "metadata": {
+          "creation_date_time": "2021-09-21T03:15:09Z",
+          "label_url": "https://sbnarchive.psi.edu/pds4/hayabusa2/hyb2_onc/data_calibrated/transfer/20160531/hyb2_onc_20160531_124615_tpf_l2c.xml",
+          "update_date_time": "2023-07-10T00:00:00Z",
+          "version": "1.0"
+        },
+        "properties": {
+          "pds:Local_Internal_Reference.pds:local_reference_type": [
+            "display_settings_to_array",
+            "display_to_data_object",
+            "imaging_parameters_to_image_object"
+          ],
+          "pds:Modification_Detail.pds:modification_date": [
+            "2023-07-10T00:00:00Z"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:sensitivity_calibration_period": [
+            "Before Touch Down 1"
+          ],
+          "vid": [
+            "1.0"
+          ],
+          "img:Dark_Current_Correction.img:active_flag": [
+            "true"
+          ],
+          "ops:Provenance.ops:registry_sweepers_provenance_hotfixed_version": [
+            "2"
+          ],
+          "alternate_ids": [
+            "urn:jaxa:darts:hyb2_onc:data_calibrated:hyb2_onc_20160531_124615_tpf_l2c::1.0",
+            "urn:jaxa:darts:hyb2_onc:data_calibrated:hyb2_onc_20160531_124615_tpf_l2c"
+          ],
+          "hyb2:Observation_Information.hyb2:raw_file_name": [
+            "01989_20160531124953_000059EBBD10.img"
+          ],
+          "hyb2:Observation_Geometry.hyb2:sun_direction_spacecraft_x_axis_angle": [
+            "88.69"
+          ],
+          "img:Detector.img:detector_to_image_rotation": [
+            "0.0"
+          ],
+          "pds:Axis_Array.pds:sequence_number": [
+            "1",
+            "2"
+          ],
+          "ops:Data_File_Info.ops:md5_checksum": [
+            "d3a1a6b5158fbc12cc1792adf9e1d3f1"
+          ],
+          "pds:Identification_Area.pds:title": [
+            "Hayabusa2 ONC distortion-corrected and physically converted calibrated image data product hyb2_onc_20160531_124615_tpf_l2c"
+          ],
+          "pds:Array_2D_Image.pds:offset": [
+            "23040"
+          ],
+          "hyb2:Observation_Geometry.hyb2:sun_direction_spacecraft_y_axis_angle": [
+            "89.28"
+          ],
+          "pds:Investigation_Area.pds:name": [
+            "Hayabusa2"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_null_position_flag": [
+            "Detected"
+          ],
+          "img:Subframe.img:lines": [
+            "1024"
+          ],
+          "ops:Label_File_Info.ops:creation_date_time": [
+            "2023-07-10T08:34:30Z"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:w2_camera_selection_status": [
+            "Off"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:flat_field_lamp_a_status": [
+            "Off"
+          ],
+          "pds:File.pds:comment": [
+            "Hayabusa2 ONC image in the FITS standard format."
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:stray_light_correction_status": [
+            "Not Applied"
+          ],
+          "img:Sampling.img:crosstrack_summing": [
+            "1"
+          ],
+          "geom:Object_Orientation_RA_Dec.geom:declination_angle": [
+            "-21.7512",
+            "-26.0244",
+            "-22.9656",
+            "-20.4094",
+            "-17.4667"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_reset_status": [
+            "Not In Reset Sequence"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:radiometric_calibration_status": [
+            "Applied"
+          ],
+          "img:Subframe.img:line_fov": [
+            "0.1099776"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:spacecraft_clock_count": [
+            "1/1508614623"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:photometric_correction_status": [
+            "Not Applied"
+          ],
+          "pds:File.pds:creation_date_time": [
+            "2021-09-21T03:15:09Z"
+          ],
+          "geom:Object_Orientation_RA_Dec.geom:reference_pixel_location": [
+            "Center",
+            "Lower Left Corner",
+            "Lower Right Corner",
+            "Upper Left Corner",
+            "Upper Right Corner"
+          ],
+          "img:Radiometric_Correction.img:active_flag": [
+            "true"
+          ],
+          "pds:Internal_Reference.pds:reference_type": [
+            "data_to_investigation",
+            "is_instrument_host",
+            "is_instrument",
+            "data_to_target",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "data_to_calibration_product"
+          ],
+          "ref_lidvid_kernel": [
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ck_hyb2_aocsc_2016_v02.bc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ck_hyb2_hkattrpt_2016_v02.bc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_hp_v01.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_ryugu_v01.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_shape_v01.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_v15.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_lidar_v02.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_nirs3_v03.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_onc_v05.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_tir_v04.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:lsk_naif0012.tls::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:pck_pck00010.tpc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:pck_ryugu_v10.tpc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:sclk_hyb2_20210915_v01.tsc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_2162173_ryugu_v01.bsp::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_hyb2_20141203-20180628_0001h_final_ver1.bsp::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_hyb2_de430.bsp::1.0"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:w2_exposure_duration": [
+            "0.0"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:alignment_offset_correction_status": [
+            "Not Conducted"
+          ],
+          "img:Exposure.img:exposure_type": [
+            "Manual"
+          ],
+          "img:Dark_Current_Correction.img:processing_venue": [
+            "Ground"
+          ],
+          "pds:Time_Coordinates.pds:start_date_time": [
+            "2016-05-31T12:46:15.558Z"
+          ],
+          "pds:Header.pds:object_length": [
+            "2880",
+            "20160"
+          ],
+          "lidvid": [
+            "urn:jaxa:darts:hyb2_onc:data_calibrated:hyb2_onc_20160531_124615_tpf_l2c::1.0"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:t_optics_temperature": [
+            "-17.96"
+          ],
+          "ops:Label_File_Info.ops:file_size": [
+            "43158"
+          ],
+          "pds:Science_Facets.pds:wavelength_range": [
+            "Near Infrared"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:elapsed_time_for_sensitivity_calibration": [
+            "545.35"
+          ],
+          "ops:Provenance.ops:parent_bundle_identifier": [
+            "urn:jaxa:darts:hyb2_onc::1.0"
+          ],
+          "geom:Object_Orientation_RA_Dec.geom:right_ascension_angle": [
+            "242.969",
+            "241.546",
+            "247.618",
+            "238.403",
+            "244.31"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_position_sensor_status": [
+            "Off"
+          ],
+          "ops:Data_File_Info.ops:file_name": [
+            "hyb2_onc_20160531_124615_tpf_l2c.fit"
+          ],
+          "pds:Element_Array.pds:data_type": [
+            "IEEE754MSBSingle"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:solar_distance_for_calibration": [
+            "0.0"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:w2_electric_circuit_temperature": [
+            "-9.33"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:w1_electric_circuit_temperature": [
+            "-14.03"
+          ],
+          "lid": [
+            "urn:jaxa:darts:hyb2_onc:data_calibrated:hyb2_onc_20160531_124615_tpf_l2c"
+          ],
+          "img:Subframe.img:samples": [
+            "1024"
+          ],
+          "hyb2:Observation_Information.hyb2:spacecraft_clock_start_count": [
+            "1/1508614618"
+          ],
+          "ref_lid_instrument": [
+            "urn:jaxa:darts:context:instrument:hyb2.onc"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:flat_field_correction_file_name": [
+            "hyb2_onc_c_flat_bse_tpf_t_v03_20190131.fit"
+          ],
+          "pds:File.pds:file_name": [
+            "hyb2_onc_20160531_124615_tpf_l2c.fit"
+          ],
+          "hyb2:Observation_Geometry.hyb2:backplane_data_version": [
+            "N/A"
+          ],
+          "pds:Time_Coordinates.pds:stop_date_time": [
+            "2016-05-31T12:46:15.689Z"
+          ],
+          "ref_lidvid_product": [
+            "urn:jaxa:darts:hyb2_onc:calibration:hyb2_onc_c_flat_bse_tpf_t::1.0"
+          ],
+          "ops:Label_File_Info.ops:file_ref": [
+            "https://sbnarchive.psi.edu/pds4/hayabusa2/hyb2_onc/data_calibrated/transfer/20160531/hyb2_onc_20160531_124615_tpf_l2c.xml"
+          ],
+          "img:Flat_Field_Correction.img:active_flag": [
+            "true"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:hardware_correction_status": [
+            "Applied"
+          ],
+          "img:Device_Voltage.img:device_name": [
+            "Bus Line"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:flat_field_correction_status": [
+            "Applied"
+          ],
+          "img:Device_Current.img:device_name": [
+            "ONC",
+            "FLA-C"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:bandwidth": [
+            "57.2"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:bus_line_voltage": [
+            "49.28"
+          ],
+          "img:Optical_Filter.img:bandwidth": [
+            "57.2"
+          ],
+          "ops:Provenance.ops:registry_sweepers_repairkit_version": [
+            "4"
+          ],
+          "img:Device_Temperature.img:temperature_value": [
+            "-6.29",
+            "-17.96",
+            "-34.19",
+            "-14.06",
+            "-21.41",
+            "-34.53",
+            "-14.03",
+            "-17.71",
+            "-32.66",
+            "-9.33",
+            "-17.62"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:digital_electronics_selection": [
+            "DE"
+          ],
+          "pds:Header.pds:name": [
+            "Hayabusa2 ONC FITS header of primary HDU",
+            "Hayabusa2 ONC FITS header of secondary HDU"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:image_processing_return_status": [
+            "Normal End"
+          ],
+          "ops:Provenance.ops:parent_collection_identifier": [
+            "urn:jaxa:darts:hyb2_onc:data_calibrated::1.0"
+          ],
+          "ref_lid_kernel": [
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ck_hyb2_aocsc_2016_v02.bc",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ck_hyb2_hkattrpt_2016_v02.bc",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_hp_v01.tf",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_ryugu_v01.tf",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_shape_v01.tf",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_v15.tf",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_lidar_v02.ti",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_nirs3_v03.ti",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_onc_v05.ti",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_tir_v04.ti",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:lsk_naif0012.tls",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:pck_pck00010.tpc",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:pck_ryugu_v10.tpc",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:sclk_hyb2_20210915_v01.tsc",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_2162173_ryugu_v01.bsp",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_hyb2_20141203-20180628_0001h_final_ver1.bsp",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_hyb2_de430.bsp"
+          ],
+          "description": [
+            "Initial version.",
+            "This file contains a calibrated image data (l2c) from the ONC instrument.",
+            "Hayabusa2 ONC-T distortion-corrected and physically-converted calibrated image with p-band filter of 950-nm center wavelength"
+          ],
+          "hyb2:Observation_Geometry.hyb2:spacecraft_y_position": [
+            "-196253000.0"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_step_count": [
+            "12000"
+          ],
+          "title": [
+            "Hayabusa2 ONC distortion-corrected and physically converted calibrated image data product hyb2_onc_20160531_124615_tpf_l2c"
+          ],
+          "geom:Display_Direction.geom:horizontal_display_axis": [
+            "Sample"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:ccd_sensitivity_calibration_file_name": [
+            "hyb2_onc_c_ccdt_20190131.db"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_timeout_error_count": [
+            "0"
+          ],
+          "disp:Display_Direction.disp:vertical_display_direction": [
+            "Top to Bottom"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:temperature_dependent_flat_field_correction_file_name": [
+            "hyb2_onc_c_flat_pc1_tpf_t_v03_20200814.fit"
+          ],
+          "ops:Harvest_Info.ops:harvest_version": [
+            "4.0.5"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_driving_status": [
+            "Stop"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:nonlinearity_correction_status": [
+            "Not Applied"
+          ],
+          "pds:Primary_Result_Summary.pds:description": [
+            "This file contains a calibrated image data (l2c) from the ONC instrument."
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:fla_c_electric_current": [
+            "0.0"
+          ],
+          "hyb2:Observation_Geometry.hyb2:sun_distance_from_spacecraft": [
+            "182372000.0"
+          ],
+          "hyb2:Observation_Geometry.hyb2:sun_distance_from_ryugu": [
+            "210886000.0"
+          ],
+          "pds:Identification_Area.pds:logical_identifier": [
+            "urn:jaxa:darts:hyb2_onc:data_calibrated:hyb2_onc_20160531_124615_tpf_l2c"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:hardware_correction_file_name": [
+            "hyb2_onc_c_elec_20190131.db"
+          ],
+          "pds:Axis_Array.pds:elements": [
+            "1024",
+            "1024"
+          ],
+          "img:Radiometric_Correction.img:processing_venue": [
+            "Ground"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:actual_bitdepth": [
+            "12"
+          ],
+          "ops:Label_File_Info.ops:file_name": [
+            "hyb2_onc_20160531_124615_tpf_l2c.xml"
+          ],
+          "pds:Target_Identification.pds:type": [
+            "Planet"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:solar_distance_correction_status": [
+            "Not Applied"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:sequence_number": [
+            "1"
+          ],
+          "disp:Display_Direction.disp:horizontal_display_direction": [
+            "Left to Right"
+          ],
+          "hyb2:Observation_Information.hyb2:spacecraft_clock_stop_count": [
+            "1/1508614623"
+          ],
+          "img:Onboard_Compression.img:deferred_flag": [
+            "false"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:w2_driving_status": [
+            "Off"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:observation_mode": [
+            "Science"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:t_ccd_temperature": [
+            "-34.19"
+          ],
+          "img:Subframe.img:sample_fov": [
+            "0.1099776"
+          ],
+          "pds:Modification_Detail.pds:description": [
+            "Initial version."
+          ],
+          "pds:Axis_Array.pds:axis_name": [
+            "Line",
+            "Sample"
+          ],
+          "pds:File.pds:file_size": [
+            "4219200"
+          ],
+          "pds:Internal_Reference.pds:lidvid_reference": [
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:lsk_naif0012.tls::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:pck_pck00010.tpc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:pck_ryugu_v10.tpc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:sclk_hyb2_20210915_v01.tsc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_lidar_v02.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_nirs3_v03.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_onc_v05.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_tir_v04.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_hp_v01.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_v15.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_ryugu_v01.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_shape_v01.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_hyb2_de430.bsp::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_hyb2_20141203-20180628_0001h_final_ver1.bsp::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_2162173_ryugu_v01.bsp::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ck_hyb2_hkattrpt_2016_v02.bc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ck_hyb2_aocsc_2016_v02.bc::1.0",
+            "urn:jaxa:darts:hyb2_onc:calibration:hyb2_onc_c_flat_bse_tpf_t::1.0"
+          ],
+          "ops:Label_File_Info.ops:md5_checksum": [
+            "b0c07b8d95cd110510ac416275d51df5"
+          ],
+          "ops:Tracking_Meta.ops:archive_status": [
+            "archived"
+          ],
+          "pds:Array_2D_Image.pds:local_identifier": [
+            "ImageData"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:t_exposure_duration": [
+            "0.1312"
+          ],
+          "ops:Provenance.ops:superseded_by": [
+            "null"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:analog_electronics_mode": [
+            "Shot"
+          ],
+          "img:Flat_Field_Correction.img:processing_venue": [
+            "Ground"
+          ],
+          "img:Exposure.img:exposure_duration": [
+            "0.1312"
+          ],
+          "img:Detector.img:first_sample": [
+            "1"
+          ],
+          "img:Optical_Filter.img:center_filter_wavelength": [
+            "945.1"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:unit_count_value": [
+            "0.0080717"
+          ],
+          "ops:Provenance.ops:registry_sweepers_ancestry_version": [
+            "7"
+          ],
+          "pds:Observing_System_Component.pds:type": [
+            "Host",
+            "Instrument"
+          ],
+          "hyb2:Observation_Geometry.hyb2:spacecraft_x_position": [
+            "7228080.0"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:band_center": [
+            "945.1"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:dynamic_range": [
+            "30.53811"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:flash_lamp_status": [
+            "Disable"
+          ],
+          "img:Onboard_Compression.img:onboard_compression_type": [
+            "StarPixel Lossless"
+          ],
+          "pds:Array_2D_Image.pds:axes": [
+            "2"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:smear_correction_status": [
+            "Not Applied"
+          ],
+          "geom:Reference_Frame_Identification.geom:frame_spice_name": [
+            "J2000",
+            "J2000",
+            "J2000",
+            "J2000",
+            "J2000"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:temperature_dependent_flat_field_correction_status": [
+            "Applied"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:radiance_conversion_status": [
+            "Applied"
+          ],
+          "img:Detector.img:samples": [
+            "1056"
+          ],
+          "img:Subframe.img:first_sample": [
+            "17"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:onc_electric_current": [
+            "0.52"
+          ],
+          "geom:SPICE_Kernel_Identification.geom:kernel_type": [
+            "LSK",
+            "PCK",
+            "PCK",
+            "SCLK",
+            "IK",
+            "IK",
+            "IK",
+            "IK",
+            "FK",
+            "FK",
+            "FK",
+            "FK",
+            "SPK",
+            "SPK",
+            "SPK",
+            "CK",
+            "CK"
+          ],
+          "img:Optical_Filter.img:filter_id": [
+            "p"
+          ],
+          "ref_lid_product": [
+            "urn:jaxa:darts:hyb2_onc:calibration:hyb2_onc_c_flat_bse_tpf_t"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:w2_ccd_temperature": [
+            "-32.66"
+          ],
+          "hyb2:Observation_Geometry.hyb2:earth_distance_from_spacecraft": [
+            "32457500.0"
+          ],
+          "ops:Harvest_Info.ops:node_name": [
+            "PDS_SBN"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:t_electric_circuit_temperature": [
+            "-14.06"
+          ],
+          "ops:Provenance.ops:ancestor_refs": [
+            "urn:jaxa:darts:hyb2_onc:data_calibrated::1.0",
+            "urn:jaxa:darts:hyb2_onc:data_calibrated"
+          ],
+          "ops:Data_File_Info.ops:creation_date_time": [
+            "2023-06-05T04:44:23Z"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:radiometric_calibration_file_name": [
+            "hyb2_onc_c_radc_20190131.db"
+          ],
+          "pds:Primary_Result_Summary.pds:purpose": [
+            "Science"
+          ],
+          "pds:Identification_Area.pds:information_model_version": [
+            "1.14.0.0"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:effective_solar_irradiance": [
+            "0.0"
+          ],
+          "disp:Display_Direction.disp:horizontal_display_axis": [
+            "Sample"
+          ],
+          "pds:Local_Internal_Reference.pds:local_identifier_reference": [
+            "ImageData",
+            "ImageData",
+            "ImageData"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:exposure_duration": [
+            "0.1312"
+          ],
+          "hyb2:Observation_Geometry.hyb2:spacecraft_z_position": [
+            "-76848600.0"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:flat_field_correction_parameter_file_name": [
+            "hyb2_onc_c_flat_20200814.db"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:w1_camera_selection_status": [
+            "Off"
+          ],
+          "img:Flat_Field_File.img:description": [
+            "Flat field correction that does not depend on CCD temperature."
+          ],
+          "pds:Array_2D_Image.pds:axis_index_order": [
+            "Last Index Fastest"
+          ],
+          "img:Optical_Filter.img:filter_number": [
+            "7"
+          ],
+          "pds:Modification_Detail.pds:version_id": [
+            "1.0"
+          ],
+          "img:Optical_Filter.img:filter_name": [
+            "p-band"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:w1_driving_status": [
+            "Off"
+          ],
+          "geom:Display_Direction.geom:horizontal_display_direction": [
+            "Left to Right"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:ccd_sensitivity": [
+            "944.2808"
+          ],
+          "ops:Provenance.ops:reindexed_at": [
+            "2025-03-06T20:42:36.178504"
+          ],
+          "ref_lid_target": [
+            "urn:nasa:pds:context:target:planet.mars"
+          ],
+          "img:Flat_Field_File.img:name": [
+            "hyb2_onc_c_flat_bse_tpf_t_v03_20190131.fit"
+          ],
+          "hyb2:Observation_Geometry.hyb2:sun_direction_spacecraft_z_axis_angle": [
+            "1.49"
+          ],
+          "pds:Header.pds:parsing_standard_id": [
+            "FITS 3.0",
+            "FITS 3.0"
+          ],
+          "hyb2:Observation_Information.hyb2:observation_date_time": [
+            "2016-05-31T12:46:15.624Z"
+          ],
+          "pds:Header.pds:offset": [
+            "0",
+            "2880"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:ccd_sensitivity_calibration_status": [
+            "Applied"
+          ],
+          "product_class": [
+            "Product_Observational"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:t_filter_name": [
+            "No. 7: 950 nm"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:w1_optics_temperature": [
+            "-21.41"
+          ],
+          "img:Detector.img:lines": [
+            "1024"
+          ],
+          "img:StarPixel_Lossless_Parameters.img:starpixel_initial_subsampling_interval": [
+            "3"
+          ],
+          "img:Radiometric_Correction.img:radiometric_type": [
+            "Spectral Radiance"
+          ],
+          "img:Device_Current.img:current_value": [
+            "0.52",
+            "0.0"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:t_driving_status": [
+            "On"
+          ],
+          "pds:Primary_Result_Summary.pds:processing_level": [
+            "Calibrated"
+          ],
+          "img:Sampling.img:sample_bits": [
+            "16"
+          ],
+          "ops:Harvest_Info.ops:harvest_date_time": [
+            "2025-02-28T18:05:13.164106Z"
+          ],
+          "img:Device_Voltage.img:voltage_value": [
+            "49.28"
+          ],
+          "pds:Source_Product_Internal.pds:lidvid_reference": [
+            "urn:jaxa:darts:hyb2_onc:data_partially_processed:hyb2_onc_20160531_124615_tpf_l2b::1.0"
+          ],
+          "pds:Element_Array.pds:unit": [
+            "W/(m**2*um*sr)"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:second_rotation_angle_for_stray_light": [
+            "-28.8"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:filter_name": [
+            "No. 7: 950 nm"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:onc_analog_electronics_temperature": [
+            "-6.29"
+          ],
+          "ops:Data_File_Info.ops:mime_type": [
+            "application/fits"
+          ],
+          "pds:Target_Identification.pds:name": [
+            "Mars"
+          ],
+          "img:Flat_Field_Correction.img:sequence_number": [
+            "1"
+          ],
+          "img:Detector.img:first_line": [
+            "1"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:number_of_binning": [
+            "1"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:bias_correction_status": [
+            "Not Applied"
+          ],
+          "pds:Observing_System_Component.pds:name": [
+            "Hayabusa2",
+            "Optical Navigation Camera (ONC)"
+          ],
+          "img:Device_Temperature.img:device_name": [
+            "ONC Analog Electronics",
+            "ONC-T Optics",
+            "ONC-T CCD",
+            "ONC-T Electric Circuit",
+            "ONC-W1 Optics",
+            "ONC-W1 CCD",
+            "ONC-W1 Electric Circuit",
+            "ONC-W2 Optics",
+            "ONC-W2 CCD",
+            "ONC-W2 Electric Circuit",
+            "FLA-C"
+          ],
+          "pds:Array_2D_Image.pds:name": [
+            "Hayabusa2 ONC FITS data of secondary HDU"
+          ],
+          "img:Detector.img:detector_to_image_flip": [
+            "None"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:distortion_correction_file_name": [
+            "hyb2_onc_c_dist_20190131.db"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:distortion_correction_status": [
+            "Applied"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:fla_c_temperature": [
+            "-17.62"
+          ],
+          "geom:SPICE_Kernel_Identification.geom:spice_kernel_file_name": [
+            "naif0012.tls",
+            "pck00010.tpc",
+            "ryugu_v10.tpc",
+            "hyb2_20210915_v01.tsc",
+            "hyb2_lidar_v02.ti",
+            "hyb2_nirs3_v03.ti",
+            "hyb2_onc_v05.ti",
+            "hyb2_tir_v04.ti",
+            "hyb2_hp_v01.tf",
+            "hyb2_v15.tf",
+            "hyb2_ryugu_v01.tf",
+            "hyb2_shape_v01.tf",
+            "hyb2_de430.bsp",
+            "hyb2_20141203-20180628_0001h_final_ver1.bsp",
+            "2162173_ryugu_v01.bsp",
+            "hyb2_hkattrpt_2016_v02.bc",
+            "hyb2_aocsc_2016_v02.bc"
+          ],
+          "pds:Identification_Area.pds:product_class": [
+            "Product_Observational"
+          ],
+          "pds:Source_Product_Internal.pds:reference_type": [
+            "data_to_partially_processed_source_product"
+          ],
+          "pds:Array_2D_Image.pds:description": [
+            "Hayabusa2 ONC-T distortion-corrected and physically-converted calibrated image with p-band filter of 950-nm center wavelength"
+          ],
+          "ref_lid_instrument_host": [
+            "urn:jaxa:darts:context:instrument_host:spacecraft.hyb2"
+          ],
+          "img:Sampling.img:downtrack_summing": [
+            "1"
+          ],
+          "img:Onboard_Compression.img:onboard_compression_class": [
+            "Lossless"
+          ],
+          "geom:Display_Direction.geom:vertical_display_axis": [
+            "Line"
+          ],
+          "ops:Data_File_Info.ops:file_ref": [
+            "https://sbnarchive.psi.edu/pds4/hayabusa2/hyb2_onc/data_calibrated/transfer/20160531/hyb2_onc_20160531_124615_tpf_l2c.fit"
+          ],
+          "_package_id": [
+            "580f49dd-0c33-4383-b26f-8ac971f82f35"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:w2_optics_temperature": [
+            "-17.71"
+          ],
+          "pds:Identification_Area.pds:version_id": [
+            "1.0"
+          ],
+          "hyb2:Mission_Information.hyb2:mission_phase_name": [
+            "Transfer Phase"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:linearity_guaranteed_range": [
+            "25.02227"
+          ],
+          "hyb2:Observation_Information.hyb2:naif_instrument_name": [
+            "HAYABUSA2_ONC-T"
+          ],
+          "disp:Display_Direction.disp:vertical_display_axis": [
+            "Line"
+          ],
+          "geom:Display_Direction.geom:vertical_display_direction": [
+            "Top to Bottom"
+          ],
+          "pds:Internal_Reference.pds:lid_reference": [
+            "urn:jaxa:darts:context:investigation:mission.hyb2",
+            "urn:jaxa:darts:context:instrument_host:spacecraft.hyb2",
+            "urn:jaxa:darts:context:instrument:hyb2.onc",
+            "urn:nasa:pds:context:target:planet.mars"
+          ],
+          "geom:Object_Orientation_RA_Dec.geom:celestial_north_clock_angle": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "img:Exposure.img:exposure_count": [
+            "1"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:stray_light_status": [
+            "Not Affected"
+          ],
+          "ops:Data_File_Info.ops:file_size": [
+            "4219200"
+          ],
+          "ops:Provenance.ops:registry_sweepers_provenance_version": [
+            "null"
+          ],
+          "geom:SPICE_Kernel_Identification.geom:kernel_provenance": [
+            "Provenance Not Applicable",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed"
+          ],
+          "ref_lid_investigation": [
+            "urn:jaxa:darts:context:investigation:mission.hyb2"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:w1_ccd_temperature": [
+            "-34.53"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:w1_exposure_duration": [
+            "0.0"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_step_counter_error_count": [
+            "0"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:t_camera_selection_status": [
+            "On"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:number_of_subimage": [
+            "1"
+          ],
+          "img:Subframe.img:first_line": [
+            "1"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:flat_field_lamp_b_status": [
+            "Off"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:dark_correction_status": [
+            "Applied"
+          ],
+          "pds:Science_Facets.pds:discipline_name": [
+            "Small Bodies"
+          ],
+          "hyb2:Observation_Geometry.hyb2:ryugu_distance_from_spacecraft": [
+            "90960200.0"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:first_rotation_angle_for_stray_light": [
+            "-1.49"
+          ],
+          "pds:Investigation_Area.pds:type": [
+            "Mission"
+          ]
+        }
+      },
+      {
+        "id": "urn:jaxa:darts:hyb2_onc:data_calibrated:hyb2_onc_20160605_090726_tbf_l2c::1.0",
+        "type": "Product_Observational",
+        "title": "Hayabusa2 ONC distortion-corrected and physically converted calibrated image data product hyb2_onc_20160605_090726_tbf_l2c",
+        "start_date_time": "2016-06-05T09:06:41.587Z",
+        "stop_date_time": "2016-06-05T09:08:10.717Z",
+        "investigations": [
+          {
+            "id": "urn:jaxa:darts:context:investigation:mission.hyb2",
+            "href": "https://pds.mcp.nasa.gov/api/search/1/products/urn:jaxa:darts:context:investigation:mission.hyb2"
+          }
+        ],
+        "observing_system_components": [
+          {
+            "id": "urn:jaxa:darts:context:instrument_host:spacecraft.hyb2",
+            "href": "https://pds.mcp.nasa.gov/api/search/1/products/urn:jaxa:darts:context:instrument_host:spacecraft.hyb2"
+          },
+          {
+            "id": "urn:jaxa:darts:context:instrument:hyb2.onc",
+            "href": "https://pds.mcp.nasa.gov/api/search/1/products/urn:jaxa:darts:context:instrument:hyb2.onc"
+          }
+        ],
+        "targets": [
+          {
+            "id": "urn:nasa:pds:context:target:planet.mars",
+            "href": "https://pds.mcp.nasa.gov/api/search/1/products/urn:nasa:pds:context:target:planet.mars"
+          }
+        ],
+        "metadata": {
+          "creation_date_time": "2021-09-21T03:15:21Z",
+          "label_url": "https://sbnarchive.psi.edu/pds4/hayabusa2/hyb2_onc/data_calibrated/transfer/20160605/hyb2_onc_20160605_090726_tbf_l2c.xml",
+          "update_date_time": "2023-07-10T00:00:00Z",
+          "version": "1.0"
+        },
+        "properties": {
+          "pds:Local_Internal_Reference.pds:local_reference_type": [
+            "display_settings_to_array",
+            "display_to_data_object",
+            "imaging_parameters_to_image_object"
+          ],
+          "pds:Modification_Detail.pds:modification_date": [
+            "2023-07-10T00:00:00Z"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:sensitivity_calibration_period": [
+            "Before Touch Down 1"
+          ],
+          "vid": [
+            "1.0"
+          ],
+          "img:Dark_Current_Correction.img:active_flag": [
+            "true"
+          ],
+          "ops:Provenance.ops:registry_sweepers_provenance_hotfixed_version": [
+            "2"
+          ],
+          "alternate_ids": [
+            "urn:jaxa:darts:hyb2_onc:data_calibrated:hyb2_onc_20160605_090726_tbf_l2c::1.0",
+            "urn:jaxa:darts:hyb2_onc:data_calibrated:hyb2_onc_20160605_090726_tbf_l2c"
+          ],
+          "hyb2:Observation_Information.hyb2:raw_file_name": [
+            "02014_20160605091251_00005AB85223.img"
+          ],
+          "hyb2:Observation_Geometry.hyb2:sun_direction_spacecraft_x_axis_angle": [
+            "84.37"
+          ],
+          "img:Detector.img:detector_to_image_rotation": [
+            "0.0"
+          ],
+          "pds:Axis_Array.pds:sequence_number": [
+            "1",
+            "2"
+          ],
+          "ops:Data_File_Info.ops:md5_checksum": [
+            "12d337c28ff95a522908d8bec172c60b"
+          ],
+          "pds:Identification_Area.pds:title": [
+            "Hayabusa2 ONC distortion-corrected and physically converted calibrated image data product hyb2_onc_20160605_090726_tbf_l2c"
+          ],
+          "pds:Array_2D_Image.pds:offset": [
+            "23040"
+          ],
+          "hyb2:Observation_Geometry.hyb2:sun_direction_spacecraft_y_axis_angle": [
+            "87.72"
+          ],
+          "pds:Investigation_Area.pds:name": [
+            "Hayabusa2"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_null_position_flag": [
+            "Detected"
+          ],
+          "img:Subframe.img:lines": [
+            "1024"
+          ],
+          "ops:Label_File_Info.ops:creation_date_time": [
+            "2023-07-10T08:34:33Z"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:w2_camera_selection_status": [
+            "Off"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:flat_field_lamp_a_status": [
+            "Off"
+          ],
+          "pds:File.pds:comment": [
+            "Hayabusa2 ONC image in the FITS standard format."
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:stray_light_correction_status": [
+            "Not Applied"
+          ],
+          "img:Sampling.img:crosstrack_summing": [
+            "1"
+          ],
+          "geom:Object_Orientation_RA_Dec.geom:declination_angle": [
+            "-23.5561",
+            "-27.9663",
+            "-24.176",
+            "-22.7881",
+            "-19.1422"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_reset_status": [
+            "Not In Reset Sequence"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:radiometric_calibration_status": [
+            "Applied"
+          ],
+          "img:Subframe.img:line_fov": [
+            "0.1099776"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:spacecraft_clock_count": [
+            "1/1522020104"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:photometric_correction_status": [
+            "Not Applied"
+          ],
+          "pds:File.pds:creation_date_time": [
+            "2021-09-21T03:15:21Z"
+          ],
+          "geom:Object_Orientation_RA_Dec.geom:reference_pixel_location": [
+            "Center",
+            "Lower Left Corner",
+            "Lower Right Corner",
+            "Upper Left Corner",
+            "Upper Right Corner"
+          ],
+          "img:Radiometric_Correction.img:active_flag": [
+            "true"
+          ],
+          "pds:Internal_Reference.pds:reference_type": [
+            "data_to_investigation",
+            "is_instrument_host",
+            "is_instrument",
+            "data_to_target",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "data_to_calibration_product"
+          ],
+          "ref_lidvid_kernel": [
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ck_hyb2_aocsc_2016_v02.bc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ck_hyb2_hkattrpt_2016_v02.bc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_hp_v01.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_ryugu_v01.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_shape_v01.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_v15.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_lidar_v02.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_nirs3_v03.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_onc_v05.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_tir_v04.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:lsk_naif0012.tls::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:pck_pck00010.tpc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:pck_ryugu_v10.tpc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:sclk_hyb2_20210915_v01.tsc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_2162173_ryugu_v01.bsp::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_hyb2_20141203-20180628_0001h_final_ver1.bsp::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_hyb2_de430.bsp::1.0"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:w2_exposure_duration": [
+            "0.0"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:alignment_offset_correction_status": [
+            "Not Conducted"
+          ],
+          "img:Exposure.img:exposure_type": [
+            "Manual"
+          ],
+          "img:Dark_Current_Correction.img:processing_venue": [
+            "Ground"
+          ],
+          "pds:Time_Coordinates.pds:start_date_time": [
+            "2016-06-05T09:06:41.587Z"
+          ],
+          "pds:Header.pds:object_length": [
+            "2880",
+            "20160"
+          ],
+          "lidvid": [
+            "urn:jaxa:darts:hyb2_onc:data_calibrated:hyb2_onc_20160605_090726_tbf_l2c::1.0"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:t_optics_temperature": [
+            "-16.4"
+          ],
+          "ops:Label_File_Info.ops:file_size": [
+            "42980"
+          ],
+          "pds:Science_Facets.pds:wavelength_range": [
+            "Visible"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:elapsed_time_for_sensitivity_calibration": [
+            "550.198"
+          ],
+          "ops:Provenance.ops:parent_bundle_identifier": [
+            "urn:jaxa:darts:hyb2_onc::1.0"
+          ],
+          "geom:Object_Orientation_RA_Dec.geom:right_ascension_angle": [
+            "241.778",
+            "240.992",
+            "246.616",
+            "236.992",
+            "242.513"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_position_sensor_status": [
+            "Off"
+          ],
+          "ops:Data_File_Info.ops:file_name": [
+            "hyb2_onc_20160605_090726_tbf_l2c.fit"
+          ],
+          "pds:Element_Array.pds:data_type": [
+            "IEEE754MSBSingle"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:solar_distance_for_calibration": [
+            "0.0"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:w2_electric_circuit_temperature": [
+            "-8.81"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:w1_electric_circuit_temperature": [
+            "-12.99"
+          ],
+          "lid": [
+            "urn:jaxa:darts:hyb2_onc:data_calibrated:hyb2_onc_20160605_090726_tbf_l2c"
+          ],
+          "img:Subframe.img:samples": [
+            "1024"
+          ],
+          "hyb2:Observation_Information.hyb2:spacecraft_clock_start_count": [
+            "1/1522017251"
+          ],
+          "ref_lid_instrument": [
+            "urn:jaxa:darts:context:instrument:hyb2.onc"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:flat_field_correction_file_name": [
+            "hyb2_onc_c_flat_bse_tbf_t_v03_20190131.fit"
+          ],
+          "pds:File.pds:file_name": [
+            "hyb2_onc_20160605_090726_tbf_l2c.fit"
+          ],
+          "hyb2:Observation_Geometry.hyb2:backplane_data_version": [
+            "N/A"
+          ],
+          "pds:Time_Coordinates.pds:stop_date_time": [
+            "2016-06-05T09:08:10.717Z"
+          ],
+          "ref_lidvid_product": [
+            "urn:jaxa:darts:hyb2_onc:calibration:hyb2_onc_c_flat_bse_tbf_t::1.0"
+          ],
+          "ops:Label_File_Info.ops:file_ref": [
+            "https://sbnarchive.psi.edu/pds4/hayabusa2/hyb2_onc/data_calibrated/transfer/20160605/hyb2_onc_20160605_090726_tbf_l2c.xml"
+          ],
+          "img:Flat_Field_Correction.img:active_flag": [
+            "true"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:hardware_correction_status": [
+            "Applied"
+          ],
+          "img:Device_Voltage.img:device_name": [
+            "Bus Line"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:flat_field_correction_status": [
+            "Applied"
+          ],
+          "img:Device_Current.img:device_name": [
+            "ONC",
+            "FLA-C"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:bandwidth": [
+            "26.7"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:bus_line_voltage": [
+            "49.28"
+          ],
+          "img:Optical_Filter.img:bandwidth": [
+            "26.7"
+          ],
+          "ops:Provenance.ops:registry_sweepers_repairkit_version": [
+            "4"
+          ],
+          "img:Device_Temperature.img:temperature_value": [
+            "-4.73",
+            "-16.4",
+            "-33.15",
+            "-13.53",
+            "-19.85",
+            "-33.49",
+            "-12.99",
+            "-16.93",
+            "-34.22",
+            "-8.81",
+            "-16.84"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:digital_electronics_selection": [
+            "DE"
+          ],
+          "pds:Header.pds:name": [
+            "Hayabusa2 ONC FITS header of primary HDU",
+            "Hayabusa2 ONC FITS header of secondary HDU"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:image_processing_return_status": [
+            "Normal End"
+          ],
+          "ops:Provenance.ops:parent_collection_identifier": [
+            "urn:jaxa:darts:hyb2_onc:data_calibrated::1.0"
+          ],
+          "ref_lid_kernel": [
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ck_hyb2_aocsc_2016_v02.bc",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ck_hyb2_hkattrpt_2016_v02.bc",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_hp_v01.tf",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_ryugu_v01.tf",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_shape_v01.tf",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_v15.tf",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_lidar_v02.ti",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_nirs3_v03.ti",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_onc_v05.ti",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_tir_v04.ti",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:lsk_naif0012.tls",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:pck_pck00010.tpc",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:pck_ryugu_v10.tpc",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:sclk_hyb2_20210915_v01.tsc",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_2162173_ryugu_v01.bsp",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_hyb2_20141203-20180628_0001h_final_ver1.bsp",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_hyb2_de430.bsp"
+          ],
+          "description": [
+            "Initial version.",
+            "This file contains a calibrated image data (l2c) from the ONC instrument.",
+            "Hayabusa2 ONC-T distortion-corrected and physically-converted calibrated image with b-band filter of 480-nm center wavelength"
+          ],
+          "hyb2:Observation_Geometry.hyb2:spacecraft_y_position": [
+            "-196438000.0"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_step_count": [
+            "12600"
+          ],
+          "title": [
+            "Hayabusa2 ONC distortion-corrected and physically converted calibrated image data product hyb2_onc_20160605_090726_tbf_l2c"
+          ],
+          "geom:Display_Direction.geom:horizontal_display_axis": [
+            "Sample"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:ccd_sensitivity_calibration_file_name": [
+            "hyb2_onc_c_ccdt_20190131.db"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_timeout_error_count": [
+            "0"
+          ],
+          "disp:Display_Direction.disp:vertical_display_direction": [
+            "Top to Bottom"
+          ],
+          "ops:Harvest_Info.ops:harvest_version": [
+            "4.0.5"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_driving_status": [
+            "Stop"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:nonlinearity_correction_status": [
+            "Not Applied"
+          ],
+          "pds:Primary_Result_Summary.pds:description": [
+            "This file contains a calibrated image data (l2c) from the ONC instrument."
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:fla_c_electric_current": [
+            "0.0"
+          ],
+          "hyb2:Observation_Geometry.hyb2:sun_distance_from_spacecraft": [
+            "183715000.0"
+          ],
+          "hyb2:Observation_Geometry.hyb2:sun_distance_from_ryugu": [
+            "211260000.0"
+          ],
+          "pds:Identification_Area.pds:logical_identifier": [
+            "urn:jaxa:darts:hyb2_onc:data_calibrated:hyb2_onc_20160605_090726_tbf_l2c"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:hardware_correction_file_name": [
+            "hyb2_onc_c_elec_20190131.db"
+          ],
+          "pds:Axis_Array.pds:elements": [
+            "1024",
+            "1024"
+          ],
+          "img:Radiometric_Correction.img:processing_venue": [
+            "Ground"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:actual_bitdepth": [
+            "12"
+          ],
+          "ops:Label_File_Info.ops:file_name": [
+            "hyb2_onc_20160605_090726_tbf_l2c.xml"
+          ],
+          "pds:Target_Identification.pds:type": [
+            "Planet"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:solar_distance_correction_status": [
+            "Not Applied"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:sequence_number": [
+            "1"
+          ],
+          "disp:Display_Direction.disp:horizontal_display_direction": [
+            "Left to Right"
+          ],
+          "hyb2:Observation_Information.hyb2:spacecraft_clock_stop_count": [
+            "1/1522020104"
+          ],
+          "img:Onboard_Compression.img:deferred_flag": [
+            "false"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:w2_driving_status": [
+            "Off"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:observation_mode": [
+            "Science"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:t_ccd_temperature": [
+            "-33.15"
+          ],
+          "img:Subframe.img:sample_fov": [
+            "0.1099776"
+          ],
+          "pds:Modification_Detail.pds:description": [
+            "Initial version."
+          ],
+          "pds:Axis_Array.pds:axis_name": [
+            "Line",
+            "Sample"
+          ],
+          "pds:File.pds:file_size": [
+            "4219200"
+          ],
+          "pds:Internal_Reference.pds:lidvid_reference": [
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:lsk_naif0012.tls::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:pck_pck00010.tpc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:pck_ryugu_v10.tpc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:sclk_hyb2_20210915_v01.tsc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_lidar_v02.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_nirs3_v03.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_onc_v05.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_tir_v04.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_hp_v01.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_v15.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_ryugu_v01.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_shape_v01.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_hyb2_de430.bsp::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_hyb2_20141203-20180628_0001h_final_ver1.bsp::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_2162173_ryugu_v01.bsp::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ck_hyb2_hkattrpt_2016_v02.bc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ck_hyb2_aocsc_2016_v02.bc::1.0",
+            "urn:jaxa:darts:hyb2_onc:calibration:hyb2_onc_c_flat_bse_tbf_t::1.0"
+          ],
+          "ops:Label_File_Info.ops:md5_checksum": [
+            "12401b01b87fc865c74870af6b7a5da5"
+          ],
+          "ops:Tracking_Meta.ops:archive_status": [
+            "archived"
+          ],
+          "pds:Array_2D_Image.pds:local_identifier": [
+            "ImageData"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:t_exposure_duration": [
+            "89.13"
+          ],
+          "ops:Provenance.ops:superseded_by": [
+            "null"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:analog_electronics_mode": [
+            "Shot"
+          ],
+          "img:Flat_Field_Correction.img:processing_venue": [
+            "Ground"
+          ],
+          "img:Exposure.img:exposure_duration": [
+            "89.13"
+          ],
+          "img:Detector.img:first_sample": [
+            "1"
+          ],
+          "img:Optical_Filter.img:center_filter_wavelength": [
+            "479.8"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:unit_count_value": [
+            "1.153973e-05"
+          ],
+          "ops:Provenance.ops:registry_sweepers_ancestry_version": [
+            "7"
+          ],
+          "pds:Observing_System_Component.pds:type": [
+            "Host",
+            "Instrument"
+          ],
+          "hyb2:Observation_Geometry.hyb2:spacecraft_x_position": [
+            "16655200.0"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:band_center": [
+            "479.8"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:dynamic_range": [
+            "0.04360823"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:flash_lamp_status": [
+            "Disable"
+          ],
+          "img:Onboard_Compression.img:onboard_compression_type": [
+            "StarPixel Lossless"
+          ],
+          "pds:Array_2D_Image.pds:axes": [
+            "2"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:smear_correction_status": [
+            "Not Applied"
+          ],
+          "geom:Reference_Frame_Identification.geom:frame_spice_name": [
+            "J2000",
+            "J2000",
+            "J2000",
+            "J2000",
+            "J2000"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:temperature_dependent_flat_field_correction_status": [
+            "Not Applied"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:radiance_conversion_status": [
+            "Applied"
+          ],
+          "img:Detector.img:samples": [
+            "1056"
+          ],
+          "img:Subframe.img:first_sample": [
+            "17"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:onc_electric_current": [
+            "0.54"
+          ],
+          "geom:SPICE_Kernel_Identification.geom:kernel_type": [
+            "LSK",
+            "PCK",
+            "PCK",
+            "SCLK",
+            "IK",
+            "IK",
+            "IK",
+            "IK",
+            "FK",
+            "FK",
+            "FK",
+            "FK",
+            "SPK",
+            "SPK",
+            "SPK",
+            "CK",
+            "CK"
+          ],
+          "img:Optical_Filter.img:filter_id": [
+            "b"
+          ],
+          "ref_lid_product": [
+            "urn:jaxa:darts:hyb2_onc:calibration:hyb2_onc_c_flat_bse_tbf_t"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:w2_ccd_temperature": [
+            "-34.22"
+          ],
+          "hyb2:Observation_Geometry.hyb2:earth_distance_from_spacecraft": [
+            "35037100.0"
+          ],
+          "ops:Harvest_Info.ops:node_name": [
+            "PDS_SBN"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:t_electric_circuit_temperature": [
+            "-13.53"
+          ],
+          "ops:Provenance.ops:ancestor_refs": [
+            "urn:jaxa:darts:hyb2_onc:data_calibrated::1.0",
+            "urn:jaxa:darts:hyb2_onc:data_calibrated"
+          ],
+          "ops:Data_File_Info.ops:creation_date_time": [
+            "2023-06-05T04:44:49Z"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:radiometric_calibration_file_name": [
+            "hyb2_onc_c_radc_20190131.db"
+          ],
+          "pds:Primary_Result_Summary.pds:purpose": [
+            "Science"
+          ],
+          "pds:Identification_Area.pds:information_model_version": [
+            "1.14.0.0"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:effective_solar_irradiance": [
+            "0.0"
+          ],
+          "disp:Display_Direction.disp:horizontal_display_axis": [
+            "Sample"
+          ],
+          "pds:Local_Internal_Reference.pds:local_identifier_reference": [
+            "ImageData",
+            "ImageData",
+            "ImageData"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:exposure_duration": [
+            "89.13"
+          ],
+          "hyb2:Observation_Geometry.hyb2:spacecraft_z_position": [
+            "-75930900.0"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:flat_field_correction_parameter_file_name": [
+            "hyb2_onc_c_flat_20200814.db"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:w1_camera_selection_status": [
+            "Off"
+          ],
+          "img:Flat_Field_File.img:description": [
+            "Flat field correction that does not depend on CCD temperature."
+          ],
+          "pds:Array_2D_Image.pds:axis_index_order": [
+            "Last Index Fastest"
+          ],
+          "img:Optical_Filter.img:filter_number": [
+            "8"
+          ],
+          "pds:Modification_Detail.pds:version_id": [
+            "1.0"
+          ],
+          "img:Optical_Filter.img:filter_name": [
+            "b-band"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:w1_driving_status": [
+            "Off"
+          ],
+          "geom:Display_Direction.geom:horizontal_display_direction": [
+            "Left to Right"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:ccd_sensitivity": [
+            "972.2556"
+          ],
+          "ops:Provenance.ops:reindexed_at": [
+            "2025-03-06T20:42:36.178504"
+          ],
+          "ref_lid_target": [
+            "urn:nasa:pds:context:target:planet.mars"
+          ],
+          "img:Flat_Field_File.img:name": [
+            "hyb2_onc_c_flat_bse_tbf_t_v03_20190131.fit"
+          ],
+          "hyb2:Observation_Geometry.hyb2:sun_direction_spacecraft_z_axis_angle": [
+            "6.08"
+          ],
+          "pds:Header.pds:parsing_standard_id": [
+            "FITS 3.0",
+            "FITS 3.0"
+          ],
+          "hyb2:Observation_Information.hyb2:observation_date_time": [
+            "2016-06-05T09:07:26.152Z"
+          ],
+          "pds:Header.pds:offset": [
+            "0",
+            "2880"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:ccd_sensitivity_calibration_status": [
+            "Applied"
+          ],
+          "product_class": [
+            "Product_Observational"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:t_filter_name": [
+            "No. 8: 480 nm"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:w1_optics_temperature": [
+            "-19.85"
+          ],
+          "img:Detector.img:lines": [
+            "1024"
+          ],
+          "img:StarPixel_Lossless_Parameters.img:starpixel_initial_subsampling_interval": [
+            "3"
+          ],
+          "img:Radiometric_Correction.img:radiometric_type": [
+            "Spectral Radiance"
+          ],
+          "img:Device_Current.img:current_value": [
+            "0.54",
+            "0.0"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:t_driving_status": [
+            "On"
+          ],
+          "pds:Primary_Result_Summary.pds:processing_level": [
+            "Calibrated"
+          ],
+          "img:Sampling.img:sample_bits": [
+            "16"
+          ],
+          "ops:Harvest_Info.ops:harvest_date_time": [
+            "2025-02-28T17:56:27.573907Z"
+          ],
+          "img:Device_Voltage.img:voltage_value": [
+            "49.28"
+          ],
+          "pds:Source_Product_Internal.pds:lidvid_reference": [
+            "urn:jaxa:darts:hyb2_onc:data_partially_processed:hyb2_onc_20160605_090726_tbf_l2b::1.0"
+          ],
+          "pds:Element_Array.pds:unit": [
+            "W/(m**2*um*sr)"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:second_rotation_angle_for_stray_light": [
+            "-22.07"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:filter_name": [
+            "No. 8: 480 nm"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:onc_analog_electronics_temperature": [
+            "-4.73"
+          ],
+          "ops:Data_File_Info.ops:mime_type": [
+            "application/fits"
+          ],
+          "pds:Target_Identification.pds:name": [
+            "Mars"
+          ],
+          "img:Flat_Field_Correction.img:sequence_number": [
+            "1"
+          ],
+          "img:Detector.img:first_line": [
+            "1"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:number_of_binning": [
+            "1"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:bias_correction_status": [
+            "Not Applied"
+          ],
+          "pds:Observing_System_Component.pds:name": [
+            "Hayabusa2",
+            "Optical Navigation Camera (ONC)"
+          ],
+          "img:Device_Temperature.img:device_name": [
+            "ONC Analog Electronics",
+            "ONC-T Optics",
+            "ONC-T CCD",
+            "ONC-T Electric Circuit",
+            "ONC-W1 Optics",
+            "ONC-W1 CCD",
+            "ONC-W1 Electric Circuit",
+            "ONC-W2 Optics",
+            "ONC-W2 CCD",
+            "ONC-W2 Electric Circuit",
+            "FLA-C"
+          ],
+          "pds:Array_2D_Image.pds:name": [
+            "Hayabusa2 ONC FITS data of secondary HDU"
+          ],
+          "img:Detector.img:detector_to_image_flip": [
+            "None"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:distortion_correction_file_name": [
+            "hyb2_onc_c_dist_20190131.db"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:distortion_correction_status": [
+            "Applied"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:fla_c_temperature": [
+            "-16.84"
+          ],
+          "geom:SPICE_Kernel_Identification.geom:spice_kernel_file_name": [
+            "naif0012.tls",
+            "pck00010.tpc",
+            "ryugu_v10.tpc",
+            "hyb2_20210915_v01.tsc",
+            "hyb2_lidar_v02.ti",
+            "hyb2_nirs3_v03.ti",
+            "hyb2_onc_v05.ti",
+            "hyb2_tir_v04.ti",
+            "hyb2_hp_v01.tf",
+            "hyb2_v15.tf",
+            "hyb2_ryugu_v01.tf",
+            "hyb2_shape_v01.tf",
+            "hyb2_de430.bsp",
+            "hyb2_20141203-20180628_0001h_final_ver1.bsp",
+            "2162173_ryugu_v01.bsp",
+            "hyb2_hkattrpt_2016_v02.bc",
+            "hyb2_aocsc_2016_v02.bc"
+          ],
+          "pds:Identification_Area.pds:product_class": [
+            "Product_Observational"
+          ],
+          "pds:Source_Product_Internal.pds:reference_type": [
+            "data_to_partially_processed_source_product"
+          ],
+          "pds:Array_2D_Image.pds:description": [
+            "Hayabusa2 ONC-T distortion-corrected and physically-converted calibrated image with b-band filter of 480-nm center wavelength"
+          ],
+          "ref_lid_instrument_host": [
+            "urn:jaxa:darts:context:instrument_host:spacecraft.hyb2"
+          ],
+          "img:Sampling.img:downtrack_summing": [
+            "1"
+          ],
+          "img:Onboard_Compression.img:onboard_compression_class": [
+            "Lossless"
+          ],
+          "geom:Display_Direction.geom:vertical_display_axis": [
+            "Line"
+          ],
+          "ops:Data_File_Info.ops:file_ref": [
+            "https://sbnarchive.psi.edu/pds4/hayabusa2/hyb2_onc/data_calibrated/transfer/20160605/hyb2_onc_20160605_090726_tbf_l2c.fit"
+          ],
+          "_package_id": [
+            "580f49dd-0c33-4383-b26f-8ac971f82f35"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:w2_optics_temperature": [
+            "-16.93"
+          ],
+          "pds:Identification_Area.pds:version_id": [
+            "1.0"
+          ],
+          "hyb2:Mission_Information.hyb2:mission_phase_name": [
+            "Transfer Phase"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:linearity_guaranteed_range": [
+            "0.03577317"
+          ],
+          "hyb2:Observation_Information.hyb2:naif_instrument_name": [
+            "HAYABUSA2_ONC-T"
+          ],
+          "disp:Display_Direction.disp:vertical_display_axis": [
+            "Line"
+          ],
+          "geom:Display_Direction.geom:vertical_display_direction": [
+            "Top to Bottom"
+          ],
+          "pds:Internal_Reference.pds:lid_reference": [
+            "urn:jaxa:darts:context:investigation:mission.hyb2",
+            "urn:jaxa:darts:context:instrument_host:spacecraft.hyb2",
+            "urn:jaxa:darts:context:instrument:hyb2.onc",
+            "urn:nasa:pds:context:target:planet.mars"
+          ],
+          "geom:Object_Orientation_RA_Dec.geom:celestial_north_clock_angle": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "img:Exposure.img:exposure_count": [
+            "1"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:stray_light_status": [
+            "Not Affected"
+          ],
+          "ops:Data_File_Info.ops:file_size": [
+            "4219200"
+          ],
+          "ops:Provenance.ops:registry_sweepers_provenance_version": [
+            "null"
+          ],
+          "geom:SPICE_Kernel_Identification.geom:kernel_provenance": [
+            "Provenance Not Applicable",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed"
+          ],
+          "ref_lid_investigation": [
+            "urn:jaxa:darts:context:investigation:mission.hyb2"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:w1_ccd_temperature": [
+            "-33.49"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:w1_exposure_duration": [
+            "0.0"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_step_counter_error_count": [
+            "0"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:t_camera_selection_status": [
+            "On"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:number_of_subimage": [
+            "1"
+          ],
+          "img:Subframe.img:first_line": [
+            "1"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:flat_field_lamp_b_status": [
+            "Off"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:dark_correction_status": [
+            "Applied"
+          ],
+          "pds:Science_Facets.pds:discipline_name": [
+            "Small Bodies"
+          ],
+          "hyb2:Observation_Geometry.hyb2:ryugu_distance_from_spacecraft": [
+            "88620400.0"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:first_rotation_angle_for_stray_light": [
+            "-6.08"
+          ],
+          "pds:Investigation_Area.pds:type": [
+            "Mission"
+          ]
+        }
+      },
+      {
+        "id": "urn:jaxa:darts:hyb2_onc:data_calibrated:hyb2_onc_20160607_105024_tif_l2c::1.0",
+        "type": "Product_Observational",
+        "title": "Hayabusa2 ONC distortion-corrected and physically converted calibrated image data product hyb2_onc_20160607_105024_tif_l2c",
+        "start_date_time": "2016-06-07T10:50:24.597Z",
+        "stop_date_time": "2016-06-07T10:50:25.121Z",
+        "investigations": [
+          {
+            "id": "urn:jaxa:darts:context:investigation:mission.hyb2",
+            "href": "https://pds.mcp.nasa.gov/api/search/1/products/urn:jaxa:darts:context:investigation:mission.hyb2"
+          }
+        ],
+        "observing_system_components": [
+          {
+            "id": "urn:jaxa:darts:context:instrument_host:spacecraft.hyb2",
+            "href": "https://pds.mcp.nasa.gov/api/search/1/products/urn:jaxa:darts:context:instrument_host:spacecraft.hyb2"
+          },
+          {
+            "id": "urn:jaxa:darts:context:instrument:hyb2.onc",
+            "href": "https://pds.mcp.nasa.gov/api/search/1/products/urn:jaxa:darts:context:instrument:hyb2.onc"
+          }
+        ],
+        "targets": [
+          {
+            "id": "urn:nasa:pds:context:target:planet.mars",
+            "href": "https://pds.mcp.nasa.gov/api/search/1/products/urn:nasa:pds:context:target:planet.mars"
+          }
+        ],
+        "metadata": {
+          "creation_date_time": "2021-09-21T03:15:33Z",
+          "label_url": "https://sbnarchive.psi.edu/pds4/hayabusa2/hyb2_onc/data_calibrated/transfer/20160607/hyb2_onc_20160607_105024_tif_l2c.xml",
+          "update_date_time": "2023-07-10T00:00:00Z",
+          "version": "1.0"
+        },
+        "properties": {
+          "pds:Local_Internal_Reference.pds:local_reference_type": [
+            "display_settings_to_array",
+            "display_to_data_object",
+            "imaging_parameters_to_image_object"
+          ],
+          "pds:Modification_Detail.pds:modification_date": [
+            "2023-07-10T00:00:00Z"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:sensitivity_calibration_period": [
+            "Before Touch Down 1"
+          ],
+          "vid": [
+            "1.0"
+          ],
+          "img:Dark_Current_Correction.img:active_flag": [
+            "true"
+          ],
+          "ops:Provenance.ops:registry_sweepers_provenance_hotfixed_version": [
+            "2"
+          ],
+          "alternate_ids": [
+            "urn:jaxa:darts:hyb2_onc:data_calibrated:hyb2_onc_20160607_105024_tif_l2c::1.0",
+            "urn:jaxa:darts:hyb2_onc:data_calibrated:hyb2_onc_20160607_105024_tif_l2c"
+          ],
+          "hyb2:Observation_Information.hyb2:raw_file_name": [
+            "38522_20160607105256_00005B0FA108.img"
+          ],
+          "hyb2:Observation_Geometry.hyb2:sun_direction_spacecraft_x_axis_angle": [
+            "82.5"
+          ],
+          "img:Detector.img:detector_to_image_rotation": [
+            "0.0"
+          ],
+          "pds:Axis_Array.pds:sequence_number": [
+            "1",
+            "2"
+          ],
+          "ops:Data_File_Info.ops:md5_checksum": [
+            "11daa14bb69937ff3eeaa714ca7d1f94"
+          ],
+          "pds:Identification_Area.pds:title": [
+            "Hayabusa2 ONC distortion-corrected and physically converted calibrated image data product hyb2_onc_20160607_105024_tif_l2c"
+          ],
+          "pds:Array_2D_Image.pds:offset": [
+            "25920"
+          ],
+          "hyb2:Observation_Geometry.hyb2:sun_direction_spacecraft_y_axis_angle": [
+            "87.03"
+          ],
+          "pds:Investigation_Area.pds:name": [
+            "Hayabusa2"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_null_position_flag": [
+            "Detected",
+            "Detected"
+          ],
+          "img:Subframe.img:lines": [
+            "1024"
+          ],
+          "ops:Label_File_Info.ops:creation_date_time": [
+            "2023-07-10T08:34:36Z"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:w2_camera_selection_status": [
+            "Off",
+            "Off"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:flat_field_lamp_a_status": [
+            "Off",
+            "Off"
+          ],
+          "pds:File.pds:comment": [
+            "Hayabusa2 ONC image in the FITS standard format."
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:stray_light_correction_status": [
+            "Not Applied"
+          ],
+          "img:Sampling.img:crosstrack_summing": [
+            "1"
+          ],
+          "geom:Object_Orientation_RA_Dec.geom:declination_angle": [
+            "-24.3692",
+            "-28.7886",
+            "-24.9268",
+            "-23.6571",
+            "-19.9465"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_reset_status": [
+            "Not In Reset Sequence",
+            "Not In Reset Sequence"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:radiometric_calibration_status": [
+            "Applied"
+          ],
+          "img:Subframe.img:line_fov": [
+            "0.1099776"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:spacecraft_clock_count": [
+            "1/1527746091",
+            "1/1527746266"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:photometric_correction_status": [
+            "Not Applied"
+          ],
+          "pds:File.pds:creation_date_time": [
+            "2021-09-21T03:15:33Z"
+          ],
+          "geom:Object_Orientation_RA_Dec.geom:reference_pixel_location": [
+            "Center",
+            "Lower Left Corner",
+            "Lower Right Corner",
+            "Upper Left Corner",
+            "Upper Right Corner"
+          ],
+          "img:Radiometric_Correction.img:active_flag": [
+            "true"
+          ],
+          "pds:Internal_Reference.pds:reference_type": [
+            "data_to_investigation",
+            "is_instrument_host",
+            "is_instrument",
+            "data_to_target",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "data_to_calibration_product"
+          ],
+          "ref_lidvid_kernel": [
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ck_hyb2_aocsc_2016_v02.bc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ck_hyb2_hkattrpt_2016_v02.bc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_hp_v01.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_ryugu_v01.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_shape_v01.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_v15.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_lidar_v02.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_nirs3_v03.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_onc_v05.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_tir_v04.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:lsk_naif0012.tls::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:pck_pck00010.tpc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:pck_ryugu_v10.tpc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:sclk_hyb2_20210915_v01.tsc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_2162173_ryugu_v01.bsp::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_hyb2_20141203-20180628_0001h_final_ver1.bsp::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_hyb2_de430.bsp::1.0"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:w2_exposure_duration": [
+            "0.0",
+            "0.0"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:alignment_offset_correction_status": [
+            "Not Conducted"
+          ],
+          "img:Exposure.img:exposure_type": [
+            "Manual"
+          ],
+          "img:Dark_Current_Correction.img:processing_venue": [
+            "Ground"
+          ],
+          "pds:Time_Coordinates.pds:start_date_time": [
+            "2016-06-07T10:50:24.597Z"
+          ],
+          "pds:Header.pds:object_length": [
+            "2880",
+            "23040"
+          ],
+          "lidvid": [
+            "urn:jaxa:darts:hyb2_onc:data_calibrated:hyb2_onc_20160607_105024_tif_l2c::1.0"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:t_optics_temperature": [
+            "-15.88"
+          ],
+          "ops:Label_File_Info.ops:file_size": [
+            "45444"
+          ],
+          "pds:Science_Facets.pds:wavelength_range": [
+            "Ultraviolet",
+            "Visible",
+            "Near Infrared"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:elapsed_time_for_sensitivity_calibration": [
+            "552.27"
+          ],
+          "ops:Provenance.ops:parent_bundle_identifier": [
+            "urn:jaxa:darts:hyb2_onc::1.0"
+          ],
+          "geom:Object_Orientation_RA_Dec.geom:right_ascension_angle": [
+            "241.25",
+            "240.525",
+            "246.126",
+            "236.422",
+            "241.926"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_position_sensor_status": [
+            "Off",
+            "Off"
+          ],
+          "ops:Data_File_Info.ops:file_name": [
+            "hyb2_onc_20160607_105024_tif_l2c.fit"
+          ],
+          "pds:Element_Array.pds:data_type": [
+            "IEEE754MSBSingle"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:solar_distance_for_calibration": [
+            "0.0"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:w2_electric_circuit_temperature": [
+            "-8.81"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:w1_electric_circuit_temperature": [
+            "-12.99"
+          ],
+          "lid": [
+            "urn:jaxa:darts:hyb2_onc:data_calibrated:hyb2_onc_20160607_105024_tif_l2c"
+          ],
+          "img:Subframe.img:samples": [
+            "1024"
+          ],
+          "hyb2:Observation_Information.hyb2:spacecraft_clock_start_count": [
+            "1/1527746074"
+          ],
+          "ref_lid_instrument": [
+            "urn:jaxa:darts:context:instrument:hyb2.onc"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:flat_field_correction_file_name": [
+            "hyb2_onc_c_flat_bse_tvf_f_v03_20190131.fit"
+          ],
+          "pds:File.pds:file_name": [
+            "hyb2_onc_20160607_105024_tif_l2c.fit"
+          ],
+          "hyb2:Observation_Geometry.hyb2:backplane_data_version": [
+            "N/A"
+          ],
+          "pds:Time_Coordinates.pds:stop_date_time": [
+            "2016-06-07T10:50:25.121Z"
+          ],
+          "ref_lidvid_product": [
+            "urn:jaxa:darts:hyb2_onc:calibration:hyb2_onc_c_flat_bse_tvf_f::1.0"
+          ],
+          "ops:Label_File_Info.ops:file_ref": [
+            "https://sbnarchive.psi.edu/pds4/hayabusa2/hyb2_onc/data_calibrated/transfer/20160607/hyb2_onc_20160607_105024_tif_l2c.xml"
+          ],
+          "img:Flat_Field_Correction.img:active_flag": [
+            "true"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:hardware_correction_status": [
+            "Applied"
+          ],
+          "img:Device_Voltage.img:device_name": [
+            "Bus Line"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:flat_field_correction_status": [
+            "Applied"
+          ],
+          "img:Device_Current.img:device_name": [
+            "ONC",
+            "FLA-C"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:bandwidth": [
+            "448.0"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:bus_line_voltage": [
+            "49.28"
+          ],
+          "img:Optical_Filter.img:bandwidth": [
+            "448.0"
+          ],
+          "ops:Provenance.ops:registry_sweepers_repairkit_version": [
+            "4"
+          ],
+          "img:Device_Temperature.img:temperature_value": [
+            "-4.73",
+            "-15.88",
+            "-33.41",
+            "-13.53",
+            "-19.85",
+            "-33.23",
+            "-12.99",
+            "-16.93",
+            "-32.92",
+            "-8.81",
+            "-16.84"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:digital_electronics_selection": [
+            "DE",
+            "DE"
+          ],
+          "pds:Header.pds:name": [
+            "Hayabusa2 ONC FITS header of primary HDU",
+            "Hayabusa2 ONC FITS header of secondary HDU"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:image_processing_return_status": [
+            "Normal End"
+          ],
+          "ops:Provenance.ops:parent_collection_identifier": [
+            "urn:jaxa:darts:hyb2_onc:data_calibrated::1.0"
+          ],
+          "ref_lid_kernel": [
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ck_hyb2_aocsc_2016_v02.bc",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ck_hyb2_hkattrpt_2016_v02.bc",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_hp_v01.tf",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_ryugu_v01.tf",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_shape_v01.tf",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_v15.tf",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_lidar_v02.ti",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_nirs3_v03.ti",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_onc_v05.ti",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_tir_v04.ti",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:lsk_naif0012.tls",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:pck_pck00010.tpc",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:pck_ryugu_v10.tpc",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:sclk_hyb2_20210915_v01.tsc",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_2162173_ryugu_v01.bsp",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_hyb2_20141203-20180628_0001h_final_ver1.bsp",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_hyb2_de430.bsp"
+          ],
+          "description": [
+            "Initial version.",
+            "This file contains a calibrated image data (l2c) from the ONC instrument.",
+            "Hayabusa2 ONC-T distortion-corrected and physically-converted calibrated image with wide-band filter"
+          ],
+          "hyb2:Observation_Geometry.hyb2:spacecraft_y_position": [
+            "-196368000.0"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_step_count": [
+            "18600",
+            "18600"
+          ],
+          "title": [
+            "Hayabusa2 ONC distortion-corrected and physically converted calibrated image data product hyb2_onc_20160607_105024_tif_l2c"
+          ],
+          "geom:Display_Direction.geom:horizontal_display_axis": [
+            "Sample"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:ccd_sensitivity_calibration_file_name": [
+            "hyb2_onc_c_ccdt_20190131.db"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_timeout_error_count": [
+            "0",
+            "0"
+          ],
+          "disp:Display_Direction.disp:vertical_display_direction": [
+            "Top to Bottom"
+          ],
+          "ops:Harvest_Info.ops:harvest_version": [
+            "4.0.5"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_driving_status": [
+            "Stop",
+            "Stop"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:nonlinearity_correction_status": [
+            "Not Applied"
+          ],
+          "pds:Primary_Result_Summary.pds:description": [
+            "This file contains a calibrated image data (l2c) from the ONC instrument."
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:fla_c_electric_current": [
+            "0.0"
+          ],
+          "hyb2:Observation_Geometry.hyb2:sun_distance_from_spacecraft": [
+            "184265000.0"
+          ],
+          "hyb2:Observation_Geometry.hyb2:sun_distance_from_ryugu": [
+            "211389000.0"
+          ],
+          "pds:Identification_Area.pds:logical_identifier": [
+            "urn:jaxa:darts:hyb2_onc:data_calibrated:hyb2_onc_20160607_105024_tif_l2c"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:hardware_correction_file_name": [
+            "hyb2_onc_c_elec_20190131.db"
+          ],
+          "pds:Axis_Array.pds:elements": [
+            "1024",
+            "1024"
+          ],
+          "img:Radiometric_Correction.img:processing_venue": [
+            "Ground"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:actual_bitdepth": [
+            "12"
+          ],
+          "ops:Label_File_Info.ops:file_name": [
+            "hyb2_onc_20160607_105024_tif_l2c.xml"
+          ],
+          "pds:Target_Identification.pds:type": [
+            "Planet"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:solar_distance_correction_status": [
+            "Not Applied"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:sequence_number": [
+            "1",
+            "2"
+          ],
+          "disp:Display_Direction.disp:horizontal_display_direction": [
+            "Left to Right"
+          ],
+          "hyb2:Observation_Information.hyb2:spacecraft_clock_stop_count": [
+            "1/1527746266"
+          ],
+          "img:Onboard_Compression.img:deferred_flag": [
+            "false"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:w2_driving_status": [
+            "Off",
+            "Off"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:observation_mode": [
+            "Science"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:t_ccd_temperature": [
+            "-33.41"
+          ],
+          "img:Subframe.img:sample_fov": [
+            "0.1099776"
+          ],
+          "pds:Modification_Detail.pds:description": [
+            "Initial version."
+          ],
+          "pds:Axis_Array.pds:axis_name": [
+            "Line",
+            "Sample"
+          ],
+          "pds:File.pds:file_size": [
+            "4222080"
+          ],
+          "pds:Internal_Reference.pds:lidvid_reference": [
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:lsk_naif0012.tls::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:pck_pck00010.tpc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:pck_ryugu_v10.tpc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:sclk_hyb2_20210915_v01.tsc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_lidar_v02.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_nirs3_v03.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_onc_v05.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_tir_v04.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_hp_v01.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_v15.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_ryugu_v01.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_shape_v01.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_hyb2_de430.bsp::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_hyb2_20141203-20180628_0001h_final_ver1.bsp::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_2162173_ryugu_v01.bsp::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ck_hyb2_hkattrpt_2016_v02.bc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ck_hyb2_aocsc_2016_v02.bc::1.0",
+            "urn:jaxa:darts:hyb2_onc:calibration:hyb2_onc_c_flat_bse_tvf_f::1.0"
+          ],
+          "ops:Label_File_Info.ops:md5_checksum": [
+            "807ce2602a0cf1b530cfa1e6bcbeac71"
+          ],
+          "ops:Tracking_Meta.ops:archive_status": [
+            "archived"
+          ],
+          "pds:Array_2D_Image.pds:local_identifier": [
+            "ImageData"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:t_exposure_duration": [
+            "0.5248",
+            "0.0"
+          ],
+          "ops:Provenance.ops:superseded_by": [
+            "null"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:analog_electronics_mode": [
+            "Standby",
+            "Shot"
+          ],
+          "img:Flat_Field_Correction.img:processing_venue": [
+            "Ground"
+          ],
+          "img:Exposure.img:exposure_duration": [
+            "0.5248"
+          ],
+          "img:Detector.img:first_sample": [
+            "1"
+          ],
+          "img:Optical_Filter.img:center_filter_wavelength": [
+            "612.0"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:unit_count_value": [
+            "0.0001032052"
+          ],
+          "ops:Provenance.ops:registry_sweepers_ancestry_version": [
+            "7"
+          ],
+          "pds:Observing_System_Component.pds:type": [
+            "Host",
+            "Instrument"
+          ],
+          "hyb2:Observation_Geometry.hyb2:spacecraft_x_position": [
+            "20672100.0"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:band_center": [
+            "612.0"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:dynamic_range": [
+            "0.3905851"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:flash_lamp_status": [
+            "Disable",
+            "Disable"
+          ],
+          "img:Onboard_Compression.img:onboard_compression_type": [
+            "StarPixel Lossless"
+          ],
+          "pds:Array_2D_Image.pds:axes": [
+            "2"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:smear_correction_status": [
+            "Applied onboard"
+          ],
+          "geom:Reference_Frame_Identification.geom:frame_spice_name": [
+            "J2000",
+            "J2000",
+            "J2000",
+            "J2000",
+            "J2000"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:temperature_dependent_flat_field_correction_status": [
+            "Not Applied"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:radiance_conversion_status": [
+            "Applied"
+          ],
+          "img:Detector.img:samples": [
+            "1056"
+          ],
+          "img:Subframe.img:first_sample": [
+            "17"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:onc_electric_current": [
+            "0.52"
+          ],
+          "geom:SPICE_Kernel_Identification.geom:kernel_type": [
+            "LSK",
+            "PCK",
+            "PCK",
+            "SCLK",
+            "IK",
+            "IK",
+            "IK",
+            "IK",
+            "FK",
+            "FK",
+            "FK",
+            "FK",
+            "SPK",
+            "SPK",
+            "SPK",
+            "CK",
+            "CK"
+          ],
+          "img:Optical_Filter.img:filter_id": [
+            "i"
+          ],
+          "ref_lid_product": [
+            "urn:jaxa:darts:hyb2_onc:calibration:hyb2_onc_c_flat_bse_tvf_f"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:w2_ccd_temperature": [
+            "-32.92"
+          ],
+          "hyb2:Observation_Geometry.hyb2:earth_distance_from_spacecraft": [
+            "36238600.0"
+          ],
+          "ops:Harvest_Info.ops:node_name": [
+            "PDS_SBN"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:t_electric_circuit_temperature": [
+            "-13.53"
+          ],
+          "ops:Provenance.ops:ancestor_refs": [
+            "urn:jaxa:darts:hyb2_onc:data_calibrated::1.0",
+            "urn:jaxa:darts:hyb2_onc:data_calibrated"
+          ],
+          "ops:Data_File_Info.ops:creation_date_time": [
+            "2023-06-05T04:45:13Z"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:radiometric_calibration_file_name": [
+            "hyb2_onc_c_radc_20190131.db"
+          ],
+          "pds:Primary_Result_Summary.pds:purpose": [
+            "Science"
+          ],
+          "pds:Identification_Area.pds:information_model_version": [
+            "1.14.0.0"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:effective_solar_irradiance": [
+            "0.0"
+          ],
+          "disp:Display_Direction.disp:horizontal_display_axis": [
+            "Sample"
+          ],
+          "pds:Local_Internal_Reference.pds:local_identifier_reference": [
+            "ImageData",
+            "ImageData",
+            "ImageData"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:exposure_duration": [
+            "0.5248"
+          ],
+          "hyb2:Observation_Geometry.hyb2:spacecraft_z_position": [
+            "-75481400.0"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:flat_field_correction_parameter_file_name": [
+            "hyb2_onc_c_flat_20200814.db"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:w1_camera_selection_status": [
+            "Off",
+            "Off"
+          ],
+          "img:Flat_Field_File.img:description": [
+            "Flat field correction that does not depend on CCD temperature."
+          ],
+          "pds:Array_2D_Image.pds:axis_index_order": [
+            "Last Index Fastest"
+          ],
+          "img:Optical_Filter.img:filter_number": [
+            "2"
+          ],
+          "pds:Modification_Detail.pds:version_id": [
+            "1.0"
+          ],
+          "img:Optical_Filter.img:filter_name": [
+            "wide-band"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:w1_driving_status": [
+            "Off",
+            "Off"
+          ],
+          "geom:Display_Direction.geom:horizontal_display_direction": [
+            "Left to Right"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:ccd_sensitivity": [
+            "18463.11"
+          ],
+          "ops:Provenance.ops:reindexed_at": [
+            "2025-03-06T20:42:36.178504"
+          ],
+          "ref_lid_target": [
+            "urn:nasa:pds:context:target:planet.mars"
+          ],
+          "img:Flat_Field_File.img:name": [
+            "hyb2_onc_c_flat_bse_tvf_f_v03_20190131.fit"
+          ],
+          "hyb2:Observation_Geometry.hyb2:sun_direction_spacecraft_z_axis_angle": [
+            "8.07"
+          ],
+          "pds:Header.pds:parsing_standard_id": [
+            "FITS 3.0",
+            "FITS 3.0"
+          ],
+          "hyb2:Observation_Information.hyb2:observation_date_time": [
+            "2016-06-07T10:50:24.859Z"
+          ],
+          "pds:Header.pds:offset": [
+            "0",
+            "2880"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:ccd_sensitivity_calibration_status": [
+            "Applied"
+          ],
+          "product_class": [
+            "Product_Observational"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:t_filter_name": [
+            "No. 2: Wide",
+            "No. 2: Wide"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:w1_optics_temperature": [
+            "-19.85"
+          ],
+          "img:Detector.img:lines": [
+            "1024"
+          ],
+          "img:StarPixel_Lossless_Parameters.img:starpixel_initial_subsampling_interval": [
+            "3"
+          ],
+          "img:Radiometric_Correction.img:radiometric_type": [
+            "Spectral Radiance"
+          ],
+          "img:Device_Current.img:current_value": [
+            "0.52",
+            "0.0"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:t_driving_status": [
+            "On",
+            "On"
+          ],
+          "pds:Primary_Result_Summary.pds:processing_level": [
+            "Calibrated"
+          ],
+          "img:Sampling.img:sample_bits": [
+            "16"
+          ],
+          "ops:Harvest_Info.ops:harvest_date_time": [
+            "2025-02-28T17:55:26.304729Z"
+          ],
+          "img:Device_Voltage.img:voltage_value": [
+            "49.28"
+          ],
+          "pds:Source_Product_Internal.pds:lidvid_reference": [
+            "urn:jaxa:darts:hyb2_onc:data_partially_processed:hyb2_onc_20160607_105024_tif_l2b::1.0"
+          ],
+          "pds:Element_Array.pds:unit": [
+            "W/(m**2*um*sr)"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:second_rotation_angle_for_stray_light": [
+            "-21.65"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:filter_name": [
+            "No. 2: Wide"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:onc_analog_electronics_temperature": [
+            "-4.73"
+          ],
+          "ops:Data_File_Info.ops:mime_type": [
+            "application/fits"
+          ],
+          "pds:Target_Identification.pds:name": [
+            "Mars"
+          ],
+          "img:Flat_Field_Correction.img:sequence_number": [
+            "1"
+          ],
+          "img:Detector.img:first_line": [
+            "1"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:number_of_binning": [
+            "1"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:bias_correction_status": [
+            "Applied onboard"
+          ],
+          "pds:Observing_System_Component.pds:name": [
+            "Hayabusa2",
+            "Optical Navigation Camera (ONC)"
+          ],
+          "img:Device_Temperature.img:device_name": [
+            "ONC Analog Electronics",
+            "ONC-T Optics",
+            "ONC-T CCD",
+            "ONC-T Electric Circuit",
+            "ONC-W1 Optics",
+            "ONC-W1 CCD",
+            "ONC-W1 Electric Circuit",
+            "ONC-W2 Optics",
+            "ONC-W2 CCD",
+            "ONC-W2 Electric Circuit",
+            "FLA-C"
+          ],
+          "pds:Array_2D_Image.pds:name": [
+            "Hayabusa2 ONC FITS data of secondary HDU"
+          ],
+          "img:Detector.img:detector_to_image_flip": [
+            "None"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:distortion_correction_file_name": [
+            "hyb2_onc_c_dist_20190131.db"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:distortion_correction_status": [
+            "Applied"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:fla_c_temperature": [
+            "-16.84"
+          ],
+          "geom:SPICE_Kernel_Identification.geom:spice_kernel_file_name": [
+            "naif0012.tls",
+            "pck00010.tpc",
+            "ryugu_v10.tpc",
+            "hyb2_20210915_v01.tsc",
+            "hyb2_lidar_v02.ti",
+            "hyb2_nirs3_v03.ti",
+            "hyb2_onc_v05.ti",
+            "hyb2_tir_v04.ti",
+            "hyb2_hp_v01.tf",
+            "hyb2_v15.tf",
+            "hyb2_ryugu_v01.tf",
+            "hyb2_shape_v01.tf",
+            "hyb2_de430.bsp",
+            "hyb2_20141203-20180628_0001h_final_ver1.bsp",
+            "2162173_ryugu_v01.bsp",
+            "hyb2_hkattrpt_2016_v02.bc",
+            "hyb2_aocsc_2016_v02.bc"
+          ],
+          "pds:Identification_Area.pds:product_class": [
+            "Product_Observational"
+          ],
+          "pds:Source_Product_Internal.pds:reference_type": [
+            "data_to_partially_processed_source_product"
+          ],
+          "pds:Array_2D_Image.pds:description": [
+            "Hayabusa2 ONC-T distortion-corrected and physically-converted calibrated image with wide-band filter"
+          ],
+          "ref_lid_instrument_host": [
+            "urn:jaxa:darts:context:instrument_host:spacecraft.hyb2"
+          ],
+          "img:Sampling.img:downtrack_summing": [
+            "1"
+          ],
+          "img:Onboard_Compression.img:onboard_compression_class": [
+            "Lossless"
+          ],
+          "geom:Display_Direction.geom:vertical_display_axis": [
+            "Line"
+          ],
+          "ops:Data_File_Info.ops:file_ref": [
+            "https://sbnarchive.psi.edu/pds4/hayabusa2/hyb2_onc/data_calibrated/transfer/20160607/hyb2_onc_20160607_105024_tif_l2c.fit"
+          ],
+          "_package_id": [
+            "580f49dd-0c33-4383-b26f-8ac971f82f35"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:w2_optics_temperature": [
+            "-16.93"
+          ],
+          "pds:Identification_Area.pds:version_id": [
+            "1.0"
+          ],
+          "hyb2:Mission_Information.hyb2:mission_phase_name": [
+            "Transfer Phase"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:linearity_guaranteed_range": [
+            "0.319936"
+          ],
+          "hyb2:Observation_Information.hyb2:naif_instrument_name": [
+            "HAYABUSA2_ONC-T"
+          ],
+          "disp:Display_Direction.disp:vertical_display_axis": [
+            "Line"
+          ],
+          "geom:Display_Direction.geom:vertical_display_direction": [
+            "Top to Bottom"
+          ],
+          "pds:Internal_Reference.pds:lid_reference": [
+            "urn:jaxa:darts:context:investigation:mission.hyb2",
+            "urn:jaxa:darts:context:instrument_host:spacecraft.hyb2",
+            "urn:jaxa:darts:context:instrument:hyb2.onc",
+            "urn:nasa:pds:context:target:planet.mars"
+          ],
+          "geom:Object_Orientation_RA_Dec.geom:celestial_north_clock_angle": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "img:Exposure.img:exposure_count": [
+            "1"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:stray_light_status": [
+            "Not Affected"
+          ],
+          "ops:Data_File_Info.ops:file_size": [
+            "4222080"
+          ],
+          "ops:Provenance.ops:registry_sweepers_provenance_version": [
+            "null"
+          ],
+          "geom:SPICE_Kernel_Identification.geom:kernel_provenance": [
+            "Provenance Not Applicable",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed"
+          ],
+          "ref_lid_investigation": [
+            "urn:jaxa:darts:context:investigation:mission.hyb2"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:w1_ccd_temperature": [
+            "-33.23"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:w1_exposure_duration": [
+            "0.0",
+            "0.0"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_step_counter_error_count": [
+            "0",
+            "0"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:t_camera_selection_status": [
+            "On",
+            "On"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:number_of_subimage": [
+            "2"
+          ],
+          "img:Subframe.img:first_line": [
+            "1"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:flat_field_lamp_b_status": [
+            "Off",
+            "Off"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:dark_correction_status": [
+            "Applied"
+          ],
+          "pds:Science_Facets.pds:discipline_name": [
+            "Small Bodies"
+          ],
+          "hyb2:Observation_Geometry.hyb2:ryugu_distance_from_spacecraft": [
+            "87638700.0"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:first_rotation_angle_for_stray_light": [
+            "-8.07"
+          ],
+          "pds:Investigation_Area.pds:type": [
+            "Mission"
+          ]
+        }
+      },
+      {
+        "id": "urn:jaxa:darts:hyb2_onc:data_calibrated:hyb2_onc_20160607_122053_w1f_l2c::1.0",
+        "type": "Product_Observational",
+        "title": "Hayabusa2 ONC distortion-corrected and physically converted calibrated image data product hyb2_onc_20160607_122053_w1f_l2c",
+        "start_date_time": "2016-06-07T12:20:50.501Z",
+        "stop_date_time": "2016-06-07T12:20:56.071Z",
+        "investigations": [
+          {
+            "id": "urn:jaxa:darts:context:investigation:mission.hyb2",
+            "href": "https://pds.mcp.nasa.gov/api/search/1/products/urn:jaxa:darts:context:investigation:mission.hyb2"
+          }
+        ],
+        "observing_system_components": [
+          {
+            "id": "urn:jaxa:darts:context:instrument_host:spacecraft.hyb2",
+            "href": "https://pds.mcp.nasa.gov/api/search/1/products/urn:jaxa:darts:context:instrument_host:spacecraft.hyb2"
+          },
+          {
+            "id": "urn:jaxa:darts:context:instrument:hyb2.onc",
+            "href": "https://pds.mcp.nasa.gov/api/search/1/products/urn:jaxa:darts:context:instrument:hyb2.onc"
+          }
+        ],
+        "targets": [
+          {
+            "id": "urn:nasa:pds:context:target:planet.mars",
+            "href": "https://pds.mcp.nasa.gov/api/search/1/products/urn:nasa:pds:context:target:planet.mars"
+          },
+          {
+            "id": "urn:nasa:pds:context:target:planet.saturn",
+            "href": "https://pds.mcp.nasa.gov/api/search/1/products/urn:nasa:pds:context:target:planet.saturn"
+          }
+        ],
+        "metadata": {
+          "creation_date_time": "2021-09-21T03:15:36Z",
+          "label_url": "https://sbnarchive.psi.edu/pds4/hayabusa2/hyb2_onc/data_calibrated/transfer/20160607/hyb2_onc_20160607_122053_w1f_l2c.xml",
+          "update_date_time": "2023-07-10T00:00:00Z",
+          "version": "1.0"
+        },
+        "properties": {
+          "pds:Local_Internal_Reference.pds:local_reference_type": [
+            "display_settings_to_array",
+            "display_to_data_object",
+            "imaging_parameters_to_image_object"
+          ],
+          "pds:Modification_Detail.pds:modification_date": [
+            "2023-07-10T00:00:00Z"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:sensitivity_calibration_period": [
+            "Before Touch Down 1"
+          ],
+          "vid": [
+            "1.0"
+          ],
+          "img:Dark_Current_Correction.img:active_flag": [
+            "true"
+          ],
+          "ops:Provenance.ops:registry_sweepers_provenance_hotfixed_version": [
+            "2"
+          ],
+          "alternate_ids": [
+            "urn:jaxa:darts:hyb2_onc:data_calibrated:hyb2_onc_20160607_122053_w1f_l2c::1.0",
+            "urn:jaxa:darts:hyb2_onc:data_calibrated:hyb2_onc_20160607_122053_w1f_l2c"
+          ],
+          "hyb2:Observation_Information.hyb2:raw_file_name": [
+            "38542_20160607122359_00005B124C02.img"
+          ],
+          "hyb2:Observation_Geometry.hyb2:sun_direction_spacecraft_x_axis_angle": [
+            "82.47"
+          ],
+          "img:Detector.img:detector_to_image_rotation": [
+            "0.0"
+          ],
+          "pds:Axis_Array.pds:sequence_number": [
+            "1",
+            "2"
+          ],
+          "ops:Data_File_Info.ops:md5_checksum": [
+            "9af397823cd5331650806aee5bd1bf22"
+          ],
+          "pds:Identification_Area.pds:title": [
+            "Hayabusa2 ONC distortion-corrected and physically converted calibrated image data product hyb2_onc_20160607_122053_w1f_l2c"
+          ],
+          "pds:Array_2D_Image.pds:offset": [
+            "25920"
+          ],
+          "hyb2:Observation_Geometry.hyb2:sun_direction_spacecraft_y_axis_angle": [
+            "87.01"
+          ],
+          "pds:Investigation_Area.pds:name": [
+            "Hayabusa2"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_null_position_flag": [
+            "Detected",
+            "Detected"
+          ],
+          "img:Subframe.img:lines": [
+            "1024"
+          ],
+          "ops:Label_File_Info.ops:creation_date_time": [
+            "2023-07-10T08:34:37Z"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:w2_camera_selection_status": [
+            "Off",
+            "Off"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:flat_field_lamp_a_status": [
+            "Off",
+            "Off"
+          ],
+          "pds:File.pds:comment": [
+            "Hayabusa2 ONC image in the FITS standard format."
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:stray_light_correction_status": [
+            "Not Applied"
+          ],
+          "img:Sampling.img:crosstrack_summing": [
+            "1"
+          ],
+          "geom:Object_Orientation_RA_Dec.geom:declination_angle": [
+            "-24.1246",
+            "-65.8962",
+            "-22.797",
+            "-12.3454",
+            "18.1518"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_reset_status": [
+            "Not In Reset Sequence",
+            "Not In Reset Sequence"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:radiometric_calibration_status": [
+            "Applied"
+          ],
+          "img:Subframe.img:line_fov": [
+            "1.2167168"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:spacecraft_clock_count": [
+            "1/1527919884",
+            "1/1527920058"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:photometric_correction_status": [
+            "Not Applied"
+          ],
+          "pds:File.pds:creation_date_time": [
+            "2021-09-21T03:15:36Z"
+          ],
+          "geom:Object_Orientation_RA_Dec.geom:reference_pixel_location": [
+            "Center",
+            "Lower Left Corner",
+            "Lower Right Corner",
+            "Upper Left Corner",
+            "Upper Right Corner"
+          ],
+          "img:Radiometric_Correction.img:active_flag": [
+            "true"
+          ],
+          "pds:Internal_Reference.pds:reference_type": [
+            "data_to_investigation",
+            "is_instrument_host",
+            "is_instrument",
+            "data_to_target",
+            "data_to_target",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "geometry_to_SPICE_kernel",
+            "data_to_calibration_product"
+          ],
+          "ref_lidvid_kernel": [
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ck_hyb2_aocsc_2016_v02.bc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ck_hyb2_hkattrpt_2016_v02.bc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_hp_v01.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_ryugu_v01.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_shape_v01.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_v15.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_lidar_v02.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_nirs3_v03.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_onc_v05.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_tir_v04.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:lsk_naif0012.tls::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:pck_pck00010.tpc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:pck_ryugu_v10.tpc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:sclk_hyb2_20210915_v01.tsc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_2162173_ryugu_v01.bsp::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_hyb2_20141203-20180628_0001h_final_ver1.bsp::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_hyb2_de430.bsp::1.0"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:w2_exposure_duration": [
+            "0.0",
+            "0.0"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:alignment_offset_correction_status": [
+            "Not Conducted"
+          ],
+          "img:Exposure.img:exposure_type": [
+            "Manual"
+          ],
+          "img:Dark_Current_Correction.img:processing_venue": [
+            "Ground"
+          ],
+          "pds:Time_Coordinates.pds:start_date_time": [
+            "2016-06-07T12:20:50.501Z"
+          ],
+          "pds:Header.pds:object_length": [
+            "2880",
+            "23040"
+          ],
+          "lidvid": [
+            "urn:jaxa:darts:hyb2_onc:data_calibrated:hyb2_onc_20160607_122053_w1f_l2c::1.0"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:t_optics_temperature": [
+            "-16.4"
+          ],
+          "ops:Label_File_Info.ops:file_size": [
+            "44951"
+          ],
+          "pds:Science_Facets.pds:wavelength_range": [
+            "Visible",
+            "Near Infrared"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:elapsed_time_for_sensitivity_calibration": [
+            "552.333"
+          ],
+          "ops:Provenance.ops:parent_bundle_identifier": [
+            "urn:jaxa:darts:hyb2_onc::1.0"
+          ],
+          "geom:Object_Orientation_RA_Dec.geom:right_ascension_angle": [
+            "241.512",
+            "228.04",
+            "288.197",
+            "198.147",
+            "247.258"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_position_sensor_status": [
+            "Off",
+            "Off"
+          ],
+          "ops:Data_File_Info.ops:file_name": [
+            "hyb2_onc_20160607_122053_w1f_l2c.fit"
+          ],
+          "pds:Element_Array.pds:data_type": [
+            "IEEE754MSBSingle"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:solar_distance_for_calibration": [
+            "0.0"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:w2_electric_circuit_temperature": [
+            "-8.81"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:w1_electric_circuit_temperature": [
+            "-12.99"
+          ],
+          "lid": [
+            "urn:jaxa:darts:hyb2_onc:data_calibrated:hyb2_onc_20160607_122053_w1f_l2c"
+          ],
+          "img:Subframe.img:samples": [
+            "1024"
+          ],
+          "hyb2:Observation_Information.hyb2:spacecraft_clock_start_count": [
+            "1/1527919705"
+          ],
+          "ref_lid_instrument": [
+            "urn:jaxa:darts:context:instrument:hyb2.onc"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:flat_field_correction_file_name": [
+            "hyb2_onc_c_flat_bse_w1f_f_v03_20190131.fit"
+          ],
+          "pds:File.pds:file_name": [
+            "hyb2_onc_20160607_122053_w1f_l2c.fit"
+          ],
+          "hyb2:Observation_Geometry.hyb2:backplane_data_version": [
+            "N/A"
+          ],
+          "pds:Time_Coordinates.pds:stop_date_time": [
+            "2016-06-07T12:20:56.071Z"
+          ],
+          "ref_lidvid_product": [
+            "urn:jaxa:darts:hyb2_onc:calibration:hyb2_onc_c_flat_bse_w1f_f::1.0"
+          ],
+          "ops:Label_File_Info.ops:file_ref": [
+            "https://sbnarchive.psi.edu/pds4/hayabusa2/hyb2_onc/data_calibrated/transfer/20160607/hyb2_onc_20160607_122053_w1f_l2c.xml"
+          ],
+          "img:Flat_Field_Correction.img:active_flag": [
+            "true"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:hardware_correction_status": [
+            "Applied"
+          ],
+          "img:Device_Voltage.img:device_name": [
+            "Bus Line"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:flat_field_correction_status": [
+            "Applied"
+          ],
+          "img:Device_Current.img:device_name": [
+            "ONC",
+            "FLA-C"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:bandwidth": [
+            "145.0"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:bus_line_voltage": [
+            "49.28"
+          ],
+          "ops:Provenance.ops:registry_sweepers_repairkit_version": [
+            "4"
+          ],
+          "img:Device_Temperature.img:temperature_value": [
+            "-4.73",
+            "-16.4",
+            "-32.63",
+            "-13.53",
+            "-19.85",
+            "-32.71",
+            "-12.99",
+            "-16.93",
+            "-32.66",
+            "-8.81",
+            "-16.84"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:digital_electronics_selection": [
+            "DE",
+            "DE"
+          ],
+          "pds:Header.pds:name": [
+            "Hayabusa2 ONC FITS header of primary HDU",
+            "Hayabusa2 ONC FITS header of secondary HDU"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:image_processing_return_status": [
+            "Normal End"
+          ],
+          "ops:Provenance.ops:parent_collection_identifier": [
+            "urn:jaxa:darts:hyb2_onc:data_calibrated::1.0"
+          ],
+          "ref_lid_kernel": [
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ck_hyb2_aocsc_2016_v02.bc",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ck_hyb2_hkattrpt_2016_v02.bc",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_hp_v01.tf",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_ryugu_v01.tf",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_shape_v01.tf",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_v15.tf",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_lidar_v02.ti",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_nirs3_v03.ti",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_onc_v05.ti",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_tir_v04.ti",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:lsk_naif0012.tls",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:pck_pck00010.tpc",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:pck_ryugu_v10.tpc",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:sclk_hyb2_20210915_v01.tsc",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_2162173_ryugu_v01.bsp",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_hyb2_20141203-20180628_0001h_final_ver1.bsp",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_hyb2_de430.bsp"
+          ],
+          "description": [
+            "Initial version.",
+            "This file contains a calibrated image data (l2c) from the ONC instrument.",
+            "Hayabusa2 ONC-W1 distortion-corrected and physically-converted calibrated image"
+          ],
+          "hyb2:Observation_Geometry.hyb2:spacecraft_y_position": [
+            "-196365000.0"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_step_count": [
+            "19200",
+            "19200"
+          ],
+          "title": [
+            "Hayabusa2 ONC distortion-corrected and physically converted calibrated image data product hyb2_onc_20160607_122053_w1f_l2c"
+          ],
+          "geom:Display_Direction.geom:horizontal_display_axis": [
+            "Sample"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:ccd_sensitivity_calibration_file_name": [
+            "hyb2_onc_c_ccdt_20190131.db"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_timeout_error_count": [
+            "0",
+            "0"
+          ],
+          "disp:Display_Direction.disp:vertical_display_direction": [
+            "Top to Bottom"
+          ],
+          "ops:Harvest_Info.ops:harvest_version": [
+            "4.0.5"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_driving_status": [
+            "Stop",
+            "Stop"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:nonlinearity_correction_status": [
+            "Not Applied"
+          ],
+          "pds:Primary_Result_Summary.pds:description": [
+            "This file contains a calibrated image data (l2c) from the ONC instrument."
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:fla_c_electric_current": [
+            "0.0"
+          ],
+          "hyb2:Observation_Geometry.hyb2:sun_distance_from_spacecraft": [
+            "184282000.0"
+          ],
+          "hyb2:Observation_Geometry.hyb2:sun_distance_from_ryugu": [
+            "211393000.0"
+          ],
+          "pds:Identification_Area.pds:logical_identifier": [
+            "urn:jaxa:darts:hyb2_onc:data_calibrated:hyb2_onc_20160607_122053_w1f_l2c"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:hardware_correction_file_name": [
+            "hyb2_onc_c_elec_20190131.db"
+          ],
+          "pds:Axis_Array.pds:elements": [
+            "1024",
+            "1024"
+          ],
+          "img:Radiometric_Correction.img:processing_venue": [
+            "Ground"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:actual_bitdepth": [
+            "12"
+          ],
+          "ops:Label_File_Info.ops:file_name": [
+            "hyb2_onc_20160607_122053_w1f_l2c.xml"
+          ],
+          "pds:Target_Identification.pds:type": [
+            "Planet",
+            "Planet"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:solar_distance_correction_status": [
+            "Not Applied"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:sequence_number": [
+            "1",
+            "2"
+          ],
+          "disp:Display_Direction.disp:horizontal_display_direction": [
+            "Left to Right"
+          ],
+          "hyb2:Observation_Information.hyb2:spacecraft_clock_stop_count": [
+            "1/1527920058"
+          ],
+          "img:Onboard_Compression.img:deferred_flag": [
+            "false"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:w2_driving_status": [
+            "Off",
+            "Off"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:observation_mode": [
+            "Science"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:t_ccd_temperature": [
+            "-32.63"
+          ],
+          "img:Subframe.img:sample_fov": [
+            "1.2167168"
+          ],
+          "pds:Modification_Detail.pds:description": [
+            "Initial version."
+          ],
+          "pds:Axis_Array.pds:axis_name": [
+            "Line",
+            "Sample"
+          ],
+          "pds:File.pds:file_size": [
+            "4222080"
+          ],
+          "pds:Internal_Reference.pds:lidvid_reference": [
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:lsk_naif0012.tls::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:pck_pck00010.tpc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:pck_ryugu_v10.tpc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:sclk_hyb2_20210915_v01.tsc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_lidar_v02.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_nirs3_v03.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_onc_v05.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ik_hyb2_tir_v04.ti::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_hp_v01.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_v15.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_ryugu_v01.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:fk_hyb2_shape_v01.tf::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_hyb2_de430.bsp::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_hyb2_20141203-20180628_0001h_final_ver1.bsp::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:spk_2162173_ryugu_v01.bsp::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ck_hyb2_hkattrpt_2016_v02.bc::1.0",
+            "urn:jaxa:darts:hyb2_spice:spice_kernels:ck_hyb2_aocsc_2016_v02.bc::1.0",
+            "urn:jaxa:darts:hyb2_onc:calibration:hyb2_onc_c_flat_bse_w1f_f::1.0"
+          ],
+          "ops:Label_File_Info.ops:md5_checksum": [
+            "f3a8755eec3fe93cf524a73a536bcf9c"
+          ],
+          "ops:Tracking_Meta.ops:archive_status": [
+            "archived"
+          ],
+          "pds:Array_2D_Image.pds:local_identifier": [
+            "ImageData"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:t_exposure_duration": [
+            "0.0",
+            "0.0"
+          ],
+          "ops:Provenance.ops:superseded_by": [
+            "null"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:analog_electronics_mode": [
+            "Shot",
+            "Shot"
+          ],
+          "img:Flat_Field_Correction.img:processing_venue": [
+            "Ground"
+          ],
+          "img:Exposure.img:exposure_duration": [
+            "5.57"
+          ],
+          "img:Detector.img:first_sample": [
+            "1"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:unit_count_value": [
+            "0.0001298102"
+          ],
+          "ops:Provenance.ops:registry_sweepers_ancestry_version": [
+            "7"
+          ],
+          "pds:Observing_System_Component.pds:type": [
+            "Host",
+            "Instrument"
+          ],
+          "hyb2:Observation_Geometry.hyb2:spacecraft_x_position": [
+            "20793800.0"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:band_center": [
+            "575.0"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:dynamic_range": [
+            "0.4998376"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:flash_lamp_status": [
+            "Disable",
+            "Disable"
+          ],
+          "img:Onboard_Compression.img:onboard_compression_type": [
+            "StarPixel Lossless"
+          ],
+          "pds:Array_2D_Image.pds:axes": [
+            "2"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:smear_correction_status": [
+            "Applied onboard"
+          ],
+          "geom:Reference_Frame_Identification.geom:frame_spice_name": [
+            "J2000",
+            "J2000",
+            "J2000",
+            "J2000",
+            "J2000"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:temperature_dependent_flat_field_correction_status": [
+            "Not Applied"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:radiance_conversion_status": [
+            "Applied"
+          ],
+          "img:Detector.img:samples": [
+            "1056"
+          ],
+          "img:Subframe.img:first_sample": [
+            "17"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:onc_electric_current": [
+            "0.51"
+          ],
+          "geom:SPICE_Kernel_Identification.geom:kernel_type": [
+            "LSK",
+            "PCK",
+            "PCK",
+            "SCLK",
+            "IK",
+            "IK",
+            "IK",
+            "IK",
+            "FK",
+            "FK",
+            "FK",
+            "FK",
+            "SPK",
+            "SPK",
+            "SPK",
+            "CK",
+            "CK"
+          ],
+          "ref_lid_product": [
+            "urn:jaxa:darts:hyb2_onc:calibration:hyb2_onc_c_flat_bse_w1f_f"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:w2_ccd_temperature": [
+            "-32.66"
+          ],
+          "hyb2:Observation_Geometry.hyb2:earth_distance_from_spacecraft": [
+            "36275900.0"
+          ],
+          "ops:Harvest_Info.ops:node_name": [
+            "PDS_SBN"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:t_electric_circuit_temperature": [
+            "-13.53"
+          ],
+          "ops:Provenance.ops:ancestor_refs": [
+            "urn:jaxa:darts:hyb2_onc:data_calibrated::1.0",
+            "urn:jaxa:darts:hyb2_onc:data_calibrated"
+          ],
+          "ops:Data_File_Info.ops:creation_date_time": [
+            "2023-06-05T04:45:21Z"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:radiometric_calibration_file_name": [
+            "hyb2_onc_c_radc_20190131.db"
+          ],
+          "pds:Primary_Result_Summary.pds:purpose": [
+            "Science"
+          ],
+          "pds:Identification_Area.pds:information_model_version": [
+            "1.14.0.0"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:effective_solar_irradiance": [
+            "0.0"
+          ],
+          "disp:Display_Direction.disp:horizontal_display_axis": [
+            "Sample"
+          ],
+          "pds:Local_Internal_Reference.pds:local_identifier_reference": [
+            "ImageData",
+            "ImageData",
+            "ImageData"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:exposure_duration": [
+            "5.57"
+          ],
+          "hyb2:Observation_Geometry.hyb2:spacecraft_z_position": [
+            "-75467200.0"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:flat_field_correction_parameter_file_name": [
+            "hyb2_onc_c_flat_20200814.db"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:w1_camera_selection_status": [
+            "On",
+            "On"
+          ],
+          "img:Flat_Field_File.img:description": [
+            "Flat field correction that does not depend on CCD temperature."
+          ],
+          "pds:Array_2D_Image.pds:axis_index_order": [
+            "Last Index Fastest"
+          ],
+          "pds:Modification_Detail.pds:version_id": [
+            "1.0"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:w1_driving_status": [
+            "On",
+            "On"
+          ],
+          "geom:Display_Direction.geom:horizontal_display_direction": [
+            "Left to Right"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:ccd_sensitivity": [
+            "1383.044"
+          ],
+          "ops:Provenance.ops:reindexed_at": [
+            "2025-03-06T20:42:36.178504"
+          ],
+          "ref_lid_target": [
+            "urn:nasa:pds:context:target:planet.mars",
+            "urn:nasa:pds:context:target:planet.saturn"
+          ],
+          "img:Flat_Field_File.img:name": [
+            "hyb2_onc_c_flat_bse_w1f_f_v03_20190131.fit"
+          ],
+          "hyb2:Observation_Geometry.hyb2:sun_direction_spacecraft_z_axis_angle": [
+            "8.11"
+          ],
+          "pds:Header.pds:parsing_standard_id": [
+            "FITS 3.0",
+            "FITS 3.0"
+          ],
+          "hyb2:Observation_Information.hyb2:observation_date_time": [
+            "2016-06-07T12:20:53.286Z"
+          ],
+          "pds:Header.pds:offset": [
+            "0",
+            "2880"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:ccd_sensitivity_calibration_status": [
+            "Applied"
+          ],
+          "product_class": [
+            "Product_Observational"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:t_filter_name": [
+            "No. 3: 550 nm",
+            "No. 3: 550 nm"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:w1_optics_temperature": [
+            "-19.85"
+          ],
+          "img:Detector.img:lines": [
+            "1024"
+          ],
+          "img:StarPixel_Lossless_Parameters.img:starpixel_initial_subsampling_interval": [
+            "3"
+          ],
+          "img:Radiometric_Correction.img:radiometric_type": [
+            "Spectral Radiance"
+          ],
+          "img:Device_Current.img:current_value": [
+            "0.51",
+            "0.0"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:t_driving_status": [
+            "Off",
+            "Off"
+          ],
+          "pds:Primary_Result_Summary.pds:processing_level": [
+            "Calibrated"
+          ],
+          "img:Sampling.img:sample_bits": [
+            "16"
+          ],
+          "ops:Harvest_Info.ops:harvest_date_time": [
+            "2025-02-28T17:55:17.118190Z"
+          ],
+          "img:Device_Voltage.img:voltage_value": [
+            "49.28"
+          ],
+          "pds:Source_Product_Internal.pds:lidvid_reference": [
+            "urn:jaxa:darts:hyb2_onc:data_partially_processed:hyb2_onc_20160607_122053_w1f_l2b::1.0"
+          ],
+          "pds:Element_Array.pds:unit": [
+            "W/(m**2*um*sr)"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:filter_name": [
+            "None"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:onc_analog_electronics_temperature": [
+            "-4.73"
+          ],
+          "ops:Data_File_Info.ops:mime_type": [
+            "application/fits"
+          ],
+          "pds:Target_Identification.pds:name": [
+            "Mars",
+            "Saturn"
+          ],
+          "img:Flat_Field_Correction.img:sequence_number": [
+            "1"
+          ],
+          "img:Detector.img:first_line": [
+            "1"
+          ],
+          "hyb2:Image_Observation_Information.hyb2:number_of_binning": [
+            "1"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:bias_correction_status": [
+            "Applied onboard"
+          ],
+          "pds:Observing_System_Component.pds:name": [
+            "Hayabusa2",
+            "Optical Navigation Camera (ONC)"
+          ],
+          "img:Device_Temperature.img:device_name": [
+            "ONC Analog Electronics",
+            "ONC-T Optics",
+            "ONC-T CCD",
+            "ONC-T Electric Circuit",
+            "ONC-W1 Optics",
+            "ONC-W1 CCD",
+            "ONC-W1 Electric Circuit",
+            "ONC-W2 Optics",
+            "ONC-W2 CCD",
+            "ONC-W2 Electric Circuit",
+            "FLA-C"
+          ],
+          "pds:Array_2D_Image.pds:name": [
+            "Hayabusa2 ONC FITS data of secondary HDU"
+          ],
+          "img:Detector.img:detector_to_image_flip": [
+            "None"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:distortion_correction_file_name": [
+            "hyb2_onc_c_dist_20190131.db"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:distortion_correction_status": [
+            "Applied"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:fla_c_temperature": [
+            "-16.84"
+          ],
+          "geom:SPICE_Kernel_Identification.geom:spice_kernel_file_name": [
+            "naif0012.tls",
+            "pck00010.tpc",
+            "ryugu_v10.tpc",
+            "hyb2_20210915_v01.tsc",
+            "hyb2_lidar_v02.ti",
+            "hyb2_nirs3_v03.ti",
+            "hyb2_onc_v05.ti",
+            "hyb2_tir_v04.ti",
+            "hyb2_hp_v01.tf",
+            "hyb2_v15.tf",
+            "hyb2_ryugu_v01.tf",
+            "hyb2_shape_v01.tf",
+            "hyb2_de430.bsp",
+            "hyb2_20141203-20180628_0001h_final_ver1.bsp",
+            "2162173_ryugu_v01.bsp",
+            "hyb2_hkattrpt_2016_v02.bc",
+            "hyb2_aocsc_2016_v02.bc"
+          ],
+          "pds:Identification_Area.pds:product_class": [
+            "Product_Observational"
+          ],
+          "pds:Source_Product_Internal.pds:reference_type": [
+            "data_to_partially_processed_source_product"
+          ],
+          "pds:Array_2D_Image.pds:description": [
+            "Hayabusa2 ONC-W1 distortion-corrected and physically-converted calibrated image"
+          ],
+          "ref_lid_instrument_host": [
+            "urn:jaxa:darts:context:instrument_host:spacecraft.hyb2"
+          ],
+          "img:Sampling.img:downtrack_summing": [
+            "1"
+          ],
+          "img:Onboard_Compression.img:onboard_compression_class": [
+            "Lossless"
+          ],
+          "geom:Display_Direction.geom:vertical_display_axis": [
+            "Line"
+          ],
+          "ops:Data_File_Info.ops:file_ref": [
+            "https://sbnarchive.psi.edu/pds4/hayabusa2/hyb2_onc/data_calibrated/transfer/20160607/hyb2_onc_20160607_122053_w1f_l2c.fit"
+          ],
+          "_package_id": [
+            "580f49dd-0c33-4383-b26f-8ac971f82f35"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:w2_optics_temperature": [
+            "-16.93"
+          ],
+          "pds:Identification_Area.pds:version_id": [
+            "1.0"
+          ],
+          "hyb2:Mission_Information.hyb2:mission_phase_name": [
+            "Transfer Phase"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:linearity_guaranteed_range": [
+            "0.4024115"
+          ],
+          "hyb2:Observation_Information.hyb2:naif_instrument_name": [
+            "HAYABUSA2_ONC-W1"
+          ],
+          "disp:Display_Direction.disp:vertical_display_axis": [
+            "Line"
+          ],
+          "geom:Display_Direction.geom:vertical_display_direction": [
+            "Top to Bottom"
+          ],
+          "pds:Internal_Reference.pds:lid_reference": [
+            "urn:jaxa:darts:context:investigation:mission.hyb2",
+            "urn:jaxa:darts:context:instrument_host:spacecraft.hyb2",
+            "urn:jaxa:darts:context:instrument:hyb2.onc",
+            "urn:nasa:pds:context:target:planet.mars",
+            "urn:nasa:pds:context:target:planet.saturn"
+          ],
+          "geom:Object_Orientation_RA_Dec.geom:celestial_north_clock_angle": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "img:Exposure.img:exposure_count": [
+            "1"
+          ],
+          "ops:Data_File_Info.ops:file_size": [
+            "4222080"
+          ],
+          "ops:Provenance.ops:registry_sweepers_provenance_version": [
+            "null"
+          ],
+          "geom:SPICE_Kernel_Identification.geom:kernel_provenance": [
+            "Provenance Not Applicable",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed",
+            "Reconstructed"
+          ],
+          "ref_lid_investigation": [
+            "urn:jaxa:darts:context:investigation:mission.hyb2"
+          ],
+          "hyb2:ONC_Instrument_Attributes.hyb2:w1_ccd_temperature": [
+            "-32.71"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:w1_exposure_duration": [
+            "5.57",
+            "0.0"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:filter_wheel_driver_step_counter_error_count": [
+            "0",
+            "0"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:t_camera_selection_status": [
+            "Off",
+            "Off"
+          ],
+          "hyb2:ONC_Image_Information.hyb2:number_of_subimage": [
+            "2"
+          ],
+          "img:Subframe.img:first_line": [
+            "1"
+          ],
+          "hyb2:Sub_Image_Information.hyb2:flat_field_lamp_b_status": [
+            "Off",
+            "Off"
+          ],
+          "hyb2:ONC_Image_Processing_Parameters.hyb2:dark_correction_status": [
+            "Applied"
+          ],
+          "pds:Science_Facets.pds:discipline_name": [
+            "Small Bodies"
+          ],
+          "hyb2:Observation_Geometry.hyb2:ryugu_distance_from_spacecraft": [
+            "87609100.0"
+          ],
+          "pds:Investigation_Area.pds:type": [
+            "Mission"
+          ]
+        }
+      }
+    ]
+  }
+}
