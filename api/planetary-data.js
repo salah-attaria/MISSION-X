@@ -1,6 +1,5 @@
 
-import fallbackData from "../src/data/planetaryData.json";
-
+import fallbackData from "../src/data/planetaryData.json" with { type: "json" };
 export default async function handler(req, res) {
   if (req.method !== "GET") {
     return res.status(405).json({

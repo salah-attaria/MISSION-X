@@ -1,5 +1,5 @@
 
-import fallbackData from "../src/data/pdsData.json";
+import fallbackData from "../src/data/pdsData.json" with { type: "json" };
 
 export default async function handler(req, res) {
   if (req.method !== "GET") {
