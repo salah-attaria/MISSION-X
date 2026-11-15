@@ -16,14 +16,11 @@ export default async function handler(req, res) {
 
     const startDate = start.toISOString().slice(0, 10);
 
-    const params = new URLSearchParams({
-      startDate,
-      endDate,
-      api_key: process.env.NASA_API_KEY || "DEMO_KEY"
-    });
-
-    const NASA_API =
-      "https://ccmc.gsfc.nasa.gov/DONKI-API/get";
+   const params = new URLSearchParams({
+  startDate,
+  endDate
+});
+const NASA_API = "https://ccmc.gsfc.nasa.gov/DONKI-API/get";
 
     const [cmeResponse, flareResponse, stormResponse] =
       await Promise.all([
@@ -33,13 +30,14 @@ export default async function handler(req, res) {
       ]);
 
     if (
-      !cmeResponse.ok ||
-      !flareResponse.ok ||
-      !stormResponse.ok
-    ) {
-      throw new Error("NASA DONKI request failed");
-    }
-
+  !cmeResponse.ok ||
+  !flareResponse.ok ||
+  !stormResponse.ok
+) {
+  throw new Error(
+    `NASA DONKI failed: CME ${cmeResponse.status}, FLR ${flareResponse.status}, GST ${stormResponse.status}`
+  );
+}
     const [cme, flares, geomagneticStorms] =
       await Promise.all([
         cmeResponse.json(),

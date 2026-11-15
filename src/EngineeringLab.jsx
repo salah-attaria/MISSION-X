@@ -36,7 +36,17 @@ const initialSelection = {
   antenna: 0
 };
 
-export default function EngineeringLab({ selectedMission }) {
+export default function EngineeringLab({
+  selectedMission,
+  credits,
+  setCredits
+}) {
+  const missionStages = [
+  "LAUNCH & ORBIT",
+  "SOLAR STORM",
+  "SCIENCE OPERATIONS",
+  "RETURN TRANSMISSION"
+];
   const [nasaData, setNasaData] = useState(null);
 const [nasaLoading, setNasaLoading] = useState(true);
 const [nasaError, setNasaError] = useState("");
@@ -49,7 +59,24 @@ const cmePredictions = (nasaData?.cme || []).flatMap(cme =>
     .filter(analysis => analysis.isMostAccurate)
     .flatMap(analysis => analysis.enlilList || [])
 );
+useEffect(() => {
+  const target = document.getElementById("adaptive-commander");
 
+  if (!target) return;
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      setShowTelemetry(!entry.isIntersecting);
+    },
+    {
+      threshold: 0.15,
+    }
+  );
+
+  observer.observe(target);
+
+  return () => observer.disconnect();
+}, []);
 useEffect(() => {
   const fetchPlanetaryData = async () => {
     try {
@@ -198,13 +225,75 @@ useEffect(() => {
 
   fetchNASAData();
 }, []);
-const [selection, setSelection] = useState(initialSelection);
-const selectedComponents = {
-  power: systems.power.options[selection.power],
-  battery: systems.battery.options[selection.battery],
-  antenna: systems.antenna.options[selection.antenna]
-};
+const activeSystems = {
+  ...Object.fromEntries(
+    Object.entries(systems).map(([key, system]) => {
+      const missionOptions = selectedMission?.assets?.[key];
 
+      return [
+        key,
+        {
+          ...system,
+          options: (missionOptions || system.options).map(option => ({
+            ...option,
+            capacity: option.capacity ?? option.storage ?? 0,
+            resilience: option.resilience ?? 1,
+            description: option.description || "Mission-specific equipment.",
+            cost: option.cost ?? 0,
+          })),
+        },
+      ];
+    })
+  ),
+
+  ...(selectedMission?.assets?.instruments
+    ? {
+        instruments: {
+          title: "SCIENTIFIC INSTRUMENTS",
+          icon: Cpu,
+        options: selectedMission.assets.instruments.map(option => ({
+  ...option,
+  capacity: 0,
+  resilience: 1,
+  cost: option.cost ?? 0,
+  description: option.description || "Specialized scientific equipment.",
+})),
+        },
+      }
+    : {}),
+};
+console.log("MISSION:", selectedMission?.name);
+console.log("POWER OPTIONS:", activeSystems.power.options);
+console.log("POWER COST:", activeSystems.power.options[0]?.cost);
+console.log("BATTERY COST:", activeSystems.battery.options[0]?.cost);
+const [selection, setSelection] = useState({
+  ...initialSelection,
+  instruments: 0,
+});
+
+useEffect(() => {
+  setSelection({
+    ...initialSelection,
+    instruments: 0,
+  });
+}, [selectedMission?.id]);
+
+const selectedComponents = {
+  power: activeSystems.power.options[selection.power] || activeSystems.power.options[0],
+  battery: activeSystems.battery.options[selection.battery] || activeSystems.battery.options[0],
+  antenna: activeSystems.antenna.options[selection.antenna] || activeSystems.antenna.options[0],
+  ...(activeSystems.instruments
+    ? {
+        instruments:
+          activeSystems.instruments.options[selection.instruments] ||
+          activeSystems.instruments.options[0],
+      }
+    : {}),
+};
+const loadoutCost = Object.values(selectedComponents).reduce(
+  (total, component) => total + (component?.cost || 0),
+  0
+);
   const [crisisResult, setCrisisResult] = useState(null);
   const [crisisResolved, setCrisisResolved] = useState(false);
 
@@ -215,16 +304,36 @@ const [missionConsequences, setMissionConsequences] = useState({
   energyPenalty: 0
 });
 const [missionStage, setMissionStage] = useState(0);
+const [rewardMessage, setRewardMessage] = useState("");
+const [loadoutPurchased, setLoadoutPurchased] = useState(false);
+const [purchaseMessage, setPurchaseMessage] = useState("");
 const [researchCompleted, setResearchCompleted] = useState(false);
 const [transmissionCompleted, setTransmissionCompleted] = useState(false);
 const [repairUsed, setRepairUsed] = useState(false);
 const [repairEnergySpent, setRepairEnergySpent] = useState(0);
-const missionStages = [
-  "LAUNCH & ORBIT",
-  "SOLAR STORM",
-  "SCIENCE OPERATIONS",
-  "RETURN TRANSMISSION"
-];
+const [showTelemetry, setShowTelemetry] = useState(true);
+useEffect(() => {
+  if (missionStage !== 4 || !selectedMission) return;
+
+  const rewardKey = `missionXRewardClaimed-${selectedMission.id}`;
+
+  if (localStorage.getItem(rewardKey) === "claimed") {
+    setRewardMessage("MISSION REWARD ALREADY CLAIMED");
+    return;
+  }
+
+  const reward = Number(selectedMission.victoryReward || 0);
+
+  if (reward <= 0) return;
+
+  localStorage.setItem(rewardKey, "claimed");
+
+  setCredits(previous => previous + reward);
+
+  setRewardMessage(
+    `MISSION COMPLETED! +${reward.toLocaleString()} CREDITS AWARDED`
+  );
+}, [missionStage, selectedMission, setCredits]);
 const advanceMissionStage = () => {
   if (missionStage === 0 && missionConsequences.damage < 50) {
     setMissionStage(1);
@@ -256,11 +365,35 @@ const advanceMissionStage = () => {
     setMissionStage(4);
   }
 };
+const handleLaunch = () => {
+  if (missionConsequences.damage >= 50) {
+    advanceMissionStage();
+    return;
+  }
 
+  if (loadoutPurchased) {
+    advanceMissionStage();
+    return;
+  }
+
+  if (credits < loadoutCost) {
+    setPurchaseMessage("INSUFFICIENT CREDITS. Choose cheaper equipment.");
+    return;
+  }
+
+  setCredits(previous => previous - loadoutCost);
+  setLoadoutPurchased(true);
+  setPurchaseMessage(`EQUIPMENT PURCHASED: ${loadoutCost} CREDITS`);
+  advanceMissionStage();
+};
 const power = selectedComponents.power;
 const battery = selectedComponents.battery;
 const antenna = selectedComponents.antenna;
-  const totalMass = power.mass + battery.mass + antenna.mass;
+const totalMass =
+  power.mass +
+  battery.mass +
+  antenna.mass +
+  (selectedComponents.instruments?.mass || 0);
   const totalPower = power.power;
   const totalStorage = battery.capacity;
   const bandwidth = antenna.bandwidth;
@@ -781,7 +914,11 @@ const changeSelection = (system, index) => {
     <p>{selectedMission.description}</p>
   </div>
 )}
-
+<details className="nasa-intelligence">
+  <summary>
+    <span>✦ NASA INTELLIGENCE DATABASE</span>
+    <span className="nasa-expand-label">VIEW LIVE DATA +</span>
+  </summary>
     <div className="nasa-data-panel">
   <h2>NASA LIVE SPACE WEATHER</h2>
 
@@ -938,10 +1075,46 @@ const changeSelection = (system, index) => {
     are simulated, not NASA predictions.
   </p>
 </div>
+</details>
+{showTelemetry && (
+  <div className="live-telemetry">
+  <div className="telemetry-heading">
+    <span>◈ LIVE SPACECRAFT TELEMETRY</span>
+    <span className="telemetry-status">● SYSTEM ACTIVE</span>
+  </div>
+
+  <div className="telemetry-grid">
+    <div>
+      <strong>{totalMass} KG</strong>
+      <small>TOTAL MASS</small>
+    </div>
+
+    <div>
+      <strong>{totalPower} W</strong>
+      <small>POWER OUTPUT</small>
+    </div>
+
+    <div>
+      <strong>{totalStorage} Wh</strong>
+      <small>ENERGY STORAGE</small>
+    </div>
+
+    <div>
+      <strong>{bandwidth} MB/S</strong>
+      <small>DATA BANDWIDTH</small>
+    </div>
+
+    <div>
+      <strong>{resilience}/11</strong>
+      <small>RESILIENCE</small>
+    </div>
+  </div>
+</div>
+)}
       <div className="lab-layout">
     
         <div className="component-panel">
-          {Object.entries(systems).map(([key, system]) => {
+          {Object.entries(activeSystems).map(([key, system]) => {
             const Icon = system.icon;
 
             return (
@@ -960,7 +1133,11 @@ const changeSelection = (system, index) => {
                         <span>{selection[key] === index ? "SELECTED" : "SELECT"}</span>
                       </div>
                       <p>{option.description}</p>
-                      <small>MASS: {option.mass} KG</small>
+                    <small>
+  MASS: {option.mass} KG
+  {" | "}
+  COST: {option.cost} CREDITS
+</small>
                     </button>
                   ))}
                 </div>
@@ -973,7 +1150,7 @@ const changeSelection = (system, index) => {
           </button>
         </div>
 
-        <aside className="spacecraft-summary">
+        <aside className="spacecraft-summary" id="adaptive-commander">
           <div className="eyebrow">LIVE ENGINEERING ANALYSIS</div>
           <div className="dna-title"><Cpu size={22} /> MISSION DNA</div>
           <div className="dna-code">{dna}</div>
@@ -1111,7 +1288,11 @@ const changeSelection = (system, index) => {
       ? "MISSION COMPLETED"
       : missionStages[missionStage]}
   </h3>
-
+{rewardMessage && missionStage === 4 && (
+  <div className="briefing-note">
+    {rewardMessage}
+  </div>
+)}
   <div className="stage-track">
     {missionStages.map((stage, index) => (
       <div
@@ -1128,7 +1309,13 @@ const changeSelection = (system, index) => {
 
   <button
     className="advance-button"
-    onClick={advanceMissionStage}
+   onClick={() => {
+  if (missionStage === 0) {
+    handleLaunch();
+  } else {
+    advanceMissionStage();
+  }
+}}
    disabled={
   missionStage === 4 ||
   (missionStage === 1 && crisisResult?.status !== "SUCCESS") ||
@@ -1146,7 +1333,8 @@ const changeSelection = (system, index) => {
       <>
         <h3>LAUNCH PREPARATION</h3>
         <p>Review your spacecraft design and confirm readiness for launch.</p>
-        <button className="stage-action-button" onClick={advanceMissionStage}>
+    <button className="stage-action-button" onClick={handleLaunch}>
+      {purchaseMessage && <p>{purchaseMessage}</p>}
           <Rocket size={16} /> INITIATE LAUNCH
         </button>
       </>

@@ -1,10 +1,11 @@
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import EngineeringLab from "./EngineeringLab";
 import {
   Rocket,
   Orbit,
   Satellite,
+  Coins,
   Radio,
   Shield,
   Zap,
@@ -16,7 +17,6 @@ import {
   Globe,
 } from "lucide-react";
 import "./App.css";
-
 const missions = [
   {
     id: "01",
@@ -26,30 +26,149 @@ const missions = [
     difficulty: "MODERATE",
     description:
       "Establish a research mission near the lunar south pole. Manage power, communication and radiation while collecting scientific data.",
-    objectives: ["Establish lunar orbit", "Collect ice samples", "Maintain power systems"],
+
+    startingCredits: 1500,
+    unlockCost: 0,
+    victoryReward: 1800,
+
+    hazards: ["Lunar radiation", "Extreme temperature", "Limited sunlight"],
+
+    objectives: [
+      "Establish lunar orbit",
+      "Collect ice samples",
+      "Maintain power systems",
+    ],
+
+    assets: {
+      power: [
+        { id: "solar-compact", name: "Compact Solar Array", cost: 250, power: 500, mass: 80 },
+        { id: "solar-advanced", name: "Advanced Solar Array", cost: 450, power: 900, mass: 130 },
+        { id: "solar-dual", name: "Dual Solar Array", cost: 650, power: 1200, mass: 190 },
+      ],
+      battery: [
+        { id: "battery-standard", name: "Standard Battery", cost: 150, storage: 300, mass: 50 },
+        { id: "battery-high", name: "High-Capacity Battery", cost: 300, storage: 600, mass: 90 },
+      ],
+      antenna: [
+        { id: "antenna-compact", name: "Compact Antenna", cost: 120, bandwidth: 2, mass: 20 },
+        { id: "antenna-high", name: "High-Gain Antenna", cost: 280, bandwidth: 6, mass: 55 },
+        { id: "antenna-dual", name: "Dual Antenna System", cost: 400, bandwidth: 8, mass: 85 },
+      ],
+    },
   },
+
   {
     id: "02",
     name: "RED FRONTIER",
     destination: "MARS",
     type: "PLANETARY EXPLORATION",
     difficulty: "ADVANCED",
+
     description:
       "Send an autonomous spacecraft to Mars. Prepare for communication delays, harsh radiation and unpredictable system failures.",
-    objectives: ["Reach Mars orbit", "Analyze the surface", "Protect the spacecraft"],
+
+    unlockCost: 1200,
+    victoryReward: 5200,
+
+    hazards: [
+      "Solar radiation storms",
+      "Long communication delays",
+      "Dust interference",
+      "Extreme temperature changes",
+    ],
+
+    objectives: [
+      "Reach Mars orbit",
+      "Analyze the surface",
+      "Protect the spacecraft",
+    ],
+
+    assets: {
+      power: [
+        { id: "mars-solar", name: "Radiation-Hardened Solar Array", cost: 550, power: 850, mass: 150 },
+        { id: "mars-nuclear", name: "Compact Nuclear Generator", cost: 950, power: 1100, mass: 220 },
+      ],
+      battery: [
+        { id: "mars-thermal", name: "Thermal-Protected Battery", cost: 400, storage: 650, mass: 110 },
+        { id: "mars-extended", name: "Extended-Life Battery", cost: 600, storage: 900, mass: 145 },
+      ],
+      antenna: [
+        { id: "mars-deep", name: "Deep Space Antenna", cost: 500, bandwidth: 5, mass: 75 },
+        { id: "mars-array", name: "High-Gain Communication Array", cost: 750, bandwidth: 9, mass: 120 },
+      ],
+      instruments: [
+        { id: "mars-spectrometer", name: "Mineral Spectrometer", cost: 450, science: 30, mass: 45 },
+        { id: "mars-radar", name: "Ground Penetrating Radar", cost: 650, science: 45, mass: 70 },
+      ],
+    },
   },
+
   {
     id: "03",
     name: "SILENT SIGNAL",
     destination: "DEEP SPACE",
     type: "DEEP SPACE MISSION",
     difficulty: "EXPERT",
+
     description:
       "Explore the unknown beyond familiar planetary territory. Every engineering decision could determine whether your spacecraft survives.",
-    objectives: ["Navigate deep space", "Preserve communication", "Complete scientific survey"],
+
+    unlockCost: 2200,
+    victoryReward: 4500,
+
+    hazards: [
+      "Extremely weak solar energy",
+      "Communication blackouts",
+      "Long-duration system degradation",
+      "Unknown radiation exposure",
+    ],
+
+    objectives: [
+      "Navigate deep space",
+      "Preserve communication",
+      "Complete scientific survey",
+    ],
+
+    assets: {
+      power: [
+        { id: "deep-nuclear", name: "Long-Life Nuclear Power Core", cost: 1200, power: 1400, mass: 260 },
+        { id: "deep-hybrid", name: "Hybrid Power System", cost: 900, power: 1000, mass: 190 },
+      ],
+      battery: [
+        { id: "deep-cryo", name: "Cryogenic Energy Storage", cost: 800, storage: 1200, mass: 160 },
+        { id: "deep-backup", name: "Emergency Reserve Battery", cost: 500, storage: 700, mass: 100 },
+      ],
+      antenna: [
+        { id: "deep-relay", name: "Long-Range Relay System", cost: 1000, bandwidth: 10, mass: 130 },
+        { id: "deep-laser", name: "Laser Communication System", cost: 1400, bandwidth: 15, mass: 95 },
+      ],
+      instruments: [
+        { id: "deep-telescope", name: "Deep Space Telescope", cost: 900, science: 60, mass: 80 },
+        { id: "deep-particle", name: "Particle Detection Instrument", cost: 700, science: 45, mass: 55 },
+      ],
+    },
   },
 ];
-
+const fundingContracts = [
+  {
+    id: "nasa-analysis",
+    title: "NASA DATA ANALYSIS",
+    description: "Analyze real NASA mission observations.",
+    reward: 150,
+  },
+  {
+    id: "engineering-challenge",
+    title: "ENGINEERING CHALLENGE",
+    description: "Complete a spacecraft engineering diagnosis.",
+    reward: 250,
+  },
+  {
+    id: "risk-assessment",
+    title: "MISSION RISK ASSESSMENT",
+    description: "Identify and assess a mission hazard.",
+    reward: 100,
+  },
+];
 const crewRoles = [
   {
     id: "architect",
@@ -83,12 +202,71 @@ const crewRoles = [
 
 function App() {
   const [selectedMission, setSelectedMission] = useState(null);
+  const [credits, setCredits] = useState(() => {
+  const savedCredits = localStorage.getItem("missionXCredits");
+
+  return savedCredits !== null
+    ? Number(savedCredits)
+    : missions[0].startingCredits;
+});
+
+useEffect(() => {
+  localStorage.setItem("missionXCredits", String(credits));
+}, [credits]);  
+const [claimedContracts, setClaimedContracts] = useState(() => {
+  return JSON.parse(
+    localStorage.getItem("missionXClaimedContracts") || "[]"
+  );
+});
+
+useEffect(() => {
+  localStorage.setItem(
+    "missionXClaimedContracts",
+    JSON.stringify(claimedContracts)
+  );
+}, [claimedContracts]);
+
   const [activeMission, setActiveMission] = useState(null);
   const [activePage, setActivePage] = useState("COMMAND CENTER");
 const [selectedCrewRole, setSelectedCrewRole] = useState("architect");
+const [menuOpen, setMenuOpen] = useState(false);
+const claimContract = (contract) => {
+  const rewardKey = `missionXContract-${contract.id}`;
+
+  if (
+    claimedContracts.includes(contract.id) ||
+    localStorage.getItem(rewardKey) === "claimed"
+  ) {
+    return;
+  }
+
+  localStorage.setItem(rewardKey, "claimed");
+
+  setCredits(previous => previous + contract.reward);
+
+  setClaimedContracts(previous => [
+    ...previous,
+    contract.id,
+  ]);
+};
+const completeContract = (contractId) => {
+  if (claimedContracts.includes(contractId)) return;
+
+  setClaimedContracts(previous => [
+    ...previous,
+    contractId,
+  ]);
+};
   return (
     <div className="app-shell">
-      <aside className="sidebar">
+      <button
+  className="mobile-menu-button"
+  onClick={() => setMenuOpen(prev => !prev)}
+  aria-label="Toggle navigation menu"
+>
+  {menuOpen ? "✕" : "☰"}
+</button>
+     <aside className={`sidebar ${menuOpen ? "sidebar-open" : ""}`}>
         <div className="brand">
           <div className="brand-icon"><Orbit size={27} /></div>
           <div>
@@ -104,6 +282,7 @@ const [selectedCrewRole, setSelectedCrewRole] = useState("architect");
           { name: "MISSION ARCHIVE", icon: Globe },
           { name: "ENGINEERING LAB", icon: Cpu },
           { name: "CREW & ROLES", icon: Shield },
+          { name: "FUNDING CENTER", icon: Coins },
         ].map(({ name, icon: Icon }) => (
           <button
             key={name}
@@ -125,8 +304,11 @@ const [selectedCrewRole, setSelectedCrewRole] = useState("architect");
         <header className="topbar">
           <div className="breadcrumb">MISSION CONTROL / <span>{activePage}</span></div>
           <div className="top-status">
-            <span className="live-dot" /> ALL SYSTEMS OPERATIONAL
-          </div>
+  <span className="live-dot" /> ALL SYSTEMS OPERATIONAL
+  <span className="credit-display">
+    ◈ {credits.toLocaleString()} CREDITS
+  </span>
+</div>
         </header>
 
         {activePage === "COMMAND CENTER" && (
@@ -202,9 +384,15 @@ const [selectedCrewRole, setSelectedCrewRole] = useState("architect");
             </section>
           </>
         )}
+        {activePage === "ENGINEERING LAB" &&
+  console.log("ACTIVE MISSION IN APP:", activeMission)}
 
   {activePage === "ENGINEERING LAB" && (
-  <EngineeringLab selectedMission={activeMission} />
+<EngineeringLab
+  selectedMission={activeMission}
+  credits={credits}
+  setCredits={setCredits}
+/>
 )}
 
 
@@ -301,7 +489,56 @@ const [selectedCrewRole, setSelectedCrewRole] = useState("architect");
     </div>
   </section>
 )}
+{activePage === "FUNDING CENTER" && (
+  <section className="placeholder-page">
+    <div className="eyebrow">MISSION ECONOMY / RESEARCH FUNDING</div>
 
+    <h1>FUNDING <span>CENTER</span></h1>
+
+    <p>
+      Secure additional mission funding through available research grants.
+    </p>
+
+    <div className="briefing-note">
+      AVAILABLE BALANCE:
+      <strong> ◈ {credits.toLocaleString()} CREDITS</strong>
+    </div>
+
+    <div className="mission-grid">
+      {fundingContracts.map(contract => {
+        const claimed = claimedContracts.includes(contract.id);
+
+        return (
+          <article className="mission-card" key={contract.id}>
+            <div className="card-top">
+              <span>FUNDING CONTRACT</span>
+              <Coins size={20} />
+            </div>
+
+            <h3>{contract.title}</h3>
+            <p>{contract.description}</p>
+
+            <div className="briefing-note">
+              REWARD: +{contract.reward} CREDITS
+            </div>
+
+            <div className="card-footer">
+              <span>{claimed ? "CLAIMED" : "AVAILABLE"}</span>
+
+              <button
+                disabled={claimed}
+                onClick={() => claimContract(contract)}
+              >
+                {claimed ? "REWARD CLAIMED" : "CLAIM GRANT"}
+                <ChevronRight size={16} />
+              </button>
+            </div>
+          </article>
+        );
+      })}
+    </div>
+  </section>
+)}
 
         <footer>MISSION X © 2026 <span>BUILT FOR THE NEXT GENERATION OF SPACE ENGINEERS</span></footer>
       </main>
@@ -311,9 +548,30 @@ const [selectedCrewRole, setSelectedCrewRole] = useState("architect");
           <div className="briefing-modal" onClick={(e) => e.stopPropagation()}>
             <button className="close-button" onClick={() => setSelectedMission(null)}><X /></button>
             <div className="eyebrow">MISSION BRIEFING / {selectedMission.id}</div>
-            <h2>{selectedMission.name}</h2>
-            <p>{selectedMission.description}</p>
-            <h3>PRIMARY OBJECTIVES</h3>
+          
+<h2>{selectedMission.name}</h2>
+
+<p>{selectedMission.description}</p>
+
+<div className="mission-briefing-details">
+  <div>
+    <small>DESTINATION</small>
+    <strong>{selectedMission.destination}</strong>
+  </div>
+
+  <div>
+    <small>MISSION TYPE</small>
+    <strong>{selectedMission.type}</strong>
+  </div>
+
+  <div>
+    <small>DIFFICULTY</small>
+    <strong>{selectedMission.difficulty}</strong>
+  </div>
+</div>
+
+<h3>PRIMARY OBJECTIVES</h3>
+
             {selectedMission.objectives.map((objective, index) => (
               <div className="objective" key={objective}>
                 <span>0{index + 1}</span>{objective}
@@ -326,7 +584,7 @@ const [selectedCrewRole, setSelectedCrewRole] = useState("architect");
 
 <button
   className="primary-button"
-  onClick={() => {
+ onClick={() => {
   setActiveMission(selectedMission);
   setSelectedMission(null);
   setActivePage("ENGINEERING LAB");
