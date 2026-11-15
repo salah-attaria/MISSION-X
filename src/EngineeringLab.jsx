@@ -53,9 +53,7 @@ const cmePredictions = (nasaData?.cme || []).flatMap(cme =>
 useEffect(() => {
   const fetchPlanetaryData = async () => {
     try {
-      const response = await fetch(
-        "http://localhost:3001/api/planetary-data"
-      );
+      const response = await fetch("/api/planetary-data");
 
       if (!response.ok) {
         throw new Error("NASA planetary data unavailable");
@@ -76,10 +74,7 @@ useEffect(() => {
 useEffect(() => {
   const fetchPDSData = async () => {
     try {
-      const response = await fetch(
-        "http://localhost:3001/api/pds-data"
-      );
-
+     const response = await fetch("/api/pds-data");
       if (!response.ok) {
         throw new Error("NASA PDS data unavailable");
       }
