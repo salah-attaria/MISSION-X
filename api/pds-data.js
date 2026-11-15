@@ -14,9 +14,14 @@ export default async function handler(req, res) {
       limit: "5"
     });
 
-    const response = await fetch(
-      `https://pds.nasa.gov/api/search/1/products?${params}`
-    );
+ const response = await fetch(
+  `https://pds.nasa.gov/api/search/1/products?${params}`,
+  {
+    headers: {
+      Accept: "application/json"
+    }
+  }
+);
 
     if (!response.ok) {
       throw new Error(`NASA PDS request failed: ${response.status}`);
